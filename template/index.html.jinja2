@@ -33,8 +33,11 @@ It is useful for writing the 'Related Work' section in research papers.
 {% if article['pubData']['doi'] %}
 <a class="pubDoi" href="https://doi.org/{{article['pubData']['doi']}}">doi:{{article['pubData']['doi']}}</a>
 {% endif %}
+{% if article['pubData']['arxiv'] %}
+<a class="pubArxiv" href="https://arxiv.org/abs/{{article['pubData']['arxiv']}}">arXiv:{{article['pubData']['arxiv']}}</a>
+{% endif %}
 {% if article['pubData']['url'] %}
-<a class="pubUrl" href="{{article['pubData']['url']}}">url</a>
+<a class="pubUrl" href="{{article['pubData']['url']}}">{{article['pubData']['url']}}</a>
 {% endif %}
 </div>
 {% if article['status'] == 'incomplete' %}
