@@ -52,10 +52,22 @@ function orF(conditions) {
     }
 }
 
+function installCiteHandlers() {
+    for(var elem of document.getElementsByClassName('citeButton')) {
+        elem.addEventListener('click', function(ev) {
+            var buttonElem = ev.target;
+            const bibtexId = buttonElem.getAttribute('data-target');
+            var bibtexElem = document.getElementById(bibtexId);
+            bibtexElem.classList.toggle('hidden');
+        });
+    }
+}
+
 function main() {
     window.fetch('articles.json')
         .then(function(response) {return response.json();})
         .then(function(data) {articles = data;});
+    installCiteHandlers();
 }
 
 window.addEventListener('load', main);

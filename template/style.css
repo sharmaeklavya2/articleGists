@@ -67,6 +67,13 @@ h1 {
 .article > .topicsStr {
     font-family: monospace;
 }
+.citeButton:hover {
+    background-color: var(--medium-tint);
+    cursor: pointer;
+}
+.citeButton:active {
+    background-color: var(--heavy-tint);
+}
 
 /* generic */
 html {
@@ -110,6 +117,10 @@ div.math {
 .linkable-list > li:target {
     background-color: var(--light-tint);
     box-shadow: 0px 0px 5px 10px var(--light-tint);
+}
+pre {
+    padding: 1em;
+    background-color: var(--very-light-tint);
 }
 
 /* details */

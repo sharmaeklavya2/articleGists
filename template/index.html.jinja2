@@ -39,6 +39,9 @@ It is useful for writing the 'Related Work' section in research papers.
 {% if article['pubData']['url'] %}
 <a class="pubUrl" href="{{article['pubData']['url']}}">{{article['pubData']['url']}}</a>
 {% endif %}
+{% if article['bibtex'] %}
+<span data-target="bibtex.{{articleId}}" class="citeButton">&#10078;</span>
+{% endif %}
 </div>
 {% if article['status'] == 'incomplete' %}
 <div class="status danger">Status: incomplete</div>
@@ -47,6 +50,11 @@ It is useful for writing the 'Related Work' section in research papers.
 <div class="topics">
 Topics: <span class="topicsStr">{{article['topicsStr']}}</span>
 </div>
+{% endif %}
+{% if article['bibtex'] %}
+<pre id="bibtex.{{articleId}}" class="bibtex hidden">
+{{article['bibtex']}}
+</pre>
 {% endif %}
 <div class="content">
 {% if article['description'] %}

@@ -31,11 +31,45 @@ CONFIG = {
     "title": "Article Gists",
     "mathengine": "mathjax",
 }
+BIBTEX_TRN = {'journal': ['longVenue', 'venue'], 'booktitle': ['longVenue', 'venue']}
+BIBTEX_FORMATS = {
+    'article': ['journal', 'year', 'volume', 'number', 'pages'],
+    'inproceedings': ['booktitle', 'year', 'volume', 'number', 'pages'],
+    'misc': ['year'],
+}
 
 acronyms: Optional[Mapping[str, Mapping[str, str]]] = None
 
 
-def processArticle(article: ArticleT) -> None:
+def generateBibEntry(id: str, title: str, pubData: Mapping[str, object]) -> str:
+    pubType = pubData['type']
+    header = '@' + pubType + '{' + id + ',\n'
+    bibInfo = {'title': title}
+    if 'authors' in pubData:
+        bibInfo['author'] = ' and '.join(['{}, {}'.format(l, f) for f, l in pubData['authors']])
+
+    for key in BIBTEX_FORMATS[pubType]:
+        if key in pubData:
+            bibInfo[key] = str(pubData[key])
+        elif key in BIBTEX_TRN:
+            keySeq = BIBTEX_TRN[key]
+            for key2 in keySeq:
+                if key2 in pubData:
+                    bibInfo[key] = str(pubData[key2])
+                    break
+
+    if 'doi' in pubData:
+        bibInfo['doi'] = pubData['doi']
+    elif 'arxiv' in pubData:
+        bibInfo['eprint'] = pubData['arxiv']
+        bibInfo['archivePrefix'] = 'arXiv'
+    elif 'url' in pubData:
+        bibInfo['url'] = pubData['url']
+
+    return header + ',\n'.join([k + '={' + v + '}' for k, v in bibInfo.items()]) + '\n}'
+
+
+def processArticle(id: str, article: ArticleT) -> None:
     assert 'pubData' in article
     pubData = article['pubData']
     assert isinstance(pubData, dict)
@@ -64,6 +98,11 @@ def processArticle(article: ArticleT) -> None:
             pubData['longVenue'] = acronyms['venue'][pubData['venue']]
         except KeyError:
             pass
+
+    # bibtex
+    if 'type' in pubData:
+        article['bibtex'] = generateBibEntry(id,
+            article.get('bibtexTitle') or article['title'], pubData)
 
 
 def prettyJsonHelper(obj: object) -> tuple[str, int]:
@@ -145,7 +184,7 @@ def createWebsite(ipath: str, opath: str, acronymsPath: str) -> None:
     articles = jsonConcat(ipath)
     articles = sortDict(articles, articleSortKey)
     for k, v in articles.items():
-        processArticle(v)
+        processArticle(k, v)
     articlesPruned = pruneArticles(articles)
 
     os.makedirs(opath, exist_ok=True)

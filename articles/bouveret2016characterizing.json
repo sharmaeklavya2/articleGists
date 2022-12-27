@@ -1,12 +1,15 @@
 {
-"gscid": "bouveret2016characterizing",
 "title": "Characterizing conflicts in fair division of indivisible goods using a scale of criteria",
 "pubData": {
     "authors": [["Sylvain", "Bouveret"], ["Michel", "Lemaître"]],
     "doi": "10.1007/s10458-015-9287-3",
-    "type": "article",
     "year": 2016,
-    "venue": "AAMAS"
+    "venue": "AAMAS",
+    "type": "article",
+    "volume": "30",
+    "number": "2",
+    "pages": "259--290",
+    "publisher": "Springer"
 },
 "topics": {
     "fairDivision": ["goods", "indiv", "additive", "mms", "prop", "envyFree", "ceei", "minMaxShare", "egal"]
