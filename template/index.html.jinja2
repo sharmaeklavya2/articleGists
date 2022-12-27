@@ -22,7 +22,9 @@ It is useful for writing the 'Related Work' section in research papers.
 {% if article['pubData']['authorsStr'] %}
 <span class="pubAuthors">by {{article['pubData']['authorsStr']}}</span>
 {% endif %}
-{% if article['pubData']['venue'] %}
+{% if article['pubData']['longVenue'] %}
+<span class="pubVenue">in <abbr title="{{article['pubData']['longVenue']}}">{{article['pubData']['venue']}}</abbr></span>
+{% elif article['pubData']['venue'] %}
 <span class="pubVenue">in {{article['pubData']['venue']}}</span>
 {% endif %}
 {% if article['pubData']['year'] %}

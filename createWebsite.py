@@ -12,7 +12,7 @@ import shutil
 from collections.abc import Collection, Mapping, Sequence
 from os.path import dirname, abspath, relpath, splitext
 from os.path import join as pjoin
-from typing import Callable, TypeVar
+from typing import Callable, Optional, TypeVar
 
 from jinja2 import Template
 
@@ -32,12 +32,15 @@ CONFIG = {
     "mathengine": "mathjax",
 }
 
+acronyms: Optional[Mapping[str, Mapping[str, str]]] = None
+
 
 def processArticle(article: ArticleT) -> None:
-    # add authorsStr
     assert 'pubData' in article
     pubData = article['pubData']
     assert isinstance(pubData, dict)
+
+    # add authorsStr
     authorsList = [firstName + ' ' + lastName for firstName, lastName
         in pubData.get('authors', [])]
     if len(authorsList) == 0:
@@ -54,6 +57,13 @@ def processArticle(article: ArticleT) -> None:
     # add topicsStr
     if 'topics' in article:
         article['topicsStr'] = json.dumps(article['topics'])
+
+    # expand acronyms
+    if acronyms is not None:
+        try:
+            pubData['longVenue'] = acronyms['venue'][pubData['venue']]
+        except KeyError:
+            pass
 
 
 def prettyJsonHelper(obj: object) -> tuple[str, int]:
@@ -127,7 +137,11 @@ def pruneArticles(articles: ArticlesT) -> ArticlesT:
     return {id: pruneKeys(articleInfo, USEFUL_FIELDS) for id, articleInfo in articles.items()}
 
 
-def createWebsite(ipath: str, opath: str) -> None:
+def createWebsite(ipath: str, opath: str, acronymsPath: str) -> None:
+    global acronyms
+    with open(acronymsPath) as fp:
+        acronyms = json.load(fp)
+
     articles = jsonConcat(ipath)
     articles = sortDict(articles, articleSortKey)
     for k, v in articles.items():
@@ -152,8 +166,11 @@ def createWebsite(ipath: str, opath: str) -> None:
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('ipath', help='path to directory containing JSON files')
-    parser.add_argument('opath', help='path to output directory')
+    parser.add_argument('-i', '--input', help='path to directory containing article JSON files')
+    parser.add_argument('-o', '--output', required=True, help='path to output directory')
+    parser.add_argument('--acronyms', help='path to acronyms JSON file')
     args = parser.parse_args()
 
-    createWebsite(args.ipath, args.opath)
+    ipath = args.input or pjoin(BASE_DIR, 'articles')
+    acronymsPath = args.acronyms or pjoin(BASE_DIR, 'acronyms.json')
+    createWebsite(ipath, args.output, acronymsPath)

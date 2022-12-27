@@ -8,7 +8,7 @@ The `createWebsite.py` script takes as input a directory containing these JSON f
 The `articles` directory contains JSON files that I curated.
 Example invocation:
 
-    python3 createWebsite.py articles output
+    python3 createWebsite.py -i articles -o output
 
 ## Filtering
 
