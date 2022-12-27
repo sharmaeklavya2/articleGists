@@ -1,0 +1,21 @@
+{
+"title": "Fair Enough: Guaranteeing Approximate Maximin Shares",
+"pubData": {
+    "authors": [["Ariel D.", "Procaccia"], ["Junxing", "Wang"]],
+    "doi": "10.1145/3140756",
+    "year": 2014,
+    "venue": "EC",
+    "type": "inproceedings",
+    "pages": "675--692",
+    "publisher": "Association for Computing Machinery"
+},
+"topics": {
+    "fairDivision": ["goods", "indiv", "additive", "mms"]
+},
+"description": "Fair division of $m$ indivisible goods among $n$ agents with additive valuations.",
+"results": [
+    "Theorem 2.1: For each $n ≥ 3$, there is an instance where an MMS allocation doesn't exist. $m$ may be exponential in $n$ in this instance.",
+    "Introduced approximate MMS.",
+    "Theorem 3.1: An algorithm that outputs a $2/3$-MMS allocation, whose running time is polynomial in $m$ but not $n$. The algorithm's output is $3/4$-MMS when $n ∈ \\{3, 4\\}$."
+]
+}
