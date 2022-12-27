@@ -77,6 +77,9 @@ body {
     line-height: 1.4;
     font-size: 1.1em;
 }
+.hidden {
+    display: none;
+}
 a {color: var(--link-color);}
 a:visited {color: var(--vlink-color);}
 a:not(:hover) {

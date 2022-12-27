@@ -10,6 +10,27 @@ Example invocation:
 
     python3 createWebsite.py articles output
 
+## Filtering
+
+You can filter articles based on topics and subtopics.
+To do this, you'll have to open your browser's console and call the `filterArticles` function.
+Here are a few examples:
+
+    filterArticles(hasTopicF('marketEquilibrium'));
+    filterArticles(hasSubtopicF('fairDivision', 'ef1'));
+
+You can compose conditions using functions `andF` and `orF`:
+
+    filterArticles(andF([hasSubtopicF('fairDivision', 'ef1'), hasSubtopicF('fairDivision', 'prop')]));
+    filterArticles(orF([hasSubtopicF('fairDivision', 'ef1'), hasSubtopicF('fairDivision', 'prop')]));
+
+`filterArticles` works by reading `articles.json`, which is written to the output directory
+by `createWebsite.py`. You can also create your own filter functions if you want to filter
+on something other than topics and subtopics. See `script.js` to get started.
+
+If you have ideas for a better UI for filtering, please let me know by
+opening an issue or pull request or contacting me personally.
+
 ## Type checking
 
 Python code has been type-annotated. To type-check using [mypy](http://mypy-lang.org/), run

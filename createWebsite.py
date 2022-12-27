@@ -26,7 +26,7 @@ BASE_DIR = dirname(abspath(__file__))
 TEMPLATE_PATH = pjoin(BASE_DIR, 'template')
 
 USEFUL_FIELDS = {'title', 'status', 'pubData', 'topics'}
-STATIC_FILES = ['style.css']
+STATIC_FILES = ['style.css', 'script.js']
 CONFIG = {
     "title": "Article Gists",
     "mathengine": "mathjax",
