@@ -7,6 +7,19 @@
 <title>{{config.title}}</title>
 <link rel="stylesheet" href="style.css" />
 <script defer src="script.js"></script>
+{% if config.mathengine == 'mathjax' %}
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+window.MathJax = {
+    "tex": {
+        "inlineMath": [['$', '$'], ['\\(', '\\)']],
+    },
+    "chtml": {
+        "scale": 0.95,
+    }
+};
+</script>
+{% endif %}
 </head>
 <body>
 <h1>{{config.title}}</h1>
