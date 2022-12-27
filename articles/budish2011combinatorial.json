@@ -1,0 +1,20 @@
+{
+"gscid": "budish2011combinatorial",
+"title": "The Combinatorial Assignment Problem: Approximate Competitive Equilibrium from Equal Incomes",
+"status": "incomplete",
+"pubData": {
+    "authors": [["Eric", "Budish"]],
+    "doi": "10.1086/664613",
+    "type": "article",
+    "year": 2011,
+    "venue": "Journal of Political Economy"
+},
+"topics": {
+    "fairDivision": ["goods", "indiv", "ceei", "mms", "ef1"],
+    "marketEquilibrium": ["ceei"]
+},
+"results": [
+    "Defines envy-freeness up to one good (EF1).",
+    "Defines maximin share (MMS)."
+]
+}

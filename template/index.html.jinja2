@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="style.css" />
+<meta name="color-scheme" content="light dark" />
+<title>{{config.title}}</title>
+</head>
+<body>
+<h1>{{config.title}}</h1>
+<p id="about">
+This website lists the gists of research articles and categorizes them by topics.
+It is useful for writing the 'Related Work' section in research papers.
+</p>
+<ol id="articleList" class="linkable-list">
+{% for articleId, article in articles.items() %}
+<li class="article" id="article.{{articleId}}">
+<div class="title">{{article.title}} <a class="id" href="#article.{{articleId}}">[{{articleId}}]</a></div>
+<div class="pubData">
+{% if article['pubData']['authorsStr'] %}
+<span class="pubAuthors">by {{article['pubData']['authorsStr']}}</span>
+{% endif %}
+{% if article['pubData']['venue'] %}
+<span class="pubVenue">in {{article['pubData']['venue']}}</span>
+{% endif %}
+{% if article['pubData']['year'] %}
+<span class="pubYear">{{article['pubData']['year']}}</span>
+{% endif %}
+{% if article['pubData']['doi'] %}
+<a class="pubDoi" href="https://doi.org/{{article['pubData']['doi']}}">doi:{{article['pubData']['doi']}}</a>
+{% endif %}
+{% if article['pubData']['url'] %}
+<a class="pubUrl" href="{{article['pubData']['url']}}">url</a>
+{% endif %}
+</div>
+{% if article['status'] == 'incomplete' %}
+<div class="status danger">Status: incomplete</div>
+{% endif %}
+{% if article['topics'] %}
+<div class="topics">
+Topics: <span class="topicsStr">{{article['topicsStr']}}</span>
+</div>
+{% endif %}
+<div class="content">
+{% if article['description'] %}
+<p class="description">{{article['description']}}</p>
+{% endif %}
+{% if article['results'] %}
+<ol class="results">
+{% for result in article['results'] %}
+<li>{{result}}</li>
+{% endfor %}
+</ol>
+{% endif %}
+</div>
+</li>
+{% endfor %}
+</ol>
+</body>
+</html>
