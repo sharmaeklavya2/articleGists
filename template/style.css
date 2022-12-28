@@ -53,10 +53,12 @@ h1 {
     color: var(--emph-color);
     font-size: 1.1em;
 }
-.article > .title > .id {
-    color: var(--text-secondary);
+.articleId {
     font-size: 0.9rem;
     font-family: monospace;
+}
+.article > .title > .articleId {
+    color: var(--text-secondary);
 }
 .article > .pubData > *:not(:last-child)::after,
 .article > .meta > *:not(:last-child)::after
