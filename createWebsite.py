@@ -8,6 +8,7 @@ whose keys are file names and values are file contents.
 import argparse
 import json
 import os
+import sys
 import shutil
 from collections.abc import Collection, Mapping, Sequence
 from os.path import dirname, abspath, relpath, splitext
@@ -148,12 +149,16 @@ def jsonConcat(ipath: str) -> ArticlesT:
             basename, ext = splitext(fname)
             if ext == '.json':
                 fpath = pjoin(dpath, fname)
-                with open(fpath) as fp:
-                    d = json.load(fp)
-                assert isinstance(d, dict)
                 key = relpath(fpath, ipath)[:-5].replace('\\', '.').replace('/', '.')
                 if key in objs:
                     raise ValueError('duplicate key: ' + key)
+                with open(fpath) as fp:
+                    try:
+                        d = json.load(fp)
+                    except json.JSONDecodeError as e:
+                        print(key + '.json is invalid JSON', file=sys.stderr)
+                        raise e
+                assert isinstance(d, dict)
                 objs[key] = d
     return objs
 
