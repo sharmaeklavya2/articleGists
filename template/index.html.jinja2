@@ -11,12 +11,16 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <script>
 window.MathJax = {
-    "tex": {
-        "inlineMath": [['$', '$'], ['\\(', '\\)']],
-    },
-    "chtml": {
-        "scale": 0.95,
+"tex": {
+    "inlineMath": [['$', '$'], ['\\(', '\\)']],
+    "macros": {
+        "eps": "\\varepsilon",
+        "defeq": ":=",
+        "Th": "^{\\textrm{th}}",
+        "E": "\\operatorname{\\mathbb{E}}",
     }
+},
+"chtml": {"scale": 0.95},
 };
 </script>
 {% endif %}
