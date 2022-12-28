@@ -31,7 +31,11 @@ CONFIG = {
     "title": "Article Gists",
     "mathengine": "mathjax",
 }
-BIBTEX_TRN = {'journal': ['longVenue', 'venue'], 'booktitle': ['longVenue', 'venue']}
+BIBTEX_TRN = {
+    'journal': ['longVenue', 'venue'],
+    'booktitle': ['longVenue', 'venue'],
+    'publisher': ['longPublisher', 'publisher'],
+}
 BIBTEX_FORMATS = {
     'article': ['journal', 'year', 'volume', 'number', 'pages'],
     'inproceedings': ['booktitle', 'year', 'volume', 'number', 'pages'],
@@ -49,14 +53,14 @@ def generateBibEntry(id: str, title: str, pubData: Mapping[str, object]) -> str:
         bibInfo['author'] = ' and '.join(['{}, {}'.format(l, f) for f, l in pubData['authors']])
 
     for key in BIBTEX_FORMATS[pubType]:
-        if key in pubData:
-            bibInfo[key] = str(pubData[key])
-        elif key in BIBTEX_TRN:
+        if key in BIBTEX_TRN:
             keySeq = BIBTEX_TRN[key]
-            for key2 in keySeq:
-                if key2 in pubData:
-                    bibInfo[key] = str(pubData[key2])
-                    break
+        else:
+            keySeq = [key]
+        for key2 in keySeq:
+            if key2 in pubData:
+                bibInfo[key] = str(pubData[key2])
+                break
 
     if 'doi' in pubData:
         bibInfo['doi'] = pubData['doi']
@@ -94,10 +98,11 @@ def processArticle(id: str, article: ArticleT) -> None:
 
     # expand acronyms
     if acronyms is not None:
-        try:
-            pubData['longVenue'] = acronyms['venue'][pubData['venue']]
-        except KeyError:
-            pass
+        for k, longK in [('venue', 'longVenue'), ('publisher', 'longPublisher')]:
+            try:
+                pubData[longK] = acronyms[k][pubData[k]]
+            except KeyError:
+                pass
 
     # bibtex
     if 'type' in pubData:

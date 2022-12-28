@@ -1,6 +1,10 @@
 {
 "venue": {
+"JACM": "Journal of the ACM",
 "AAMAS": "International Conference on Autonomous Agents and Multiagent Systems",
 "EC": "ACM Conference on Economics and Computation"
+},
+"publisher": {
+"ACM": "Association for Computing Machinery"
 }
 }
