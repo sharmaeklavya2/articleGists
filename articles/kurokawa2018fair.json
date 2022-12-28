@@ -1,0 +1,27 @@
+{
+"title": "Fair Enough: Guaranteeing Approximate Maximin Shares",
+"pubData": {
+    "authors": [["David", "Kurokawa"], ["Ariel D.", "Procaccia"], ["Junxing", "Wang"]],
+    "doi": "10.1145/3140756",
+    "year": 2018,
+    "type": "article",
+    "venue": "JACM",
+    "volume": "65",
+    "number": "2",
+    "pages": "1--27",
+    "month": "February",
+    "publisher": "ACM",
+    "address": "New York, NY, USA"
+},
+"topics": {
+    "fairDivision": ["goods", "indiv", "additive", "mms"]
+},
+"relatedWork": ["Supersedes", "article:procaccia2014fair"],
+"description": "Fair division of $m$ indivisible goods among $n$ agents with additive valuations.",
+"results": [
+    "Theorem 2.1: For each $n ≥ 3$, there is an instance with $m ≤ 3n+4$ where an MMS allocation doesn't exist.",
+    "Introduced approximate MMS.",
+    "Section 3: Algorithm for $ρ(1-ε)$-MMS, where $ε ≥ 0$ is a parameter to the algorithm, $ρ = 2n'/(3n'-1)$ $= (2/3)(1 + 1/(3n'-1))$, and $n'$ is the largest odd number such that $n' ≤ n$. The algorithm runs in polynomial time when $ε$ is a positive constant.",
+    "Corollary of Section 3: When $n$ is constant, we can pick $ε = 1/(3n')$ to get $2/3$-MMS in polytime. When $n ∈ \\{3, 4\\}$, $3/4$-MMS exists."
+]
+}

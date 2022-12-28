@@ -7,16 +7,17 @@
     "venue": "EC",
     "type": "inproceedings",
     "pages": "675--692",
-    "publisher": "Association for Computing Machinery"
+    "publisher": "ACM"
 },
 "topics": {
     "fairDivision": ["goods", "indiv", "additive", "mms"]
 },
+"relatedWork": ["Superseded by", "article:kurokawa2018fair"],
 "description": "Fair division of $m$ indivisible goods among $n$ agents with additive valuations.",
 "results": [
     "Theorem 2.1: For each $n ≥ 3$, there is an instance where an MMS allocation doesn't exist. $m$ may be exponential in $n$ in this instance.",
     "Introduced approximate MMS.",
-    "Section 3: PTAS for $ρ$-MMS (i.e., $ρ(1-ε)$-MMS in polytime when $ε$ is constant), where $ρ = 2n'/(3n'-1) = (2/3)(1 + 1/(3n'-1))$ and $n'$ is the largest odd number such that $n' ≤ n$.",
+    "Section 3: Algorithm for $ρ(1-ε)$-MMS, where $ε ≥ 0$ is a parameter to the algorithm, $ρ = 2n'/(3n'-1)$ $= (2/3)(1 + 1/(3n'-1))$, and $n'$ is the largest odd number such that $n' ≤ n$. The algorithm runs in polynomial time when $n$ and $ε$ are constants and $ε > 0$.",
     "Corollary of Section 3: When $n$ is constant, we can pick $ε = 1/(3n')$ to get $2/3$-MMS in polytime. When $n ∈ \\{3, 4\\}$, $3/4$-MMS exists."
 ]
 }
