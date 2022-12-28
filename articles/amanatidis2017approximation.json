@@ -1,0 +1,27 @@
+{
+"title": "Approximation Algorithms for Computing Maximin Share Allocations",
+"pubData": {
+    "authors": [["Georgios", "Amanatidis"], ["Evangelos", "Markakis"], ["Afshin", "Nikzad"], ["Amin", "Saberi"]],
+    "doi": "10.1145/3147173",
+    "arxiv": "1503.00941",
+    "year": 2017,
+    "venue": "TALG",
+    "type": "article",
+    "volume": "13",
+    "number": "4",
+    "pages": "1--28",
+    "publisher": "ACM"
+},
+"topics": {
+    "fairDivision": ["goods", "indiv", "additive", "mms"]
+},
+"relatedWork": ["Supersedes", "article:amanatidis2015approximation"],
+"description": "Fair division of $m$ indivisible goods among $n$ agents with additive valuations.",
+"results": [
+    "Theorem 3.5: A simple round-robin-based $O(mn^2 + m^2)$-time algorithm for $1/2$-MMS.",
+    "Theorem 4.1: PTAS for $2/3$-MMS.",
+    "Theorem 5.1: PTAS for $7/8$-MMS for $n=3$.",
+    "Theorem 5.5: Algorithm to find an MMS allocation in $O(mn\\log m)$ time when valuations are in $\\{0, 1, 2\\}$.",
+    "Theorem 6.2 and Corollary 6.4: Let valuations be IID uniform in $[0, 1]$. The Greedy Round Robin algorithm outputs a proportional allocation with probability $1-O(1/n)$ if $m > 2n$ and $n$ is large, and with probability $1-O(1/m)$ if $m$ is large."
+]
+}

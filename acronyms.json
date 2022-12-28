@@ -1,8 +1,10 @@
 {
 "venue": {
-"JACM": "Journal of the ACM",
 "AAMAS": "International Conference on Autonomous Agents and Multiagent Systems",
-"EC": "ACM Conference on Economics and Computation"
+"EC": "ACM Conference on Economics and Computation",
+"ICALP": "International Colloquium on Automata, Languages, and Programming",
+"JACM": "Journal of the ACM",
+"TALG": "ACM Transactions on Algorithms"
 },
 "publisher": {
 "ACM": "Association for Computing Machinery"
