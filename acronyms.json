@@ -4,7 +4,8 @@
 "EC": "ACM Conference on Economics and Computation",
 "ICALP": "International Colloquium on Automata, Languages, and Programming",
 "JACM": "Journal of the ACM",
-"TALG": "ACM Transactions on Algorithms"
+"TALG": "ACM Transactions on Algorithms",
+"TCS": "Theoretical Computer Science"
 },
 "publisher": {
 "ACM": "Association for Computing Machinery"

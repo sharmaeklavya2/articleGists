@@ -1,0 +1,19 @@
+{
+"title": "On Maximin Share Allocations in Matroids",
+"gistStatus": "incomplete",
+"pubData": {
+    "authors": [["Laurent", "Gourvès"], ["Jérôme", "Monnot"]],
+    "doi": "10.1016/j.tcs.2018.05.018",
+    "year": 2019,
+    "venue": "TCS",
+    "type": "article",
+    "volume": "754",
+    "pages": "50--64",
+    "publisher": "Elsevier"
+},
+"topics": {
+    "fairDivision": ["goods", "indiv", "additive", "mms"],
+    "matroids": []
+},
+"description": "Fair division of $m$ indivisible goods among $n$ agents with additive valuations and matroid constraints: Polytime algorithm for $1/2$-MMS, PTAS for MMS for $n=2$, PTAS for $8/9$-MMS for $n=3$."
+}
