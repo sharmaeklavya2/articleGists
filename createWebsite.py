@@ -13,15 +13,47 @@ import shutil
 from collections.abc import Collection, Mapping, Sequence
 from os.path import dirname, abspath, relpath, splitext
 from os.path import join as pjoin
-from typing import Callable, Optional, TypeVar
+from typing import Callable, Optional, TypedDict, TypeVar
 
 from jinja2 import Template
 
 
+class PubData(TypedDict, total=False):
+    authors: Sequence[tuple[str, str]]
+    authorsStr: Optional[str]
+    doi: str
+    arxiv: str
+    url: str
+    year: int
+    venue: str
+    type: str
+    volume: str
+    number: str
+    pages: str
+    month: int
+    publisher: str
+    address: str
+    longVenue: str
+    longPublisher: str
+
+
+class Article(TypedDict, total=False):
+    title: str
+    bibtexTitle: str
+    gistStatus: str
+    paperStatus: str
+    pubData: PubData
+    topics: Mapping[str, Sequence[str]]
+    topicsStr: str
+    description: str
+    relatedWork: Sequence[str]
+    results: Sequence[str]
+    bibtex: str
+
+
 KT = TypeVar('KT')
 VT = TypeVar('VT')
-ArticleT = dict[str, object]
-ArticlesT = dict[str, ArticleT]
+ArticlesT = dict[str, Article]
 
 BASE_DIR = dirname(abspath(__file__))
 TEMPLATE_PATH = pjoin(BASE_DIR, 'template')
@@ -46,7 +78,7 @@ BIBTEX_FORMATS = {
 acronyms: Optional[Mapping[str, Mapping[str, str]]] = None
 
 
-def generateBibEntry(id: str, title: str, pubData: Mapping[str, object]) -> str:
+def generateBibEntry(id: str, title: str, pubData: PubData) -> str:
     pubType = pubData['type']
     header = '@' + pubType + '{' + id + ',\n'
     bibInfo = {'title': title}
@@ -60,7 +92,7 @@ def generateBibEntry(id: str, title: str, pubData: Mapping[str, object]) -> str:
             keySeq = [key]
         for key2 in keySeq:
             if key2 in pubData:
-                bibInfo[key] = str(pubData[key2])
+                bibInfo[key] = str(pubData[key2])  # type: ignore
                 break
 
     if 'doi' in pubData:
@@ -74,10 +106,9 @@ def generateBibEntry(id: str, title: str, pubData: Mapping[str, object]) -> str:
     return header + ',\n'.join([k + '={' + v + '}' for k, v in bibInfo.items()]) + '\n}'
 
 
-def processArticle(id: str, article: ArticleT) -> None:
+def processArticle(id: str, article: Article) -> None:
     assert 'pubData' in article
     pubData = article['pubData']
-    assert isinstance(pubData, dict)
 
     # add authorsStr
     authorsList = [firstName + ' ' + lastName for firstName, lastName
@@ -101,7 +132,7 @@ def processArticle(id: str, article: ArticleT) -> None:
     if acronyms is not None:
         for k, longK in [('venue', 'longVenue'), ('publisher', 'longPublisher')]:
             try:
-                pubData[longK] = acronyms[k][pubData[k]]
+                pubData[longK] = acronyms[k][pubData[k]]  # type: ignore
             except KeyError:
                 pass
 
@@ -143,7 +174,7 @@ def prettyJsonize(obj: object) -> str:
 
 
 def jsonConcat(ipath: str) -> ArticlesT:
-    objs: dict[str, ArticleT] = {}
+    objs: dict[str, Article] = {}
     for (dpath, dnames, fnames) in os.walk(ipath):
         for fname in fnames:
             basename, ext = splitext(fname)
@@ -158,7 +189,6 @@ def jsonConcat(ipath: str) -> ArticlesT:
                     except json.JSONDecodeError as e:
                         print(key + '.json is invalid JSON', file=sys.stderr)
                         raise e
-                assert isinstance(d, dict)
                 objs[key] = d
     return objs
 
@@ -167,19 +197,17 @@ def sortDict(d: Mapping[KT, VT], sortKey: Callable[[tuple[KT, VT]], int]) -> dic
     return dict(sorted(d.items(), key=sortKey))
 
 
-def articleSortKey(kvPair: tuple[str, object]) -> int:
+def articleSortKey(kvPair: tuple[str, Article]) -> int:
     k, v = kvPair
     try:
-        assert isinstance(v, Mapping)
         value = v['pubData']['year']
-        assert isinstance(value, int)
         return value
     except (KeyError, IndexError):
         return 0
 
 
-def pruneKeys(d: Mapping[KT, VT], usefulKeys: Collection[KT]) -> dict[KT, VT]:
-    return {k: v for k, v in d.items() if k in usefulKeys}
+def pruneKeys(d: Article, usefulKeys: Collection[KT]) -> Article:
+    return {k: v for k, v in d.items() if k in usefulKeys}  # type: ignore
 
 
 def pruneArticles(articles: ArticlesT) -> ArticlesT:
