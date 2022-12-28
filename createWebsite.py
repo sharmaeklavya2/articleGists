@@ -25,7 +25,7 @@ ArticlesT = dict[str, ArticleT]
 BASE_DIR = dirname(abspath(__file__))
 TEMPLATE_PATH = pjoin(BASE_DIR, 'template')
 
-USEFUL_FIELDS = {'title', 'status', 'pubData', 'topics'}
+USEFUL_FIELDS = {'title', 'gistStatus', 'paperStatus', 'pubData', 'topics'}
 STATIC_FILES = ['style.css', 'script.js']
 CONFIG = {
     "title": "Article Gists",

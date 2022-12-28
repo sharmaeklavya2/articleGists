@@ -61,8 +61,11 @@ It is useful for writing the 'Related Work' section in research papers.
 {% endif %}
 </div>
 <div class="meta">
-{% if article['status'] == 'incomplete' %}
-<span class="status">Status: <span class="danger">incomplete</span></span>
+{% if article['gistStatus'] %}
+<span class="gistStatus">gist status: <span{% if article.gistStatus in ('error', 'incomplete') %} class="danger"{% endif %}>{{article.gistStatus}}</span></span>
+{% endif %}
+{% if article['paperStatus'] %}
+<span class="paperStatus">paper status: <span>{{article.paperStatus}}</span></span>
 {% endif %}
 {% if article['relatedWork'] %}
 <span class="relatedWork">
