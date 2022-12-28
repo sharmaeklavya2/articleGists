@@ -2,7 +2,7 @@
 "title": "Fair Enough: Guaranteeing Approximate Maximin Shares",
 "pubData": {
     "authors": [["Ariel D.", "Procaccia"], ["Junxing", "Wang"]],
-    "doi": "10.1145/3140756",
+    "doi": "10.1145/2600057.2602835",
     "year": 2014,
     "venue": "EC",
     "type": "inproceedings",
@@ -16,6 +16,7 @@
 "results": [
     "Theorem 2.1: For each $n ≥ 3$, there is an instance where an MMS allocation doesn't exist. $m$ may be exponential in $n$ in this instance.",
     "Introduced approximate MMS.",
-    "Theorem 3.1: An algorithm that outputs a $2/3$-MMS allocation, whose running time is polynomial in $m$ but not $n$. The algorithm's output is $3/4$-MMS when $n ∈ \\{3, 4\\}$."
+    "Section 3: PTAS for $ρ$-MMS (i.e., $ρ(1-ε)$-MMS in polytime when $ε$ is constant), where $ρ = 2n'/(3n'-1) = (2/3)(1 + 1/(3n'-1))$ and $n'$ is the largest odd number such that $n' ≤ n$.",
+    "Corollary of Section 3: When $n$ is constant, we can pick $ε = 1/(3n')$ to get $2/3$-MMS in polytime. When $n ∈ \\{3, 4\\}$, $3/4$-MMS exists."
 ]
 }
