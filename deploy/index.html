@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="color-scheme" content="light dark" />
+<title>Article Gists</title>
+<link rel="stylesheet" href="style.css" />
+<script defer src="script.js"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+window.MathJax = {
+"chtml": {"scale": 0.95},
+"tex": {"inlineMath": [['$', '$'], ['\\(', '\\)']]}
+};
+window.MathJax.tex["macros"] = {
+  "E": "\\operatorname{\\mathbb{E}}",
+  "MMS": "\\mathrm{MMS}",
+  "NestShare": "\\mathrm{NS}",
+  "Th": "^{\\textrm{th}}",
+  "Var": "\\operatorname{Var}",
+  "defeq": ":=",
+  "eps": "\\varepsilon",
+  "opname": "\\operatorname{#1}"
+};
+</script>
+</head>
+<body>
+<h1>Article Gists</h1>
+<p id="about">
+This website contains summaries of research articles and categorizes them by topics.
+</p>
+<ol id="articleList" class="linkable-list">
+<li class="article" id="article.deuermeyer1982scheduling">
+<div class="title">Scheduling to Maximize the Minimum Processor Finish Time in a Multiprocessor System <a class="articleId" href="#article.deuermeyer1982scheduling">[deuermeyer1982scheduling]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Bryan L. Deuermeyer, Donald K. Friesen, and Michael A. Langston</span>
+<span class="pubVenue">in SIAM Journal on Algebraic Discrete Methods</span>
+<span class="pubYear">1982</span>
+<a class="pubDoi" href="https://doi.org/10.1137/0603019">doi:10.1137/0603019</a>
+<span data-target="bibtex.deuermeyer1982scheduling" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">scheduling: </span>
+<span class="topic"><span class="topicLabel">idMachines</span></span>
+<span class="topic"><span class="topicLabel">maxmin</span></span>
+<span class="topic"><span class="topicLabel">lpt</span></span>
+</span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">idVal</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">mms</span></span>
+</span>
+</div>
+<pre id="bibtex.deuermeyer1982scheduling" class="bibtex hidden">
+@article{deuermeyer1982scheduling,
+title={Scheduling to Maximize the Minimum Processor Finish Time in a Multiprocessor System},
+author={Deuermeyer, Bryan L. and Friesen, Donald K. and Langston, Michael A.},
+journal={SIAM Journal on Algebraic Discrete Methods},
+year={1982},
+volume={3},
+number={2},
+pages={190--196},
+doi={10.1137/0603019}
+}
+</pre>
+<div class="content">
+<p class="description">Considers the problem of scheduling jobs on $m$ identical machines. Analyzes the approximation ratio of the LPT (longest processing time) algorithm for maximizing the MCT (minimum completion time).</p>
+<ol class="results">
+<li>Proves that LPT's MCT is at least $3/4$ times the maximum MCT.</li>
+<li>Gives an example for which LPT's MCT is $(3m-1)/(4m-2)$ times the maximum MCT.</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.csirik1992exact">
+<div class="title">The exact LPT-bound for maximizing the minimum completion time <a class="articleId" href="#article.csirik1992exact">[csirik1992exact]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by János Csirik, Hans Kellerer, and Gerhard Woeginger</span>
+<span class="pubVenue">in Operations Research Letters</span>
+<span class="pubYear">1992</span>
+<a class="pubDoi" href="https://doi.org/10.1016/0167-6377(92)90004-M">doi:10.1016/0167-6377(92)90004-M</a>
+<span data-target="bibtex.csirik1992exact" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">scheduling: </span>
+<span class="topic"><span class="topicLabel">idMachines</span></span>
+<span class="topic"><span class="topicLabel">maxmin</span></span>
+<span class="topic"><span class="topicLabel">lpt</span></span>
+</span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">idVal</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">mms</span></span>
+</span>
+</div>
+<pre id="bibtex.csirik1992exact" class="bibtex hidden">
+@article{csirik1992exact,
+title={The exact {LPT}-bound for maximizing the minimum completion time},
+author={Csirik, János and Kellerer, Hans and Woeginger, Gerhard},
+journal={Operations Research Letters},
+year={1992},
+volume={11},
+number={5},
+pages={281--287},
+doi={10.1016/0167-6377(92)90004-M}
+}
+</pre>
+<div class="content">
+<p class="description">Analyzes the LPT (longest processing time) algorithm for scheduling jobs on $m$ identical machines. Proves that LPT's MCT (minimum completion time) is at least $(3m-1)/(4m-2)$ times the maximum MCT.</p>
+</div>
+</li>
+<li class="article" id="article.budish2011combinatorial">
+<div class="title">The Combinatorial Assignment Problem: Approximate Competitive Equilibrium from Equal Incomes <a class="articleId" href="#article.budish2011combinatorial">[budish2011combinatorial]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Eric Budish</span>
+<span class="pubVenue">in Journal of Political Economy</span>
+<span class="pubYear">2011</span>
+<a class="pubDoi" href="https://doi.org/10.1086/664613">doi:10.1086/664613</a>
+<span data-target="bibtex.budish2011combinatorial" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+<span class="gistStatus">gist status: <span class="danger">incomplete</span></span>
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">ceei</span></span>
+<span class="topic"><span class="topicLabel">mms</span></span>
+<span class="topic"><span class="topicLabel">ef1</span></span>
+</span>
+<span class="topic">
+<span class="topicLabel">marketEquilibrium: </span>
+<span class="topic"><span class="topicLabel">ceei</span></span>
+</span>
+</div>
+<pre id="bibtex.budish2011combinatorial" class="bibtex hidden">
+@article{budish2011combinatorial,
+title={The Combinatorial Assignment Problem: Approximate Competitive Equilibrium from Equal Incomes},
+author={Budish, Eric},
+journal={Journal of Political Economy},
+year={2011},
+volume={119},
+number={6},
+pages={1061--1103},
+doi={10.1086/664613}
+}
+</pre>
+<div class="content">
+<ol class="results">
+<li>Defines envy-freeness up to one good (EF1).</li>
+<li>Defines maximin share (MMS).</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.procaccia2014fair">
+<div class="title">Fair Enough: Guaranteeing Approximate Maximin Shares <a class="articleId" href="#article.procaccia2014fair">[procaccia2014fair]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Ariel D. Procaccia and Junxing Wang</span>
+<span class="pubVenue">in <abbr title="ACM Conference on Economics and Computation">EC</abbr></span>
+<span class="pubYear">2014</span>
+<a class="pubDoi" href="https://doi.org/10.1145/2600057.2602835">doi:10.1145/2600057.2602835</a>
+<span data-target="bibtex.procaccia2014fair" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+<span class="relatedWork">
+Superseded by
+<a class="articleId" href="#article.kurokawa2018fair">[kurokawa2018fair]</a>
+</span>
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">mms</span></span>
+</span>
+</div>
+<pre id="bibtex.procaccia2014fair" class="bibtex hidden">
+@inproceedings{procaccia2014fair,
+title={Fair Enough: Guaranteeing Approximate Maximin Shares},
+author={Procaccia, Ariel D. and Wang, Junxing},
+booktitle={ACM Conference on Economics and Computation},
+year={2014},
+pages={675--692},
+doi={10.1145/2600057.2602835}
+}
+</pre>
+<div class="content">
+<p class="description">Fair division of $m$ indivisible goods among $n$ agents with additive valuations.</p>
+<ol class="results">
+<li>Theorem 2.1: For each $n ≥ 3$, there is an instance where an MMS allocation doesn't exist. $m$ may be exponential in $n$ in this instance.</li>
+<li>Introduced approximate MMS.</li>
+<li>Section 3: Algorithm for $ρ(1-ε)$-MMS, where $ε ≥ 0$ is a parameter to the algorithm, $ρ = 2n'/(3n'-1)$ $= (2/3)(1 + 1/(3n'-1))$, and $n'$ is the largest odd number such that $n' ≤ n$. The algorithm runs in polynomial time when $n$ and $ε$ are constants and $ε > 0$.</li>
+<li>Corollary of Section 3: When $n$ is constant, we can pick $ε = 1/(3n')$ to get $2/3$-MMS in polytime. When $n ∈ \{3, 4\}$, $3/4$-MMS exists.</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.amanatidis2015approximation">
+<div class="title">Approximation Algorithms for Computing Maximin Share Allocations <a class="articleId" href="#article.amanatidis2015approximation">[amanatidis2015approximation]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Georgios Amanatidis, Evangelos Markakis, Afshin Nikzad, and Amin Saberi</span>
+<span class="pubVenue">in <abbr title="International Colloquium on Automata, Languages, and Programming">ICALP</abbr></span>
+<span class="pubYear">2015</span>
+<a class="pubDoi" href="https://doi.org/10.1007/978-3-662-47672-7_4">doi:10.1007/978-3-662-47672-7_4</a>
+<span data-target="bibtex.amanatidis2015approximation" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+<span class="relatedWork">
+Superseded by
+<a class="articleId" href="#article.amanatidis2017approximation">[amanatidis2017approximation]</a>
+</span>
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">mms</span></span>
+</span>
+</div>
+<pre id="bibtex.amanatidis2015approximation" class="bibtex hidden">
+@inproceedings{amanatidis2015approximation,
+title={Approximation Algorithms for Computing Maximin Share Allocations},
+author={Amanatidis, Georgios and Markakis, Evangelos and Nikzad, Afshin and Saberi, Amin},
+booktitle={International Colloquium on Automata, Languages, and Programming},
+year={2015},
+pages={39--51},
+doi={10.1007/978-3-662-47672-7_4}
+}
+</pre>
+<div class="content">
+<p class="description">Fair division of $m$ indivisible goods among $n$ agents with additive valuations.</p>
+<ol class="results">
+<li>Theorem 3: A simple round-robin-based $O(mn^2 + m^2)$-time algorithm for $1/2$-MMS.</li>
+<li>Theorem 4: PTAS for $2/3$-MMS.</li>
+<li>Theorem 6: PTAS for $6/7$-MMS for $n=3$.</li>
+<li>Theorem 7 and Corollary 1: Let valuations be IID uniform in $[0, 1]$. The Greedy Round Robin algorithm outputs a proportional allocation with probability $1-O(1/n)$ if $m > 2n$ and $n$ is large, and with probability $1-O(\log^2 m / m)$ if $m$ is large.</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.kurokawa2016can">
+<div class="title">When Can the Maximin Share Guarantee Be Guaranteed? <a class="articleId" href="#article.kurokawa2016can">[kurokawa2016can]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by David Kurokawa, Ariel Procaccia, and Junxing Wang</span>
+<span class="pubVenue">in <abbr title="AAAI Conference on Artificial Intelligence">AAAI</abbr></span>
+<span class="pubYear">2016</span>
+<a class="pubDoi" href="https://doi.org/10.1609/aaai.v30i1.10041">doi:10.1609/aaai.v30i1.10041</a>
+<span data-target="bibtex.kurokawa2016can" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">mms</span></span>
+</span>
+</div>
+<pre id="bibtex.kurokawa2016can" class="bibtex hidden">
+@inproceedings{kurokawa2016can,
+title={When Can the Maximin Share Guarantee Be Guaranteed?},
+author={Kurokawa, David and Procaccia, Ariel and Wang, Junxing},
+booktitle={AAAI Conference on Artificial Intelligence},
+year={2016},
+doi={10.1609/aaai.v30i1.10041}
+}
+</pre>
+<div class="content">
+<p class="description">Fair division of $m$ indivisible goods among $n$ agents with additive valuations.</p>
+<ol class="results">
+<li>Theorem 2.1: $∀n≥3$, there is an example with $≤3n+4$ goods for which an MMS allocation doesn't exist.</li>
+<li>Theorem 3.1: Let $c > 0$ be a constant. For each agent $i$, let $D_i$ be a probability distribution supported over $[0, 1]$ such that $\Var(D_i) ≥ c$. Suppose $v_i(g)$ is independently randomly sampled from $D_i$ for each agent $i$ and good $g$. Then $∀ ε>0$, $∃ K$, such that if $\max(n, m) ≥ K$, then an MMS allocation exists with probability $1-ε$ ($K$ depends on $ε$ and $c$).</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.bouveret2016characterizing">
+<div class="title">Characterizing conflicts in fair division of indivisible goods using a scale of criteria <a class="articleId" href="#article.bouveret2016characterizing">[bouveret2016characterizing]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Sylvain Bouveret and Michel Lemaître</span>
+<span class="pubVenue">in <abbr title="International Conference on Autonomous Agents and Multiagent Systems">AAMAS</abbr></span>
+<span class="pubYear">2016</span>
+<a class="pubDoi" href="https://doi.org/10.1007/s10458-015-9287-3">doi:10.1007/s10458-015-9287-3</a>
+<span data-target="bibtex.bouveret2016characterizing" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">mms</span></span>
+<span class="topic"><span class="topicLabel">prop</span></span>
+<span class="topic"><span class="topicLabel">envyFree</span></span>
+<span class="topic"><span class="topicLabel">ceei</span></span>
+<span class="topic"><span class="topicLabel">minMaxShare</span></span>
+<span class="topic"><span class="topicLabel">egal</span></span>
+</span>
+</div>
+<pre id="bibtex.bouveret2016characterizing" class="bibtex hidden">
+@article{bouveret2016characterizing,
+title={Characterizing conflicts in fair division of indivisible goods using a scale of criteria},
+author={Bouveret, Sylvain and Lemaître, Michel},
+journal={International Conference on Autonomous Agents and Multiagent Systems},
+year={2016},
+volume={30},
+number={2},
+pages={259--290},
+doi={10.1007/s10458-015-9287-3}
+}
+</pre>
+<div class="content">
+<p class="description">Gives a scale of criteria for fair division of $m$ indivisible goods among $n$ agents with additive valuations.</p>
+<ol class="results">
+<li>Propositions 2, 4, 6, 7: MMS ⟹ PROP ⟹ MinMaxShare ⟹ EnvyFree ⟹ CEEI</li>
+<li>Proposition 1, 3: The following problems are NP-hard: 1. computing an agent's MMS share. 2. finding an MMS allocation. 3. checking if a PROP allocation exists.</li>
+<li>Proposition 10: For sum-normalized valuations, PROP ⟹ Egalitarian.</li>
+<li>Proposition 11: For binary valuations, the round-robin algorithm gives an MMS allocation in $O(m^2)$ time.</li>
+<li>Proposition 12: For identical valuations, MMS, PROP, envy-freeness, CEEI, and equitability are the same.</li>
+<li>Proposition 13: If $n-1$ agents have identical valuations, an MMS allocation exists.</li>
+<li>Proposition 14: An MMS allocation exists if the corresponding ordered instance also has an MMS allocation.</li>
+<li>Propositions 18, 19, 20: If $m ≤ n+3$, then an MMS allocation exists.</li>
+<li>Experiments: Thousands of ordered fair division instances were randomly generated using IID (uniform and gaussion) valuations. MMS allocations were found to always exist.</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.amanatidis2017approximation">
+<div class="title">Approximation Algorithms for Computing Maximin Share Allocations <a class="articleId" href="#article.amanatidis2017approximation">[amanatidis2017approximation]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Georgios Amanatidis, Evangelos Markakis, Afshin Nikzad, and Amin Saberi</span>
+<span class="pubVenue">in <abbr title="ACM Transactions on Algorithms">TALG</abbr></span>
+<span class="pubYear">2017</span>
+<a class="pubDoi" href="https://doi.org/10.1145/3147173">doi:10.1145/3147173</a>
+<a class="pubArxiv" href="https://arxiv.org/abs/1503.00941v3">arXiv:1503.00941v3</a>
+<span data-target="bibtex.amanatidis2017approximation" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+<span class="relatedWork">
+Supersedes
+<a class="articleId" href="#article.amanatidis2015approximation">[amanatidis2015approximation]</a>
+</span>
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">mms</span></span>
+</span>
+</div>
+<pre id="bibtex.amanatidis2017approximation" class="bibtex hidden">
+@article{amanatidis2017approximation,
+title={Approximation Algorithms for Computing Maximin Share Allocations},
+author={Amanatidis, Georgios and Markakis, Evangelos and Nikzad, Afshin and Saberi, Amin},
+journal={ACM Transactions on Algorithms},
+year={2017},
+volume={13},
+number={4},
+pages={1--28},
+doi={10.1145/3147173}
+}
+</pre>
+<div class="content">
+<p class="description">Fair division of $m$ indivisible goods among $n$ agents with additive valuations.</p>
+<ol class="results">
+<li>Theorem 3.5: A simple round-robin-based $O(mn^2 + m^2)$-time algorithm for $1/2$-MMS.</li>
+<li>Theorem 4.1: PTAS for $2/3$-MMS.</li>
+<li>Theorem 5.1: PTAS for $7/8$-MMS for $n=3$.</li>
+<li>Theorem 5.5: Algorithm to find an MMS allocation in $O(mn\log m)$ time when valuations are in $\{0, 1, 2\}$.</li>
+<li>Theorem 5.6 (without full proof): Reducing the problem of finding an $α$-MMS allocation to the special case of ordered instances.</li>
+<li>Theorem 6.2 and Corollary 6.4: Let valuations be IID uniform in $[0, 1]$. The Greedy Round Robin algorithm outputs a proportional allocation with probability $1-O(1/n)$ if $m > 2n$ and $n$ is large, and with probability $1-O(1/m)$ if $m$ is large.</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.barman2017approximation">
+<div class="title">Approximation Algorithms for Maximin Fair Division <a class="articleId" href="#article.barman2017approximation">[barman2017approximation]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Siddharth Barman and Sanath Kumar Krishna Murthy</span>
+<span class="pubVenue">in <abbr title="ACM Conference on Economics and Computation">EC</abbr></span>
+<span class="pubYear">2017</span>
+<a class="pubDoi" href="https://doi.org/10.1145/3033274.3085136">doi:10.1145/3033274.3085136</a>
+<span data-target="bibtex.barman2017approximation" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+<span class="relatedWork">
+Superseded by
+<a class="articleId" href="#article.barman2020approximation">[barman2020approximation]</a>
+</span>
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">submodular</span></span>
+<span class="topic"><span class="topicLabel">mms</span></span>
+<span class="topic"><span class="topicLabel">efx</span></span>
+</span>
+</div>
+<pre id="bibtex.barman2017approximation" class="bibtex hidden">
+@inproceedings{barman2017approximation,
+title={Approximation Algorithms for Maximin Fair Division},
+author={Barman, Siddharth and Krishna Murthy, Sanath Kumar},
+booktitle={ACM Conference on Economics and Computation},
+year={2017},
+pages={647--664},
+doi={10.1145/3033274.3085136}
+}
+</pre>
+<div class="content">
+<p class="description">Fair (MMS) division of indivisible goods among n agents.</p>
+<ol class="results">
+<li>Theorem 2.1: For non-negative additive valuations, $2n/(3n-1)$-MMS allocations can be found in polynomial time. The algorithm for this first reduces the problem to an ordered instance, and then applies a version of the Envy Cycle Elimination (ECE) algorithm.</li>
+<li>Corollary 2.3: For non-negative additive valuations, we can reduce the problem of finding an α-MMS allocation to the special case of an ordered instance using Bouveret and Lemaître's reduction.</li>
+<li>Lemma 2.5: For additive and ordered instances of goods, a version of the ECE algorithm outputs an EFX allocation.</li>
+<li>Theorem 3.1: For non-negative submodular valuations, we can compute a 1/10-MMS allocation in polynomial time using a simple round-robin algorithm.</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.aziz2017algorithms">
+<div class="title">Algorithms for Max-Min Share Fair Allocation of Indivisible Chores <a class="articleId" href="#article.aziz2017algorithms">[aziz2017algorithms]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Haris Aziz, Gerhard Rauchecker, Guido Schryen, and Toby Walsh</span>
+<span class="pubVenue">in <abbr title="AAAI Conference on Artificial Intelligence">AAAI</abbr></span>
+<span class="pubYear">2017</span>
+<a class="pubDoi" href="https://doi.org/10.1609/aaai.v31i1.10582">doi:10.1609/aaai.v31i1.10582</a>
+<span data-target="bibtex.aziz2017algorithms" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+<span class="gistStatus">gist status: <span class="warning">abstractOnly</span></span>
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">chores</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">mms</span></span>
+</span>
+</div>
+<pre id="bibtex.aziz2017algorithms" class="bibtex hidden">
+@inproceedings{aziz2017algorithms,
+title={Algorithms for Max-Min Share Fair Allocation of Indivisible Chores},
+author={Aziz, Haris and Rauchecker, Gerhard and Schryen, Guido and Walsh, Toby},
+booktitle={AAAI Conference on Artificial Intelligence},
+year={2017},
+doi={10.1609/aaai.v31i1.10582}
+}
+</pre>
+<div class="content">
+<p class="description">Fair division of indivisible chores among $n$ agents with additive valuations.</p>
+<ol class="results">
+<li>MMS allocations may not exist for 3 agents.</li>
+<li>Computing an MMS allocation for chores, if it exists, is strongly NP-hard.</li>
+<li>Polynomial-time algorithm for 2-MMS.</li>
+<li>New fairness concept: optimal MMS.</li>
+<li>PTAS for optimal MMS for constant number of agents.</li>
+<li>Efficient heuristic algorithm.</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.kurokawa2018fair">
+<div class="title">Fair Enough: Guaranteeing Approximate Maximin Shares <a class="articleId" href="#article.kurokawa2018fair">[kurokawa2018fair]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by David Kurokawa, Ariel D. Procaccia, and Junxing Wang</span>
+<span class="pubVenue">in <abbr title="Journal of the ACM">JACM</abbr></span>
+<span class="pubYear">2018</span>
+<a class="pubDoi" href="https://doi.org/10.1145/3140756">doi:10.1145/3140756</a>
+<span data-target="bibtex.kurokawa2018fair" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+<span class="relatedWork">
+Supersedes
+<a class="articleId" href="#article.procaccia2014fair">[procaccia2014fair]</a>
+</span>
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">mms</span></span>
+</span>
+</div>
+<pre id="bibtex.kurokawa2018fair" class="bibtex hidden">
+@article{kurokawa2018fair,
+title={Fair Enough: Guaranteeing Approximate Maximin Shares},
+author={Kurokawa, David and Procaccia, Ariel D. and Wang, Junxing},
+journal={Journal of the ACM},
+year={2018},
+volume={65},
+number={2},
+pages={1--27},
+doi={10.1145/3140756}
+}
+</pre>
+<div class="content">
+<p class="description">Fair division of $m$ indivisible goods among $n$ agents with additive valuations.</p>
+<ol class="results">
+<li>Theorem 2.1: For each $n ≥ 3$, there is an instance with $m ≤ 3n+4$ where an MMS allocation doesn't exist.</li>
+<li>Introduced approximate MMS.</li>
+<li>Section 3: Algorithm for $ρ(1-ε)$-MMS, where $ε ≥ 0$ is a parameter to the algorithm, $ρ = 2n'/(3n'-1)$ $= (2/3)(1 + 1/(3n'-1))$, and $n'$ is the largest odd number such that $n' ≤ n$. The algorithm runs in polynomial time when $ε$ is a positive constant.</li>
+<li>Corollary of Section 3: When $n$ is constant, we can pick $ε = 1/(3n')$ to get $2/3$-MMS in polytime. When $n ∈ \{3, 4\}$, $3/4$-MMS exists.</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.ghodsi2018fair">
+<div class="title">Fair Allocation of Indivisible Goods: Improvements and Generalizations <a class="articleId" href="#article.ghodsi2018fair">[ghodsi2018fair]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Mohammad Ghodsi, MohammadTaghi HajiAghayi, Masoud Seddighin, Saeed Seddighin, and Hadi Yami</span>
+<span class="pubVenue">in <abbr title="ACM Conference on Economics and Computation">EC</abbr></span>
+<span class="pubYear">2018</span>
+<a class="pubDoi" href="https://doi.org/10.1145/3219166.3219238">doi:10.1145/3219166.3219238</a>
+<a class="pubArxiv" href="https://arxiv.org/abs/1704.00222">arXiv:1704.00222</a>
+<span data-target="bibtex.ghodsi2018fair" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">submodular</span></span>
+<span class="topic"><span class="topicLabel">xos</span></span>
+<span class="topic"><span class="topicLabel">subadditive</span></span>
+<span class="topic"><span class="topicLabel">mms</span></span>
+</span>
+</div>
+<pre id="bibtex.ghodsi2018fair" class="bibtex hidden">
+@inproceedings{ghodsi2018fair,
+title={Fair Allocation of Indivisible Goods: Improvements and Generalizations},
+author={Ghodsi, Mohammad and HajiAghayi, MohammadTaghi and Seddighin, Masoud and Seddighin, Saeed and Yami, Hadi},
+booktitle={ACM Conference on Economics and Computation},
+year={2018},
+pages={539--556},
+doi={10.1145/3219166.3219238}
+}
+</pre>
+<div class="content">
+<p class="description">Fair division of $m$ indivisible goods among $n$ agents, using MMS as the notion of fairness.</p>
+<ol class="results">
+<li>Theorem 1.1: additive valuations: PTAS for $3/4$-MMS.</li>
+<li>Theorem 4.8: submodular valuations: $1/3$-MMS in polytime.</li>
+<li>Theorem 4.1: submodular valuations: For any $n≥2$, there is an instance with $n$ agents and $2n$ goods, where the first $n-1$ agents have the same valuation function and no allocation is better than $3/4$-MMS.</li>
+<li>Theorem 1.2: xos valuations: A $1/5$-MMS allocation always exists.</li>
+<li>Theorem 1.3: xos valuations: $1/8$-MMS in polytime.</li>
+<li>Theorem 4.2: xos valuations: For any $n≥2$, there is an instance with $n$ agents and $2n$ goods, where the first $n-1$ agents have the same valuation function and no allocation is better than $1/2$-MMS.</li>
+<li>Theorem 1.5: subadditive valuations: A $(10⌈\log m⌉)^{-1}$-MMS allocation always exists.</li>
+<li>Theorem A.6: additive valuations: A $4/5$-MMS allocation always exists for $n=4$.</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.amanatidis2018comparing">
+<div class="title">Comparing Approximate Relaxations of Envy-Freeness <a class="articleId" href="#article.amanatidis2018comparing">[amanatidis2018comparing]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Georgios Amanatidis, Georgios Birmpas, and Evangelos Markakis</span>
+<span class="pubVenue">in <abbr title="International Joint Conference on Artificial Intelligence">IJCAI</abbr></span>
+<span class="pubYear">2018</span>
+<a class="pubDoi" href="https://doi.org/10.24963/ijcai.2018/6">doi:10.24963/ijcai.2018/6</a>
+<a class="pubArxiv" href="https://arxiv.org/abs/1806.03114">arXiv:1806.03114</a>
+<span data-target="bibtex.amanatidis2018comparing" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">ef1</span></span>
+<span class="topic"><span class="topicLabel">efx</span></span>
+<span class="topic"><span class="topicLabel">mms</span></span>
+<span class="topic"><span class="topicLabel">pmms</span></span>
+</span>
+</div>
+<pre id="bibtex.amanatidis2018comparing" class="bibtex hidden">
+@inproceedings{amanatidis2018comparing,
+title={Comparing Approximate Relaxations of Envy-Freeness},
+author={Amanatidis, Georgios and Birmpas, Georgios and Markakis, Evangelos},
+booktitle={International Joint Conference on Artificial Intelligence},
+year={2018},
+pages={42--48},
+doi={10.24963/ijcai.2018/6}
+}
+</pre>
+<div class="content">
+<p class="description">Relations between fairness notions for division of $m$ indivisible goods among $n$ agents with additive valuations.</p>
+<ol class="results">
+<li>Proposiiton 3.1: $∀n≥2$, $∀α∈(0,1]$, $α$-EFX $\implies$ $α$-EF1, and EF1 doesn't imply $α$-EFX, even for identical valuations.</li>
+<li>Proposition 3.3: $∀n∈\{2,3\}$, EFX $\implies$ $2/3$-MMS. This is tight, even for identical valuations.</li>
+<li>Proposition 3.4: $∀n≥4$, EFX $\implies$ $\frac{4n}{7n-2}$-MMS. EFX doesn't guarantee better than $8/13$-MMS for $n≥4$ and doesn't guarantee better than $301/509$-MMS (≈ 0.5914-MMS) for $n≥1631721$, even for identical valuations.</li>
+<li>Proposition 3.5: $∀n≥2$, $∀α∈(0,1)$, $α$-EFX $\implies$ $\frac{αn}{α+2n-2}$-MMS, but is not better than $\frac{2α}{2+α}$-MMS, and not better than $\max(\frac{α}{1+α}, \frac{8α}{11+2α})$-MMS for $n≥4$, even for identical valuations.</li>
+<li>Proposition 3.6: $∀n≥2$, $∀α∈(0,1]$, $α$-EF1 $\implies$ $\frac{α}{n-1+α}$-MMS, and this is tight, even for identical valuations.</li>
+<li>Proposition 3.7: $∀n≥2$, $∀α∈(0,1]$, $α$-EFX $\implies$ $\frac{2α}{2+α}$-PMMS, and this is tight, even for identical valuations.</li>
+<li>Proposition 3.8: $∀n≥3$, $∀α∈(0,1]$, $α$-EF1 $\implies$ $\frac{α}{1+α}$-PMMS, and this is tight.</li>
+<li>Corollary 4.2 and Proposition 4.3: $∀n≥4$, PMMS $\implies$ $\frac{4n}{7n-2}$-MMS. PMMS doesn't guarantee better than $8/13$-MMS for $n≥4$ and doesn't guarantee better than $301/509$-MMS (≈ 0.5914-MMS) for $n≥1631721$, even for identical valuations.</li>
+<li>Proposition 4.4: $∀n≥3$, $∀α∈(0,1)$, $α$-PMMS $\implies$ $\frac{α}{2(n-1)-α(n-2)}$-MMS, but is not better than $\frac{α}{n-1-α(n-2)}$-MMS, even for identical valuations.</li>
+<li>Propositions 4.5 and 4.7: $∀n≥3$, $∀β∈(0,1]$, an MMS allocation is not guaranteed to be $β$-PMMS or $β$-EF1.</li>
+<li>Proposition 4.6: $∀n≥2$, $∀α∈(0,1)$, $α$-PMMS $\implies$ $\frac{α}{2-α}$-EF1, and this is tight, even for identical valuations.</li>
+<li>Proposition 4.8: $∀n≥2$, $∀α,β∈(0,1)$, $α$-PMMS doesn't guarantee $β$-EFX, even for identical valuations.</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.gourves2019maximin">
+<div class="title">On Maximin Share Allocations in Matroids <a class="articleId" href="#article.gourves2019maximin">[gourves2019maximin]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Laurent Gourvès and Jérôme Monnot</span>
+<span class="pubVenue">in <abbr title="Theoretical Computer Science">TCS</abbr></span>
+<span class="pubYear">2019</span>
+<a class="pubDoi" href="https://doi.org/10.1016/j.tcs.2018.05.018">doi:10.1016/j.tcs.2018.05.018</a>
+<span data-target="bibtex.gourves2019maximin" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+<span class="gistStatus">gist status: <span class="danger">incomplete</span></span>
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">mms</span></span>
+</span>
+<span class="topic">
+<span class="topicLabel">matroids</span>
+</span>
+</div>
+<pre id="bibtex.gourves2019maximin" class="bibtex hidden">
+@article{gourves2019maximin,
+title={On Maximin Share Allocations in Matroids},
+author={Gourvès, Laurent and Monnot, Jérôme},
+journal={Theoretical Computer Science},
+year={2019},
+volume={754},
+pages={50--64},
+doi={10.1016/j.tcs.2018.05.018}
+}
+</pre>
+<div class="content">
+<p class="description">Fair division of $m$ indivisible goods among $n$ agents with additive valuations and matroid constraints: Polytime algorithm for $1/2$-MMS, PTAS for MMS for $n=2$, PTAS for $8/9$-MMS for $n=3$.</p>
+</div>
+</li>
+<li class="article" id="article.caragiannis2019unreasonable">
+<div class="title">The Unreasonable Fairness of Maximum Nash Welfare <a class="articleId" href="#article.caragiannis2019unreasonable">[caragiannis2019unreasonable]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Ioannis Caragiannis, David Kurokawa, Hervé Moulin, Ariel D. Procaccia, Nisarg Shah, and Junxing Wang</span>
+<span class="pubVenue">in <abbr title="ACM Transactions on Economics and Computation">TEAC</abbr></span>
+<span class="pubYear">2019</span>
+<a class="pubDoi" href="https://doi.org/10.1145/3355902">doi:10.1145/3355902</a>
+<span data-target="bibtex.caragiannis2019unreasonable" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">nashOpt</span></span>
+<span class="topic"><span class="topicLabel">PO</span></span>
+<span class="topic"><span class="topicLabel">EF1</span></span>
+<span class="topic"><span class="topicLabel">mms</span></span>
+<span class="topic"><span class="topicLabel">pmms</span></span>
+<span class="topic"><span class="topicLabel">EFX</span></span>
+</span>
+</div>
+<pre id="bibtex.caragiannis2019unreasonable" class="bibtex hidden">
+@article{caragiannis2019unreasonable,
+title={The Unreasonable Fairness of Maximum Nash Welfare},
+author={Caragiannis, Ioannis and Kurokawa, David and Moulin, Hervé and Procaccia, Ariel D. and Shah, Nisarg and Wang, Junxing},
+journal={ACM Transactions on Economics and Computation},
+year={2019},
+volume={7},
+number={3},
+pages={1--32},
+doi={10.1145/3355902}
+}
+</pre>
+<div class="content">
+<p class="description">Fair division of $m$ indivisible goods among $n$ agents with additive valuations.</p>
+<ol class="results">
+<li>Theorem 3.2: A NashOpt allocation is also EF1+PO.</li>
+<li>Theorem 4.1: A NashOpt allocation is $π_n$-MMS, where $π_n = 2/(1+\sqrt{4n-3})$. For any $ε > 0$, no NashOpt allocation is $(π_n+ε)$-MMS.</li>
+<li><span class="listHead">Pairwise maximin share (PMMS):</span><ol>
+<li>Definition 4.3: α-PMMS.</li>
+<li>Example 4.4 (part 1): An instance with 3 agents and 5 identical goods, where some MMS allocation is not PMMS.</li>
+<li>Example 4.4 (part 2): An instance with 3 agents, 7 goods, and identical valuations where some PMMS allocation is not MMS.</li>
+<li>Theorem 4.6: An envy-free allocation is PMMS. A PMMS allocation is EFX + $1/2$-MMS.</li>
+<li>Corollary 4.7: A NashOpt allocation is $π_2$-PMMS, where $π_2 = (\sqrt{5}-1)/2 ≈ 0.618$. For any $ε > 0$, no NashOpt allocation is $(π_2+ε)$-PMMS.</li>
+</ol>
+</li>
+<li><span class="listHead">Appendix B: The elusive combination of EF1 and PO:</span><ol>
+<li>Example B.1: Instance with 3 agents and 31 goods where rounding any divisible MNW allocation violates EF1.</li>
+<li>Example B.2 (part 1): Instance with 2 agents, 3 goods, and valuations normalized to sum to 1, where the unique max social welfare allocation is not EF1.</li>
+<li>Example B.2 (part 2): Instance with 3 agents, 4 goods, and valuations normalized to sum to 1, where the unique max egalitarian allocation is not EF1.</li>
+<li>Example B.3 (part 1): Instance with 4 agents, 10 goods, and valuations normalized to sum to 1, where the unique max social welfare allocation subject to EF1 is not PO.</li>
+<li>Example B.3 (part 2): Instance with 3 agents, 3 goods, and valuations normalized to sum to 1, where there is an allocation that is both max egal welfare and EF1, but not PO.</li>
+<li>Theorem B.5: Every EF1+PO allocation is $1/n$-MMS. For each $n≥1$, there exists an instance with $n$ agents and $2n-1$ goods for which some EF1+PO allocation gives some agent exactly $1/n$ of her MMS.</li>
+</ol>
+</li>
+<li><span class="listHead">Appendix C: General valuations:</span><ol>
+<li>Theorem 3.3 (part 1): There is an instance with 2 agents, 4 goods, and identical subadditive valuations for which no allocation is EF1+PO.</li>
+<li>Theorem 3.3 (part 2): There is an instance with 2 agents, 4 goods, and identical superadditive (and hence supermodular) valuations for which no allocation is EF1+PO.</li>
+<li>Example C.3: An instance with 2 agents, 4 goods, and (non-identical) submodular valuations for which the unique MNW allocation is not EF1.</li>
+<li>Definition 3.4 and Theorem 3.5: For submodular valuations, every MNW allocation is MEF1+PO.</li>
+</ol>
+</li>
+<li>Appendix D: Spectrum of Fair and Efficient Solutions</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.barman2020approximation">
+<div class="title">Approximation Algorithms for Maximin Fair Division <a class="articleId" href="#article.barman2020approximation">[barman2020approximation]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Siddharth Barman and Sanath Kumar KrishnaMurthy</span>
+<span class="pubVenue">in <abbr title="ACM Transactions on Economics and Computation">TEAC</abbr></span>
+<span class="pubYear">2020</span>
+<a class="pubDoi" href="https://doi.org/10.1145/3381525">doi:10.1145/3381525</a>
+<span data-target="bibtex.barman2020approximation" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+<span class="relatedWork">
+Supersedes
+<a class="articleId" href="#article.barman2017approximation">[barman2017approximation]</a>
+</span>
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">chores</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">submodular</span></span>
+<span class="topic"><span class="topicLabel">mms</span></span>
+<span class="topic"><span class="topicLabel">efx</span></span>
+</span>
+</div>
+<pre id="bibtex.barman2020approximation" class="bibtex hidden">
+@article{barman2020approximation,
+title={Approximation Algorithms for Maximin Fair Division},
+author={Barman, Siddharth and KrishnaMurthy, Sanath Kumar},
+journal={ACM Transactions on Economics and Computation},
+year={2020},
+pages={1--28},
+doi={10.1145/3381525}
+}
+</pre>
+<div class="content">
+<p class="description">Fair (MMS) division of indivisible goods or chores among $n$ agents.</p>
+<ol class="results">
+<li>Theorem 3.1: For non-negative additive valuations, $2n/(3n-1)$-MMS allocations can be found in polynomial time. The algorithm for this first reduces the problem to an ordered instance, and then applies a version of the Envy Cycle Elimination (ECE) algorithm.</li>
+<li>Corollary 3.3: For additive valuations (for either goods or chores), we can reduce the problem of finding an α-MMS allocation to the special case of an ordered instance using Bouveret and Lemaître's reduction.</li>
+<li>Lemma 3.5: For additive and ordered instances of goods, a version of the ECE algorithm outputs an EFX allocation.</li>
+<li>Theorem 4.1: For non-negative submodular valuations, we can compute a $\frac{1}{3}(1-\frac{1}{e})$-MMS allocation (≈ 0.2107-MMS) in polynomial time using a simple round-robin algorithm.</li>
+<li>Theorem A.2: For non-positive additive valuations, $(4n-1)/3n$-MMS allocations can be found in polynomial time. The algorithm for this first reduces the problem to an ordered instance, and then applies a version of the Envy Cycle Elimination (ECE) algorithm.</li>
+<li>Section B.1: Consider a fair division instance with $n$ agents, $2n-1$ goods, and additive identical valuations, where $n-1$ goods have value $n$ and $n$ goods have value 1. Then there is an EF1 allocation that is not better than $1/n$-MMS.</li>
+<li>Section B.2: There is a fair division instance with 2 agents, 4 goods, and submodular valuations, for which no allocation is better than $3/4$-MMS.</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.amanatidis2020multiple">
+<div class="title">Multiple birds with one stone: Beating 1/2 for EFX and GMMS via envy cycle elimination <a class="articleId" href="#article.amanatidis2020multiple">[amanatidis2020multiple]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Georgios Amanatidis, Evangelos Markakis, and Apostolos Ntokos</span>
+<span class="pubVenue">in <abbr title="Theoretical Computer Science">TCS</abbr></span>
+<span class="pubYear">2020</span>
+<a class="pubDoi" href="https://doi.org/10.1016/j.tcs.2020.07.006">doi:10.1016/j.tcs.2020.07.006</a>
+<a class="pubArxiv" href="https://arxiv.org/abs/1909.07650">arXiv:1909.07650</a>
+<span data-target="bibtex.amanatidis2020multiple" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">GMMS</span></span>
+<span class="topic"><span class="topicLabel">EF1</span></span>
+<span class="topic"><span class="topicLabel">EFX</span></span>
+<span class="topic"><span class="topicLabel">PMMS</span></span>
+</span>
+</div>
+<pre id="bibtex.amanatidis2020multiple" class="bibtex hidden">
+@article{amanatidis2020multiple,
+title={Multiple birds with one stone: Beating 1/2 for EFX and GMMS via envy cycle elimination},
+author={Amanatidis, Georgios and Markakis, Evangelos and Ntokos, Apostolos},
+journal={Theoretical Computer Science},
+year={2020},
+volume={841},
+pages={94--109},
+doi={10.1016/j.tcs.2020.07.006}
+}
+</pre>
+<div class="content">
+<p class="description">Fair division of $m$ indivisible goods among $n$ agents with additive valuations. Let $ϕ = (\sqrt{5}+1)/2$.</p>
+<ol class="results">
+<li>Algorithm 3: EF1 + $(ϕ-1)$-EFX (≈ 0.6180-EFX) + $\frac{2}{ϕ+2}$-GMMS (≈ 0.5529-GMMS) + $2/3$-PMMS in polytime.</li>
+<li>Theorem 4.7: EF1 + $3/5$-EFX + $4/7$-GMMS (≈ 0.5714-GMMS) + $2/3$-PMMS in polytime.</li>
+<li>Theorem 4.10: $\frac{2}{2ϕ-1}$-EF1 (≈ 0.894-EF1) + $(ϕ-1)$-EFX + $\frac{2}{ϕ+2}$-GMMS + $\frac{4ϕ-2}{2ϕ+3}$-PMMS (≈ 0.7171-PMMS) in polytime.</li>
+<li>Theorem 5.1: For $m ≤ n+2$, a GMMS allocation always exists and can be computed in polytime.</li>
+<li>Proposition 5.5: For any integers $n ≥ 2$ and $k ≥ 1$ and real numbers $α, β ∈ (0, 1)$, there is an instance with $n$ agents and $n + 4k$ goods, for which some allocation is $α$-GMMS but not $β$-EFX and not better than $\frac{α}{2-α}$-EF1 or $α$-PMMS.</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.huang2021algorithmic">
+<div class="title">An Algorithmic Framework for Approximating Maximin Share Allocation of Chores <a class="articleId" href="#article.huang2021algorithmic">[huang2021algorithmic]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Xin Huang and Pinyan Lu</span>
+<span class="pubVenue">in <abbr title="ACM Conference on Economics and Computation">EC</abbr></span>
+<span class="pubYear">2021</span>
+<a class="pubDoi" href="https://doi.org/10.1145/3465456.3467555">doi:10.1145/3465456.3467555</a>
+<a class="pubArxiv" href="https://arxiv.org/abs/1907.04505v4">arXiv:1907.04505v4</a>
+<span data-target="bibtex.huang2021algorithmic" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">chores</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">mms</span></span>
+</span>
+</div>
+<pre id="bibtex.huang2021algorithmic" class="bibtex hidden">
+@inproceedings{huang2021algorithmic,
+title={An Algorithmic Framework for Approximating Maximin Share Allocation of Chores},
+author={Huang, Xin and Lu, Pinyan},
+booktitle={ACM Conference on Economics and Computation},
+year={2021},
+pages={630--631},
+doi={10.1145/3465456.3467555}
+}
+</pre>
+<div class="content">
+<p class="description">Fair division of indivisible chores among $n$ agents with additive valuations.</p>
+<ol class="results">
+<li>Section 4: PTAS for 11/9-MMS.</li>
+<li>Example 4.1: Example with 4 agents, 14 chores, and identical valuations showing that their algorithm cannot give better than 20/17-MMS even for identical valuations.</li>
+<li>Section 5: 5/4-MMS in $O(mn\log m + n^2)$ time.</li>
+<li>Section 6: 11/9-MMS in $O(m\log m + n)$ time for identical valuations.</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.babaioff2021fair">
+<div class="title">Fair-Share Allocations for Agents with Arbitrary Entitlements <a class="articleId" href="#article.babaioff2021fair">[babaioff2021fair]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Moshe Babaioff, Tomer Ezra, and Uriel Feige</span>
+<span class="pubVenue">in <abbr title="ACM Conference on Economics and Computation">EC</abbr></span>
+<span class="pubYear">2021</span>
+<a class="pubDoi" href="https://doi.org/10.1145/3465456.3467559">doi:10.1145/3465456.3467559</a>
+<a class="pubArxiv" href="https://arxiv.org/abs/2103.04304v4">arXiv:2103.04304v4</a>
+<span data-target="bibtex.babaioff2021fair" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">chores</span></span>
+<span class="topic"><span class="topicLabel">mixedManna</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">unequalEntitlements</span></span>
+<span class="topic"><span class="topicLabel">aps</span></span>
+<span class="topic"><span class="topicLabel">tps</span></span>
+<span class="topic"><span class="topicLabel">pessShare</span></span>
+<span class="topic"><span class="topicLabel">mms</span></span>
+<span class="topic"><span class="topicLabel">wmms</span></span>
+</span>
+</div>
+<pre id="bibtex.babaioff2021fair" class="bibtex hidden">
+@inproceedings{babaioff2021fair,
+title={Fair-Share Allocations for Agents with Arbitrary Entitlements},
+author={Babaioff, Moshe and Ezra, Tomer and Feige, Uriel},
+booktitle={ACM Conference on Economics and Computation},
+year={2021},
+pages={127--127},
+doi={10.1145/3465456.3467559}
+}
+</pre>
+<div class="content">
+<p class="description">For fair division of $m$ indivisible goods among $n$ agents with possibly unequal entitlements and additive valuations, this paper proposes a new notion of fairness called AnyPrice Share (APS), and shows how to compute an approximate APS allocation. Agent $i$ has entitlement $b_i$, where $\sum_{i=1}^n b_i = 1$.</p>
+<ol class="results">
+<li><span class="listHead">Definitions</span><ol>
+<li>Definition 1.1: AnyPrice Share (APS), defined as a price-and-choose guarantee. The definition works even for non-additive valuations.</li>
+<li>Definition 3.1: AnyPrice Share, defined as a linear programming relaxation of MMS. The definition works even for non-additive valuations.</li>
+<li>Proposition 3.2: The two definitions of APS are equivalent.</li>
+<li>Section 1: Coined the term PessShare for a notion defined elsewhere.</li>
+</ol>
+</li>
+<li>Theorem 1.3: Polytime algorithm for $\max(\frac{3}{5}, \frac{1}{2-b_i})$-APS.</li>
+<li><span class="listHead">greedyEFX</span><ol>
+<li>Theorem 1.4: Polytime algorithm (called greedyEFX) for $\frac{2}{3}(1 + \frac{1}{3n-1})$-APS (same algorithm as [barman2020approximation]: reduce to ordered instance and then use Envy Cycle Elimination).</li>
+<li>Proposition 5.5: For every $ε > 0$, there is an example with equal entitlements where greedyEFX outputs an allocation that is not $(2/3+ε)$-MMS.</li>
+<li>Theorem E.5: For equal entitlements and identical valuations, greedyEFX outputs a $3/4$-APS allocation.</li>
+<li>Proposition E.9: Example with $m = 3n-1$, equal entitlements, and identical valuations, where greedyEFX's output is not better than $\frac{3}{4}(1 + \frac{5}{24n-9})$-MMS.</li>
+</ol>
+</li>
+<li><span class="listHead">Relationships among fairness notions</span><ol>
+<li>Observation 3.4: A CE (competitive equilibrium) allocation is an APS allocation.</li>
+<li>Proposition 3.7: Prop ≥ APS ≥ PessShare ≥ APS/2. For each inequality, there is an example where it holds as equality. For each inequality, there is an example with equal entitlements where it holds as a strict inequality.</li>
+<li>Lemma C.1: There is an example with $n=3$, $m=15$, equal entitlements, and identical valuations, where APS = 97 and MMS ≤ 96.</li>
+<li>Unproven claim: For equal entitlements, PessShare = MMS.</li>
+<li>Observation 3.8: For 2 agents with equal entitlements, APS = MMS. (Hence, computing APS is NP-hard.)</li>
+<li>Remark C.3: Example with $n=2$, $m=6$, equal entitlements, and submodular valuations, for which MMS = 5 and APS = 6. Another similar example with subadditive valuations instead, for which MMS = 3 and APS = 6.</li>
+<li>Corollary 5.4: For equal entitlements, APS ≤ (4/3)MMS.</li>
+<li>Proposition 4.2: TPS ≥ APS.</li>
+</ol>
+</li>
+<li>Observation 3.9: APS allocation exists for $n=2$.</li>
+<li>Proposition 3.10: Algorithm for computing an agent's APS in pseudopolynomial time.</li>
+<li>Section 1: Why Weighted MMS (WMMS) is a bad notion of fairness.</li>
+<li>Section 1: Maximizing weighted NSW can give a bad output, even for $n = m = 3$.</li>
+<li>Observation 3.3: There is an optimal solution for APS' LP where the support has size at most $m$.</li>
+<li><span class="listHead">Chores and Mixed Manna</span><ol>
+<li>Definition F.1: APS for mixed manna defined as LP.</li>
+<li>Proposition F.2: $v([m]) ≥ 0$ implies APS ≥ 0 for mixed manna, even for non-additive valuations.</li>
+<li>Remark F.3: APS is a quasiconcave function of the entitlement for mixed manna.</li>
+<li>Proposition F.4: For chores, APS ≤ $\min_c v(c)$.</li>
+<li>Proposition F.5: For mixed manna, APS ≤ PROP.</li>
+<li>Proposition F.6: 2-APS allocation exists for chores.</li>
+<li>Definition F.7: Price-and-choose definition of APS for chores.</li>
+<li>Unproven claim: For chores, the two definitions of APS are equivalent.</li>
+</ol>
+</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.chaudhury2021little">
+<div class="title">A Little Charity Guarantees Almost Envy-Freeness <a class="articleId" href="#article.chaudhury2021little">[chaudhury2021little]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Bhaskar Ray Chaudhury, Telikepalli Kavitha, Kurt Mehlhorn, and Alkmini Sgouritsa</span>
+<span class="pubVenue">in <abbr title="SIAM Journal on Computing">SJoC</abbr></span>
+<span class="pubYear">2021</span>
+<a class="pubDoi" href="https://doi.org/10.1137/20M1359134">doi:10.1137/20M1359134</a>
+<span data-target="bibtex.chaudhury2021little" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">efx</span></span>
+<span class="topic"><span class="topicLabel">charity</span></span>
+<span class="topic"><span class="topicLabel">mms</span></span>
+<span class="topic"><span class="topicLabel">gmms</span></span>
+<span class="topic"><span class="topicLabel">nashWelfare</span></span>
+</span>
+</div>
+<pre id="bibtex.chaudhury2021little" class="bibtex hidden">
+@article{chaudhury2021little,
+title={A Little Charity Guarantees Almost Envy-Freeness},
+author={Chaudhury, Bhaskar Ray and Kavitha, Telikepalli and Mehlhorn, Kurt and Sgouritsa, Alkmini},
+journal={SIAM Journal on Computing},
+year={2021},
+volume={50},
+number={4},
+pages={1336--1358},
+doi={10.1137/20M1359134}
+}
+</pre>
+<div class="content">
+<p class="description">Fair division of a set $M$ of $m$ indivisible goods among $n$ agents (general monotone valuations).</p>
+<ol class="results">
+<li>Section 1.2: Example with 3 agents, 4 goods, and additive valuations for which bundle-splitting is necessary.</li>
+<li><span class="listHead">Algorithm 2.1: Takes as input any partial EFX allocation $Y$ (default value of $Y$ is the empty allocation) and outputs another partial allocation $X$ and a set $P$ of unallocated goods such that all of these hold:</span><ol>
+<li>$X$ is EFX.</li>
+<li>$|P| < n$.</li>
+<li>$v_i(X_i) ≥ v_i(P)$ for each agent $i$.</li>
+<li>$v_i(X_i) ≥ v_i(Y_i)$ for each agent $i$.</li>
+<li>The algorithm runs in at most $m + mnV/Δ$ iterations, and each iteration uses at most $mn$ value queries, where $V = \max_i v_i(M)$ and $Δ = \min_i\min_{S,T: v_i(S)≠v_i(T)} |v_i(S)-v_i(T)|$.</li>
+<li>Proposition 3.1: When valuations are additive, $v_i(X_i) ≥ \frac{\MMS_i(M, n)}{2-|P|/n}$ for each agent $i$.</li>
+<li>Theorem 3.5: When valuations are additive, $(X_1 ∪ P, X_2, …, X_n)$ is $4/7$-GMMS and $1/2$-EFX.</li>
+</ol>
+</li>
+<li><span class="listHead">An algorithm parametrized by $ε > 0$ that outputs a partial allocation $X$ and a set $P$ of unallocated goods such that all of these hold:</span><ol>
+<li>$X$ is $(1+ε)^{-1}$-EFX.</li>
+<li>$|P| < n$.</li>
+<li>$v_i(X_i) ≥ v_i(P)/(1+ε)$ for each agent $i$.</li>
+<li>The algorithm runs in $O((mn/ε)\log(V/Δ))$ iterations, and each iteration uses at most $mn$ value queries, where $V = \max_i v_i(M)$ and $Δ = \min_i\min_{S,T: v_i(S)≠v_i(T)} |v_i(S)-v_i(T)|$.</li>
+</ol>
+</li>
+<li>For additive valuations, by picking $Y$ appropriately in Algorithm 2.1, its output $X$ satisfies $v_i(X_i) ≥ v_i(X^*)/2$, where $X^*$ is the maximum Nash welfare allocation.</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.feige2022tight">
+<div class="title">A Tight Negative Example for MMS Fair Allocations <a class="articleId" href="#article.feige2022tight">[feige2022tight]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Uriel Feige, Ariel Sapir, and Laliv Tauber</span>
+<span class="pubVenue">in <abbr title="Web and Internet Economics">WINE</abbr></span>
+<span class="pubYear">2021</span>
+<a class="pubDoi" href="https://doi.org/10.1007/978-3-030-94676-0_20">doi:10.1007/978-3-030-94676-0_20</a>
+<a class="pubArxiv" href="https://arxiv.org/abs/2104.04977">arXiv:2104.04977</a>
+<span data-target="bibtex.feige2022tight" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">chores</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">mms</span></span>
+</span>
+</div>
+<pre id="bibtex.feige2022tight" class="bibtex hidden">
+@inproceedings{feige2022tight,
+title={A Tight Negative Example for MMS Fair Allocations},
+author={Feige, Uriel and Sapir, Ariel and Tauber, Laliv},
+booktitle={Web and Internet Economics},
+year={2021},
+pages={355--372},
+doi={10.1007/978-3-030-94676-0_20}
+}
+</pre>
+<div class="content">
+<p class="description">Fair division of $m$ indivisible goods (or chores) among $n$ agents with additive valuations, using MMS as the notion of fairness.</p>
+<ol class="results">
+<li>Theorem 1: An example with 3 agents and 9 goods where no allocation is better than 39/40-MMS.</li>
+<li>Theorem 2: For at most $n+5$ goods, an MMS allocation exists.</li>
+<li>Theorem 3: For at most 9 goods, some allocation is 39/40-MMS or better.</li>
+<li><span class="listHead">Theorem 4: For each $n ≥ 4$, there is an instance with at most $3n+1+2(n\%2)$ goods for which no allocation is better than $(1-(⌈\frac{n}{2}⌉+1)^{-4})$-MMS. Furthermore, the instance has these properties:</span><ol>
+<li>There are 2 kinds of valuation functions.</li>
+<li>There is a set $S$ of at most 11 positive integers such that $v_i(g) ∈ S$ for all $i$ and $g$.</li>
+<li>There is a set $S$ of goods such that $|S| ≤ 2⌈\frac{n}{2}⌉ + 3$, every good outside $S$ has the same value for each agent, and for each good $g ∈ S$ and every pair $(i,j)$ of agents, $|v_i(g) - v_j(g)| ≤ 1$.</li>
+<li>Each agent has an MMS partition where each bundle has total value $f(⌈\frac{n}{2}⌉+2)$, where $f(x) = x^2(x-2)^2+x ∈ ((x-2)^4, (x-1)^4)$.</li>
+</ol>
+</li>
+<li>Theorem 5: Example with 3 agents and 9 chores for which no allocation is better than 44/43-MMS.</li>
+<li>Unproven claim: For at most 8 chores, an MMS allocation exists.</li>
+<li>Unproven claim: For at most 9 chores, some allocation is 44/43-MMS or better.</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.hosseini2022ordinal">
+<div class="title">Ordinal Maximin Share Approximation for Chores <a class="articleId" href="#article.hosseini2022ordinal">[hosseini2022ordinal]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Hadi Hosseini, Andrew Searns, and Erel Segal-Halevi</span>
+<span class="pubVenue">in <abbr title="International Conference on Autonomous Agents and Multiagent Systems">AAMAS</abbr></span>
+<span class="pubYear">2022</span>
+<a class="pubArxiv" href="https://arxiv.org/abs/2201.07424">arXiv:2201.07424</a>
+<a class="pubUrl" href="https://www.ifaamas.org/Proceedings/aamas2022/pdfs/p597.pdf">https://www.ifaamas.org/Proceedings/aamas2022/pdfs/p597.pdf</a>
+<span data-target="bibtex.hosseini2022ordinal" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">chores</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">mms</span></span>
+</span>
+</div>
+<pre id="bibtex.hosseini2022ordinal" class="bibtex hidden">
+@inproceedings{hosseini2022ordinal,
+title={Ordinal Maximin Share Approximation for Chores},
+author={Hosseini, Hadi and Searns, Andrew and Segal-Halevi, Erel},
+booktitle={International Conference on Autonomous Agents and Multiagent Systems},
+year={2022},
+pages={597--605},
+eprint={2201.07424},
+archivePrefix={arXiv}
+}
+</pre>
+<div class="content">
+<p class="description">Fair division of indivisible chores to $n$ agents. Fairness notion: 1-out-of-$d$ MMS.</p>
+<ol class="results">
+<li>Strongly polynomial-time algorithm for 1-out-of-$\lfloor 2n/3 \rfloor$ MMS.</li>
+<li>1-out-of-$\lfloor 3n/4 \rfloor$ MMS allocations always exist.</li>
+<li>Polynomial-time algorithm for 1-out-of-$\lfloor 3n/4 - O(\log n) \rfloor$ MMS.</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.babaioff2022best">
+<div class="title">On Best-of-Both-Worlds Fair-Share Allocations <a class="articleId" href="#article.babaioff2022best">[babaioff2022best]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Moshe Babaioff, Tomer Ezra, and Uriel Fiege</span>
+<span class="pubVenue">in <abbr title="Web and Internet Economics">WINE</abbr></span>
+<span class="pubYear">2022</span>
+<a class="pubDoi" href="https://doi.org/10.1007/978-3-031-22832-2_14">doi:10.1007/978-3-031-22832-2_14</a>
+<a class="pubArxiv" href="https://arxiv.org/abs/2102.04909">arXiv:2102.04909</a>
+<span data-target="bibtex.babaioff2022best" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">exAnte</span></span>
+<span class="topic"><span class="topicLabel">PROP</span></span>
+<span class="topic"><span class="topicLabel">MMS</span></span>
+<span class="topic"><span class="topicLabel">fPO</span></span>
+<span class="topic"><span class="topicLabel">PO</span></span>
+<span class="topic"><span class="topicLabel">PROP1</span></span>
+<span class="topic"><span class="topicLabel">TPS</span></span>
+</span>
+</div>
+<pre id="bibtex.babaioff2022best" class="bibtex hidden">
+@inproceedings{babaioff2022best,
+title={On Best-of-Both-Worlds Fair-Share Allocations},
+author={Babaioff, Moshe and Ezra, Tomer and Fiege, Uriel},
+booktitle={Web and Internet Economics},
+year={2022},
+pages={237--255},
+doi={10.1007/978-3-031-22832-2_14}
+}
+</pre>
+<div class="content">
+<p class="description">Fair and efficient division of $m$ indivisible goods among $n$ agents with additive valuations.</p>
+<ol class="results">
+<li>An example with $m=2n-1$ for which [aziz2023best]'s algorithms give some agent at most $(2+ε)/n$ times her MMS.</li>
+<li><span class="listHead">New fairness notion: TPS:</span><ol>
+<li>ProportionalShare ≥ TPS ≥ MMS ≥ $\frac{n}{2n-1}$TPS. Every inequality holds as an equality for some instance and strict inequality for some instance.</li>
+<li>Every half-fair allocation is $n/(2n-1)$-TPS.</li>
+<li>The Envy-Cycle Elimination algorithm's output is half-fair.</li>
+<li>EFX allocations are half-fair.</li>
+<li>For $2n-1$ identical goods, in every allocation, some agent gets $n/(2n-1)$ times her TPS.</li>
+</ol>
+</li>
+<li>Theorem 7: A polytime algorithm whose output is a distribution of at most $n$ allocations that is ex ante PROP + ex post 1/2-TPS + ex post PROP1.</li>
+<li>Proposition 8: For every $n ≥ 2$ and $ε > 0$, there is a fair division instance such that for any ex ante fPO distribution of allocations, every allocation in that distribution gives some agent at most $(1+ε)/n$ times her MMS.</li>
+<li>Corollary 9: There is a randomized allocation of support at most $n$ that is ex ante PROP + ex post 1/2-TPS + ex post PO.</li>
+<li>Appendix D: For 2 agents, the output of the cut-and-choose protocol with a random cutter is ex ante EF + ex post MMS + ex post EFX + ex post $2/3$-TPS.</li>
+<li>Theorem 22: Randomized polytime algorithm whose output is ex ante $\frac{n}{2n-1}$-PROP, ex post $\frac{n}{2n-1}$-TPS, and ex post EF1.</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.babaioff2022fair">
+<div class="title">Fair Shares: Feasibility, Domination and Incentive <a class="articleId" href="#article.babaioff2022fair">[babaioff2022fair]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Moshe Babaioff and Uriel Feige</span>
+<span class="pubVenue">in <abbr title="ACM Conference on Economics and Computation">EC</abbr></span>
+<span class="pubYear">2022</span>
+<a class="pubDoi" href="https://doi.org/10.1145/3490486.3538286">doi:10.1145/3490486.3538286</a>
+<a class="pubArxiv" href="https://arxiv.org/abs/2205.07519">arXiv:2205.07519</a>
+<span data-target="bibtex.babaioff2022fair" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">shares</span></span>
+<span class="topic"><span class="topicLabel">mms</span></span>
+</span>
+</div>
+<pre id="bibtex.babaioff2022fair" class="bibtex hidden">
+@inproceedings{babaioff2022fair,
+title={Fair Shares: Feasibility, Domination and Incentive},
+author={Babaioff, Moshe and Feige, Uriel},
+booktitle={ACM Conference on Economics and Computation},
+year={2022},
+pages={435--435},
+doi={10.1145/3490486.3538286}
+}
+</pre>
+<div class="content">
+<p class="description">Considers fair division of $m$ indivisible goods among $n$ agents. This paper initiates a systematic study of feasible shares.</p>
+<ol class="results">
+<li><span class="listHead">Section 1.1: Definitions: Fix a class of valuations and the number $n$ of agents. The definitions also work for mixed-manna.</span><ol>
+<li>For a valuation function $v: 2^{[m]} → ℝ$, a share $s$ maps the pair $(v, n)$ to a number in interval $[α, β]$, where $α$ is the value of the minimum-value bundle and $β$ is the value of the maximum-value bundle. For a set $S$ of shares and a real number $ρ$, define $ρS = \{ρs: s ∈ S\}$.</li>
+<li>For a share, defines feasibility, legibility (polytime computability), and self-maximizability. Let $S_F$, $S_M$, $S_C$ be the set of feasible, self-maximizing, and polytime computable shares, respectively.</li>
+<li>For shares $s_1$ and $s_2$, $s_1$ dominates $s_2$ (denoted as $s_1 ⪰ s_2$) iff for every valuation function $v$, we have $s_1(v, n) ≥ s_2(v, n)$. Share $s$ dominates a set $S$ of shares (denoted as $s ⪰ S$) iff $s ⪰ s'$ for all $s' ∈ S$.</li>
+<li>Two examples of feasibile, polytime-computable, and self-maximizing shares, where one dominates the other.</li>
+</ol>
+</li>
+<li>Proposition 4: MMS $⪰ S_F$. Moreover, if the MMS is feasible, then it is the unique dominator of $S_F$, and the unique dominator of $S_F ∩ S_M$.</li>
+<li>Theorem 1: Let C be a class of valuations containing additive valuations. For C, there is no feasible share dominating $S_F ∩ S_M$.</li>
+<li>Theorem 2: Every feasible share is dominated by some feasible self-maximizing share.</li>
+<li><span class="listHead">Proposition 6:</span><ol>
+<li>$s ⪰ ρ$MMS $⟺ s ⪰ ρS_F ⟺ s ⪰ ρ(S_F ∩ S_M)$.</li>
+<li>For additive valuations, $s ⪰ ρ(S_F ∩ S_M ∩ S_C) ⟺ s ⪰ ρ$MMS.</li>
+</ol>
+</li>
+<li>Theorem 3: For additive valuations, there is a share in $S_F ∩ S_M ∩ S_C$ that dominates $ρS_F$, where $ρ = 2n/(3n-1)$, and $ρ = 4/5$ for $n ≤ 4$. For any $ε > 0$, there is a share in $S_F ∩ S_M ∩ S_C$ that dominates $(1-ε)S_F$ for $n=2$.</li>
+<li><span class="listHead">$F$-maximin shares (additive valuations only):</span><ol>
+<li><span class="listHead">Definition 5: Let $F$ be a family of partitions of $[m]$.</span><ol>
+<li>The $F$-maximin share for valuation $v$ is $\max_{P ∈ F} \min_{j=1}^n v'(P_j)$, where $v'$ is the ordered valuation for $v$.</li>
+<li>The $F$-maximin partition for ordered valuation $v$ is $\arg\max_{P ∈ F} \min_{j=1}^n v(P_j)$.</li>
+<li>An allocation that gives every agent their $F$-maximin share is called an $F$-maximin allocation.</li>
+</ol>
+</li>
+<li>Observation 17: For $n=2$, every $F$-maximin share is feasible, and if an $F$-maximin partition can be computed in polynomial time, then an $F$-maximin allocation can also be computed in polynomial time.</li>
+<li>Proposition 7: For additive valuations, every $F$-maximin share is self-maximizing.</li>
+</ol>
+</li>
+<li><span class="listHead">Nested share (additive valuations only):</span><ol>
+<li>Section 6.3: The nested share for $n$ agents, parametrized by $q ∈ \{0, 1, …, n\}$, is denoted as $\NestShare_{n,q}$ ($\NestShare_q$ when $n$ is clear from context). It is defined as an $F$-maximin share. Let $ρ(n,q) := \inf_v \frac{\NestShare_{n,q}(v)}{\MMS^n(v)}$ (hence, $\NestShare_{n,q} \succeq ρ(n,q)\MMS^n(v)$).</li>
+<li>$\NestShare_n(v) ≥ \NestShare_{n-1}(v) ≥ … ≥ \NestShare_1(v) = \NestShare_0(v)$ for all $v$. Hence, $ρ(n,n) ≥ … ≥ ρ(n, 1) = ρ(n, 0)$.</li>
+<li>Example 1: For $n=4$ and goods of (additive) values [3, 3, 2, 2, 2, 2, 2, 2, 1, 1], MMS is 5 but $\NestShare_q$ is 4 for all $q$.</li>
+<li>Theorem 6: $\NestShare_3 ∈ S_F ∩ S_M ∩ S_C$, and an $\NestShare_3$-allocation can be computed in polynomial time. Furthermore, $\NestShare_3 \succeq \frac{2n}{3n-1}$MMS, and for $n≤4$, $\NestShare_3 \succeq (4/5)$MMS.</li>
+<li>Lemma 18: $\NestShare_q$ can be computed in $O(m^4\log m)$ time using dynamic programming.</li>
+<li>Lemma 19: $ρ(n,1) ≥ \frac{2n}{3n-1}$ (and hence $\NestShare_1 \succeq \frac{2n}{3n-1}$MMS).</li>
+<li>Proposition 26 (adapted from [babaioff2021fair]): $∀ ε>0, ∀ q≥1, ∃ n, ∃$ additive $v$, such that $\NestShare_{n,q}(v) ≤ (2/3+ε)\MMS^n(v)$.</li>
+<li>Lemma 9: An $\NestShare_{q,q}$ allocation exists implies that an $\NestShare_{n,q}$ allocation exists for all $n ≥ q$. Furthermore, if we can compute an $\NestShare_{q,q}$ allocation in $T(m,q)$ time, we can compute an $\NestShare_{n,q}$ allocation in $T(m-n+q,q) + O(mn)$ time (assuming $\NestShare_{n,q}$ for the entire set of goods has already been computed for each agent).</li>
+<li>Lemmas 10 and 11: For $n=3$, given every agent's $\NestShare_3$ partition, an $\NestShare_3$ allocation can be computed in $O(m)$ time.</li>
+<li>Lemmas 20, 21, 23, 24: $ρ(2,1) = 4/5$, $ρ(2,2) = 5/6$, $ρ(3,2) = 4/5$, $ρ(4,3) = 4/5$.</li>
+<li>Proposition 27: $ρ(3,3) ≤ 5/6$, $ρ(3,1) ≤ 0.7693$. For $n ≥ 4$, $ρ(n, n-2) ≤ 3/4$ and $ρ(n,n) ≤ 4/5$.</li>
+</ol>
+</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.feige2022improved">
+<div class="title">Improved maximin fair allocation of indivisible items to three agents <a class="articleId" href="#article.feige2022improved">[feige2022improved]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Uriel Feige and Alexey Norkin</span>
+<span class="pubYear">2022</span>
+<a class="pubArxiv" href="https://arxiv.org/abs/2205.05363">arXiv:2205.05363</a>
+<span data-target="bibtex.feige2022improved" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+<span class="gistStatus">gist status: <span class="warning">abstractOnly</span></span>
+<span class="paperStatus">paper status: <span>unpublished</span></span>
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">chores</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">mms</span></span>
+</span>
+</div>
+<pre id="bibtex.feige2022improved" class="bibtex hidden">
+@misc{feige2022improved,
+title={Improved maximin fair allocation of indivisible items to three agents},
+author={Feige, Uriel and Norkin, Alexey},
+year={2022},
+eprint={2205.05363},
+archivePrefix={arXiv}
+}
+</pre>
+<div class="content">
+<p class="description">Fair division of $m$ indivisible items among 3 agents with additive valuations.</p>
+<ol class="results">
+<li>An allocation of goods exists where agent 1 gets at least her proportional share and the other agents get at least 11/12 of their maximin share.</li>
+<li>An allocation of chores exists where agent 1 gets at most her proportional share and the other agents get at most 19/18 of their maximin share.</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.akrami2023efx">
+<div class="title">EFX Allocations: Simplifications and Improvements <a class="articleId" href="#article.akrami2023efx">[akrami2023efx]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Hannaneh Akrami, Chaudhury Bhaskar Ray, Jugal Garg, Kurt Mehlhorn, and Ruta Mehta</span>
+<span class="pubVenue">in <abbr title="ACM Conference on Economics and Computation">EC</abbr></span>
+<span class="pubYear">2023</span>
+<a class="pubArxiv" href="https://arxiv.org/abs/2205.07638">arXiv:2205.07638</a>
+<span data-target="bibtex.akrami2023efx" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+<span class="gistStatus">gist status: <span class="warning">abstractOnly</span></span>
+<span class="paperStatus">paper status: <span>toBePublished</span></span>
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">EFX</span></span>
+<span class="topic"><span class="topicLabel">charity</span></span>
+<span class="topic"><span class="topicLabel">nashWelfare</span></span>
+</span>
+</div>
+<pre id="bibtex.akrami2023efx" class="bibtex hidden">
+@inproceedings{akrami2023efx,
+title={EFX Allocations: Simplifications and Improvements},
+author={Akrami, Hannaneh and Bhaskar Ray, Chaudhury and Garg, Jugal and Mehlhorn, Kurt and Mehta, Ruta},
+booktitle={ACM Conference on Economics and Computation},
+year={2023},
+eprint={2205.07638},
+archivePrefix={arXiv}
+}
+</pre>
+<div class="content">
+<p class="description">Fair division of $m$ indivisible goods among $n$ agents with general monotone valuations.</p>
+<ol class="results">
+<li>Definition 2: A new class of valuations, called MMS-feasible valuations, that generalize additive and nice-cancelable valuations.</li>
+<li>Theorem 2: EFX allocations exist when $n=3$ and at least one agent has an MMS-feasible valuation function.</li>
+<li>Theorem 4: A polytime algorithm to find a partial $(1-ε)$-EFX allocation $X$ where no agent envies the charity bundle and the number of unallocated goods is $\widetilde{O}(\sqrt{n/ε})$. Furthermore, $X$ is $1/2$-MNW.</li>
+</ol>
+</div>
+</li>
+<li class="article" id="article.aziz2023best">
+<div class="title">Best of Both Worlds: Ex Ante and Ex Post Fairness in Resource Allocation <a class="articleId" href="#article.aziz2023best">[aziz2023best]</a></div>
+<div class="pubData">
+<span class="pubAuthors">by Haris Aziz, Rupert Freeman, Nisarg Shah, and Rohit Vaish</span>
+<span class="pubVenue">in Operations Research</span>
+<span class="pubYear">2023</span>
+<a class="pubDoi" href="https://doi.org/10.1287/opre.2022.2432">doi:10.1287/opre.2022.2432</a>
+<span data-target="bibtex.aziz2023best" class="citeButton">&#10078;</span>
+</div>
+<div class="meta">
+</div>
+<div class="topics">
+<span>Topics: </span>
+<span class="topic">
+<span class="topicLabel">fairDivision: </span>
+<span class="topic"><span class="topicLabel">indiv</span></span>
+<span class="topic"><span class="topicLabel">goods</span></span>
+<span class="topic"><span class="topicLabel">additive</span></span>
+<span class="topic"><span class="topicLabel">exAnte</span></span>
+<span class="topic"><span class="topicLabel">EF</span></span>
+<span class="topic"><span class="topicLabel">EF1</span></span>
+<span class="topic"><span class="topicLabel">PO</span></span>
+<span class="topic"><span class="topicLabel">fPO</span></span>
+<span class="topic"><span class="topicLabel">PROP1</span></span>
+<span class="topic"><span class="topicLabel">EF1MaL</span></span>
+<span class="topic"><span class="topicLabel">nashOpt</span></span>
+</span>
+</div>
+<pre id="bibtex.aziz2023best" class="bibtex hidden">
+@article{aziz2023best,
+title={Best of Both Worlds: Ex Ante and Ex Post Fairness in Resource Allocation},
+author={Aziz, Haris and Freeman, Rupert and Shah, Nisarg and Vaish, Rohit},
+journal={Operations Research},
+year={2023},
+doi={10.1287/opre.2022.2432}
+}
+</pre>
+<div class="content">
+<p class="description">Fair and efficient division of $m$ indivisible goods among $n$ agents with additive valuations.</p>
+<ol class="results">
+<li><span class="listHead">Defines (with citation) the following notions of fairness and efficiency:</span><ol>
+<li>SD-EF and SD-EF1, which are stronger notions than EF and EF1, respectively.</li>
+<li>SD-Efficient (aka ordinally efficient), which is a weaker notion than fPO.</li>
+<li>PROP1 and EF1MaL.</li>
+</ol>
+</li>
+<li>Proposition 1: An ex ante fPO allocation is also ex post fPO.</li>
+<li>Theorem 3: Algorithm to find a distribution of allocations that is ex ante SD-EF + ex post SD-EF1 + ex ante SD-Efficient in $O((m+n)^{9/2})$ time and having support at most $(m+n-1)^2 + 1$.</li>
+<li>An ex ante NashOpt allocation is also ex ante Group Fair, which implies ex ante EF + ex ante fPO.</li>
+<li>Theorem 8: Strongly polytime algorithm to find a distribution of allocations that is ex ante NashOpt + ex post PROP1 + ex post EF1MaL.</li>
+<li><span class="listHead">Impossibility results:</span><ol>
+<li>Theorem 4: Example with $n=2$ and $m=4$ for which no allocation is ex ante SD-EF + ex post EF1 + ex post PO.</li>
+<li>Theorem 5: Example with $n=m=2$ for which no allocation is ex ante PROP + ex post EF1 + ex post fPO.</li>
+<li>Theorem 6: Example with $n=m=2$ for which no allocation is ex ante SD-EF + ex ante fPO.</li>
+</ol>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</body>
+</html>

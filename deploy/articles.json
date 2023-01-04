@@ -1,0 +1,590 @@
+{
+"deuermeyer1982scheduling": {
+"title": "Scheduling to Maximize the Minimum Processor Finish Time in a Multiprocessor System",
+"pubData": {
+"authors": [
+["Bryan L.", "Deuermeyer"],
+["Donald K.", "Friesen"],
+["Michael A.", "Langston"]
+],
+"doi": "10.1137/0603019",
+"year": 1982,
+"venue": "SIAM Journal on Algebraic Discrete Methods",
+"type": "article",
+"volume": "3",
+"number": "2",
+"pages": "190--196",
+"publisher": "SIAM",
+"authorsStr": "Bryan L. Deuermeyer, Donald K. Friesen, and Michael A. Langston"
+},
+"topics": {
+"scheduling": ["idMachines", "maxmin", "lpt"],
+"fairDivision": ["indiv", "goods", "idVal", "additive", "mms"]
+}
+},
+"csirik1992exact": {
+"title": "The exact LPT-bound for maximizing the minimum completion time",
+"pubData": {
+"authors": [
+["J\u00e1nos", "Csirik"],
+["Hans", "Kellerer"],
+["Gerhard", "Woeginger"]
+],
+"doi": "10.1016/0167-6377(92)90004-M",
+"year": 1992,
+"venue": "Operations Research Letters",
+"type": "article",
+"volume": "11",
+"number": "5",
+"pages": "281--287",
+"publisher": "Elsevier",
+"authorsStr": "J\u00e1nos Csirik, Hans Kellerer, and Gerhard Woeginger"
+},
+"topics": {
+"scheduling": ["idMachines", "maxmin", "lpt"],
+"fairDivision": ["indiv", "goods", "idVal", "additive", "mms"]
+}
+},
+"budish2011combinatorial": {
+"title": "The Combinatorial Assignment Problem: Approximate Competitive Equilibrium from Equal Incomes",
+"gistStatus": "incomplete",
+"pubData": {
+"authors": [
+["Eric", "Budish"]
+],
+"doi": "10.1086/664613",
+"year": 2011,
+"venue": "Journal of Political Economy",
+"type": "article",
+"volume": "119",
+"number": "6",
+"pages": "1061--1103",
+"publisher": "University of Chicago Press",
+"authorsStr": "Eric Budish"
+},
+"topics": {
+"fairDivision": ["indiv", "goods", "ceei", "mms", "ef1"],
+"marketEquilibrium": ["ceei"]
+}
+},
+"procaccia2014fair": {
+"title": "Fair Enough: Guaranteeing Approximate Maximin Shares",
+"pubData": {
+"authors": [
+["Ariel D.", "Procaccia"],
+["Junxing", "Wang"]
+],
+"doi": "10.1145/2600057.2602835",
+"year": 2014,
+"venue": "EC",
+"type": "inproceedings",
+"pages": "675--692",
+"publisher": "ACM",
+"authorsStr": "Ariel D. Procaccia and Junxing Wang",
+"longVenue": "ACM Conference on Economics and Computation",
+"longPublisher": "Association for Computing Machinery"
+},
+"topics": {
+"fairDivision": ["indiv", "goods", "additive", "mms"]
+}
+},
+"amanatidis2015approximation": {
+"title": "Approximation Algorithms for Computing Maximin Share Allocations",
+"pubData": {
+"authors": [
+["Georgios", "Amanatidis"],
+["Evangelos", "Markakis"],
+["Afshin", "Nikzad"],
+["Amin", "Saberi"]
+],
+"doi": "10.1007/978-3-662-47672-7_4",
+"year": 2015,
+"venue": "ICALP",
+"type": "inproceedings",
+"pages": "39--51",
+"publisher": "Springer",
+"authorsStr": "Georgios Amanatidis, Evangelos Markakis, Afshin Nikzad, and Amin Saberi",
+"longVenue": "International Colloquium on Automata, Languages, and Programming"
+},
+"topics": {
+"fairDivision": ["indiv", "goods", "additive", "mms"]
+}
+},
+"kurokawa2016can": {
+"title": "When Can the Maximin Share Guarantee Be Guaranteed?",
+"pubData": {
+"authors": [
+["David", "Kurokawa"],
+["Ariel", "Procaccia"],
+["Junxing", "Wang"]
+],
+"doi": "10.1609/aaai.v30i1.10041",
+"year": 2016,
+"venue": "AAAI",
+"type": "inproceedings",
+"authorsStr": "David Kurokawa, Ariel Procaccia, and Junxing Wang",
+"longVenue": "AAAI Conference on Artificial Intelligence"
+},
+"topics": {
+"fairDivision": ["indiv", "goods", "additive", "mms"]
+}
+},
+"bouveret2016characterizing": {
+"title": "Characterizing conflicts in fair division of indivisible goods using a scale of criteria",
+"pubData": {
+"authors": [
+["Sylvain", "Bouveret"],
+["Michel", "Lema\u00eetre"]
+],
+"doi": "10.1007/s10458-015-9287-3",
+"year": 2016,
+"venue": "AAMAS",
+"type": "article",
+"volume": "30",
+"number": "2",
+"pages": "259--290",
+"publisher": "Springer",
+"authorsStr": "Sylvain Bouveret and Michel Lema\u00eetre",
+"longVenue": "International Conference on Autonomous Agents and Multiagent Systems"
+},
+"topics": {
+"fairDivision": ["indiv", "goods", "additive", "mms", "prop", "envyFree", "ceei", "minMaxShare", "egal"]
+}
+},
+"amanatidis2017approximation": {
+"title": "Approximation Algorithms for Computing Maximin Share Allocations",
+"pubData": {
+"authors": [
+["Georgios", "Amanatidis"],
+["Evangelos", "Markakis"],
+["Afshin", "Nikzad"],
+["Amin", "Saberi"]
+],
+"doi": "10.1145/3147173",
+"arxiv": "1503.00941v3",
+"year": 2017,
+"venue": "TALG",
+"type": "article",
+"volume": "13",
+"number": "4",
+"pages": "1--28",
+"publisher": "ACM",
+"authorsStr": "Georgios Amanatidis, Evangelos Markakis, Afshin Nikzad, and Amin Saberi",
+"longVenue": "ACM Transactions on Algorithms",
+"longPublisher": "Association for Computing Machinery"
+},
+"topics": {
+"fairDivision": ["indiv", "goods", "additive", "mms"]
+}
+},
+"barman2017approximation": {
+"title": "Approximation Algorithms for Maximin Fair Division",
+"pubData": {
+"authors": [
+["Siddharth", "Barman"],
+["Sanath Kumar", "Krishna Murthy"]
+],
+"doi": "10.1145/3033274.3085136",
+"year": 2017,
+"venue": "EC",
+"type": "inproceedings",
+"pages": "647--664",
+"authorsStr": "Siddharth Barman and Sanath Kumar Krishna Murthy",
+"longVenue": "ACM Conference on Economics and Computation"
+},
+"topics": {
+"fairDivision": ["indiv", "goods", "additive", "submodular", "mms", "efx"]
+}
+},
+"aziz2017algorithms": {
+"title": "Algorithms for Max-Min Share Fair Allocation of Indivisible Chores",
+"gistStatus": "abstractOnly",
+"pubData": {
+"authors": [
+["Haris", "Aziz"],
+["Gerhard", "Rauchecker"],
+["Guido", "Schryen"],
+["Toby", "Walsh"]
+],
+"doi": "10.1609/aaai.v31i1.10582",
+"year": 2017,
+"venue": "AAAI",
+"type": "inproceedings",
+"authorsStr": "Haris Aziz, Gerhard Rauchecker, Guido Schryen, and Toby Walsh",
+"longVenue": "AAAI Conference on Artificial Intelligence"
+},
+"topics": {
+"fairDivision": ["indiv", "chores", "additive", "mms"]
+}
+},
+"kurokawa2018fair": {
+"title": "Fair Enough: Guaranteeing Approximate Maximin Shares",
+"pubData": {
+"authors": [
+["David", "Kurokawa"],
+["Ariel D.", "Procaccia"],
+["Junxing", "Wang"]
+],
+"doi": "10.1145/3140756",
+"year": 2018,
+"type": "article",
+"venue": "JACM",
+"volume": "65",
+"number": "2",
+"pages": "1--27",
+"month": "February",
+"publisher": "ACM",
+"address": "New York, NY, USA",
+"authorsStr": "David Kurokawa, Ariel D. Procaccia, and Junxing Wang",
+"longVenue": "Journal of the ACM",
+"longPublisher": "Association for Computing Machinery"
+},
+"topics": {
+"fairDivision": ["indiv", "goods", "additive", "mms"]
+}
+},
+"ghodsi2018fair": {
+"title": "Fair Allocation of Indivisible Goods: Improvements and Generalizations",
+"pubData": {
+"authors": [
+["Mohammad", "Ghodsi"],
+["MohammadTaghi", "HajiAghayi"],
+["Masoud", "Seddighin"],
+["Saeed", "Seddighin"],
+["Hadi", "Yami"]
+],
+"doi": "10.1145/3219166.3219238",
+"arxiv": "1704.00222",
+"year": 2018,
+"venue": "EC",
+"type": "inproceedings",
+"pages": "539--556",
+"authorsStr": "Mohammad Ghodsi, MohammadTaghi HajiAghayi, Masoud Seddighin, Saeed Seddighin, and Hadi Yami",
+"longVenue": "ACM Conference on Economics and Computation"
+},
+"topics": {
+"fairDivision": ["indiv", "goods", "additive", "submodular", "xos", "subadditive", "mms"]
+}
+},
+"amanatidis2018comparing": {
+"title": "Comparing Approximate Relaxations of Envy-Freeness",
+"pubData": {
+"authors": [
+["Georgios", "Amanatidis"],
+["Georgios", "Birmpas"],
+["Evangelos", "Markakis"]
+],
+"doi": "10.24963/ijcai.2018/6",
+"arxiv": "1806.03114",
+"year": 2018,
+"venue": "IJCAI",
+"type": "inproceedings",
+"pages": "42--48",
+"authorsStr": "Georgios Amanatidis, Georgios Birmpas, and Evangelos Markakis",
+"longVenue": "International Joint Conference on Artificial Intelligence"
+},
+"topics": {
+"fairDivision": ["indiv", "goods", "additive", "ef1", "efx", "mms", "pmms"]
+}
+},
+"gourves2019maximin": {
+"title": "On Maximin Share Allocations in Matroids",
+"gistStatus": "incomplete",
+"pubData": {
+"authors": [
+["Laurent", "Gourv\u00e8s"],
+["J\u00e9r\u00f4me", "Monnot"]
+],
+"doi": "10.1016/j.tcs.2018.05.018",
+"year": 2019,
+"venue": "TCS",
+"type": "article",
+"volume": "754",
+"pages": "50--64",
+"publisher": "Elsevier",
+"authorsStr": "Laurent Gourv\u00e8s and J\u00e9r\u00f4me Monnot",
+"longVenue": "Theoretical Computer Science"
+},
+"topics": {
+"fairDivision": ["indiv", "goods", "additive", "mms"],
+"matroids": []
+}
+},
+"caragiannis2019unreasonable": {
+"title": "The Unreasonable Fairness of Maximum Nash Welfare",
+"pubData": {
+"authors": [
+["Ioannis", "Caragiannis"],
+["David", "Kurokawa"],
+["Herv\u00e9", "Moulin"],
+["Ariel D.", "Procaccia"],
+["Nisarg", "Shah"],
+["Junxing", "Wang"]
+],
+"doi": "10.1145/3355902",
+"year": 2019,
+"venue": "TEAC",
+"type": "article",
+"volume": "7",
+"number": "3",
+"pages": "1--32",
+"authorsStr": "Ioannis Caragiannis, David Kurokawa, Herv\u00e9 Moulin, Ariel D. Procaccia, Nisarg Shah, and Junxing Wang",
+"longVenue": "ACM Transactions on Economics and Computation"
+},
+"topics": {
+"fairDivision": ["indiv", "goods", "additive", "nashOpt", "PO", "EF1", "mms", "pmms", "EFX"]
+}
+},
+"barman2020approximation": {
+"title": "Approximation Algorithms for Maximin Fair Division",
+"pubData": {
+"authors": [
+["Siddharth", "Barman"],
+["Sanath Kumar", "KrishnaMurthy"]
+],
+"doi": "10.1145/3381525",
+"year": 2020,
+"venue": "TEAC",
+"type": "article",
+"pages": "1--28",
+"authorsStr": "Siddharth Barman and Sanath Kumar KrishnaMurthy",
+"longVenue": "ACM Transactions on Economics and Computation"
+},
+"topics": {
+"fairDivision": ["indiv", "goods", "chores", "additive", "submodular", "mms", "efx"]
+}
+},
+"amanatidis2020multiple": {
+"title": "Multiple birds with one stone: Beating 1/2 for EFX and GMMS via envy cycle elimination",
+"pubData": {
+"authors": [
+["Georgios", "Amanatidis"],
+["Evangelos", "Markakis"],
+["Apostolos", "Ntokos"]
+],
+"doi": "10.1016/j.tcs.2020.07.006",
+"arxiv": "1909.07650",
+"year": 2020,
+"venue": "TCS",
+"type": "article",
+"pages": "94--109",
+"volume": 841,
+"publisher": "Elsevier",
+"authorsStr": "Georgios Amanatidis, Evangelos Markakis, and Apostolos Ntokos",
+"longVenue": "Theoretical Computer Science"
+},
+"topics": {
+"fairDivision": ["indiv", "goods", "additive", "GMMS", "EF1", "EFX", "PMMS"]
+}
+},
+"huang2021algorithmic": {
+"title": "An Algorithmic Framework for Approximating Maximin Share Allocation of Chores",
+"pubData": {
+"authors": [
+["Xin", "Huang"],
+["Pinyan", "Lu"]
+],
+"doi": "10.1145/3465456.3467555",
+"arxiv": "1907.04505v4",
+"year": 2021,
+"venue": "EC",
+"type": "inproceedings",
+"pages": "630--631",
+"authorsStr": "Xin Huang and Pinyan Lu",
+"longVenue": "ACM Conference on Economics and Computation"
+},
+"topics": {
+"fairDivision": ["indiv", "chores", "additive", "mms"]
+}
+},
+"babaioff2021fair": {
+"title": "Fair-Share Allocations for Agents with Arbitrary Entitlements",
+"pubData": {
+"authors": [
+["Moshe", "Babaioff"],
+["Tomer", "Ezra"],
+["Uriel", "Feige"]
+],
+"doi": "10.1145/3465456.3467559",
+"arxiv": "2103.04304v4",
+"year": 2021,
+"venue": "EC",
+"type": "inproceedings",
+"pages": "127--127",
+"authorsStr": "Moshe Babaioff, Tomer Ezra, and Uriel Feige",
+"longVenue": "ACM Conference on Economics and Computation"
+},
+"topics": {
+"fairDivision": ["indiv", "goods", "chores", "mixedManna", "additive", "unequalEntitlements", "aps", "tps", "pessShare", "mms", "wmms"]
+}
+},
+"chaudhury2021little": {
+"title": "A Little Charity Guarantees Almost Envy-Freeness",
+"pubData": {
+"authors": [
+["Bhaskar Ray", "Chaudhury"],
+["Telikepalli", "Kavitha"],
+["Kurt", "Mehlhorn"],
+["Alkmini", "Sgouritsa"]
+],
+"doi": "10.1137/20M1359134",
+"year": 2021,
+"venue": "SJoC",
+"type": "article",
+"volume": "50",
+"number": "4",
+"pages": "1336--1358",
+"authorsStr": "Bhaskar Ray Chaudhury, Telikepalli Kavitha, Kurt Mehlhorn, and Alkmini Sgouritsa",
+"longVenue": "SIAM Journal on Computing"
+},
+"topics": {
+"fairDivision": ["indiv", "goods", "efx", "charity", "mms", "gmms", "nashWelfare"]
+}
+},
+"feige2022tight": {
+"title": "A Tight Negative Example for MMS Fair Allocations",
+"pubData": {
+"authors": [
+["Uriel", "Feige"],
+["Ariel", "Sapir"],
+["Laliv", "Tauber"]
+],
+"doi": "10.1007/978-3-030-94676-0_20",
+"arxiv": "2104.04977",
+"year": 2021,
+"venue": "WINE",
+"type": "inproceedings",
+"pages": "355--372",
+"publisher": "Springer",
+"authorsStr": "Uriel Feige, Ariel Sapir, and Laliv Tauber",
+"longVenue": "Web and Internet Economics"
+},
+"topics": {
+"fairDivision": ["indiv", "goods", "chores", "additive", "mms"]
+}
+},
+"hosseini2022ordinal": {
+"title": "Ordinal Maximin Share Approximation for Chores",
+"pubData": {
+"authors": [
+["Hadi", "Hosseini"],
+["Andrew", "Searns"],
+["Erel", "Segal-Halevi"]
+],
+"url": "https://www.ifaamas.org/Proceedings/aamas2022/pdfs/p597.pdf",
+"arxiv": "2201.07424",
+"year": 2022,
+"venue": "AAMAS",
+"type": "inproceedings",
+"pages": "597--605",
+"authorsStr": "Hadi Hosseini, Andrew Searns, and Erel Segal-Halevi",
+"longVenue": "International Conference on Autonomous Agents and Multiagent Systems"
+},
+"topics": {
+"fairDivision": ["indiv", "chores", "additive", "mms"]
+}
+},
+"babaioff2022best": {
+"title": "On Best-of-Both-Worlds Fair-Share Allocations",
+"pubData": {
+"authors": [
+["Moshe", "Babaioff"],
+["Tomer", "Ezra"],
+["Uriel", "Fiege"]
+],
+"doi": "10.1007/978-3-031-22832-2_14",
+"arxiv": "2102.04909",
+"year": 2022,
+"venue": "WINE",
+"type": "inproceedings",
+"pages": "237--255",
+"publisher": "Springer",
+"authorsStr": "Moshe Babaioff, Tomer Ezra, and Uriel Fiege",
+"longVenue": "Web and Internet Economics"
+},
+"topics": {
+"fairDivision": ["indiv", "goods", "additive", "exAnte", "PROP", "MMS", "fPO", "PO", "PROP1", "TPS"]
+}
+},
+"babaioff2022fair": {
+"title": "Fair Shares: Feasibility, Domination and Incentive",
+"pubData": {
+"authors": [
+["Moshe", "Babaioff"],
+["Uriel", "Feige"]
+],
+"doi": "10.1145/3490486.3538286",
+"arxiv": "2205.07519",
+"year": 2022,
+"venue": "EC",
+"type": "inproceedings",
+"pages": "435--435",
+"authorsStr": "Moshe Babaioff and Uriel Feige",
+"longVenue": "ACM Conference on Economics and Computation"
+},
+"topics": {
+"fairDivision": ["indiv", "goods", "additive", "shares", "mms"]
+}
+},
+"feige2022improved": {
+"title": "Improved maximin fair allocation of indivisible items to three agents",
+"gistStatus": "abstractOnly",
+"paperStatus": "unpublished",
+"pubData": {
+"authors": [
+["Uriel", "Feige"],
+["Alexey", "Norkin"]
+],
+"arxiv": "2205.05363",
+"year": 2022,
+"type": "misc",
+"authorsStr": "Uriel Feige and Alexey Norkin"
+},
+"topics": {
+"fairDivision": ["indiv", "goods", "chores", "additive", "mms"]
+}
+},
+"akrami2023efx": {
+"title": "EFX Allocations: Simplifications and Improvements",
+"paperStatus": "toBePublished",
+"gistStatus": "abstractOnly",
+"pubData": {
+"authors": [
+["Hannaneh", "Akrami"],
+["Chaudhury", "Bhaskar Ray"],
+["Jugal", "Garg"],
+["Kurt", "Mehlhorn"],
+["Ruta", "Mehta"]
+],
+"year": 2023,
+"arxiv": "2205.07638",
+"venue": "EC",
+"type": "inproceedings",
+"authorsStr": "Hannaneh Akrami, Chaudhury Bhaskar Ray, Jugal Garg, Kurt Mehlhorn, and Ruta Mehta",
+"longVenue": "ACM Conference on Economics and Computation"
+},
+"topics": {
+"fairDivision": ["indiv", "goods", "EFX", "charity", "nashWelfare"]
+}
+},
+"aziz2023best": {
+"title": "Best of Both Worlds: Ex Ante and Ex Post Fairness in Resource Allocation",
+"pubData": {
+"authors": [
+["Haris", "Aziz"],
+["Rupert", "Freeman"],
+["Nisarg", "Shah"],
+["Rohit", "Vaish"]
+],
+"doi": "10.1287/opre.2022.2432",
+"year": 2023,
+"venue": "Operations Research",
+"type": "article",
+"publisher": "INFORMS",
+"authorsStr": "Haris Aziz, Rupert Freeman, Nisarg Shah, and Rohit Vaish"
+},
+"topics": {
+"fairDivision": ["indiv", "goods", "additive", "exAnte", "EF", "EF1", "PO", "fPO", "PROP1", "EF1MaL", "nashOpt"]
+}
+}
+}

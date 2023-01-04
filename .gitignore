@@ -1,6 +1,5 @@
 secret
 output
-deploy
 .env
 
 *.pyc
