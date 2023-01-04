@@ -3,12 +3,15 @@
 A website that lists the gists of research articles and categorizes them by topics.
 
 I'm often interested in knowing the precise statement of all the main claim(s) of a research paper,
-but doing so often involves finding the paper and then manually searching the PDF.
+but doing so involves finding the paper's PDF and then manually searching it.
 This takes time, especially if the paper uses non-standard notation.
-Ideally, the abstract should give me this information, but it often doesn't.
-Hence, I decided that whenever I read a paper, I'm going to briefly note down the main claims.
+Ideally, the abstract should give me this information, but it either doesn't,
+or the useful info is buried in a long paragraph.
+Hence, I decided that whenever I read a paper (even if I read it briefly),
+I'm going to note down the main claims.
 This is useful if I need to look at the paper many times in the future,
-e.g., when writing the 'Related Work' section of my papers.
+e.g., when writing the 'Related Work' section of my papers,
+or when I need to look at multiple papers together to get a high-level overview of the state of research in a topic.
 
 Information about each article is placed in a JSON file.
 The `createWebsite.py` script takes as input a directory containing these JSON files and outputs a website.
