@@ -1,9 +1,16 @@
 # Article Gists
 
-Create a website that lists the gists of research articles and categorizes them by topics.
-This is useful for writing the 'Related Work' section in research papers.
+A website that lists the gists of research articles and categorizes them by topics.
 
-Place information about each article in a JSON file.
+I'm often interested in knowing the precise statement of all the main claim(s) of a research paper,
+but doing so often involves finding the paper and then manually searching the PDF.
+This takes time, especially if the paper uses non-standard notation.
+Ideally, the abstract should give me this information, but it often doesn't.
+Hence, I decided that whenever I read a paper, I'm going to briefly note down the main claims.
+This is useful if I need to look at the paper many times in the future,
+e.g., when writing the 'Related Work' section of my papers.
+
+Information about each article is placed in a JSON file.
 The `createWebsite.py` script takes as input a directory containing these JSON files and outputs a website.
 The `articles` directory contains JSON files that I curated.
 Example invocation:
@@ -13,7 +20,8 @@ Example invocation:
 ## Filtering
 
 You can filter articles based on topics and subtopics.
-To do this, you'll have to open your browser's console and call the `filterArticles` function.
+There's currently no UI for this.
+You'll have to open your browser's console and call the `filterArticles` function.
 Here are a few examples:
 
     filterArticles(hasTopicF('marketEquilibrium'));
@@ -39,7 +47,8 @@ Python code has been type-annotated. To type-check using [mypy](http://mypy-lang
 
 ## Freedom to use
 
-&copy; 2022 Eklavya Sharma
+&copy; 2023 Eklavya Sharma
 
-All code is licensed under [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/).
-This roughly means that you are free to use, modify and distribute this code.
+The JSON files in the `articles` directory are under [CC0](https://choosealicense.com/licenses/cc0-1.0/).
+Other than that, all code is licensed under [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/).
+This roughly means that you are free to use, modify, and distribute this data and code.
