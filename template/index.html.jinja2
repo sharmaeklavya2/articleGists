@@ -81,7 +81,15 @@ It is useful for writing the 'Related Work' section in research papers.
 </div>
 {% if article['topics'] %}
 <div class="topics">
-Topics: <span class="topicsStr">{{article['topicsStr']}}</span>
+<span>Topics: </span>
+{% for topic, subtopics in article.topics.items() %}
+<span class="topic">
+<span class="topicLabel">{{topic}}{% if subtopics %}: {% endif %}</span>
+{% for subtopic in subtopics %}
+<span class="topic"><span class="topicLabel">{{subtopic}}</span></span>
+{% endfor %}
+</span>
+{% endfor %}
 </div>
 {% endif %}
 {% if article['bibtex'] %}

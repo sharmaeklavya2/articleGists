@@ -62,8 +62,22 @@ h1 {
     content: ",";
     white-space: pre;
 }
-.article > .topicsStr {
-    font-family: monospace;
+.article > .topics, .article .topic {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.article > .topics > .topic {
+    margin-left: 5px;
+}
+.article .topic {
+    border: 1px solid var(--heavy-tint);
+    border-radius: 5px;
+    background-color: var(--light-tint);
+    margin: 1px 2px;
+}
+.article .topicLabel{
+    padding: 1px 3px;
 }
 .citeButton:hover {
     background-color: var(--medium-tint);

@@ -44,7 +44,6 @@ class Article(TypedDict, total=False):
     paperStatus: str
     pubData: PubData
     topics: Mapping[str, Sequence[str]]
-    topicsStr: str
     description: str
     relatedWork: Sequence[str]
     results: Sequence[str]
@@ -123,10 +122,6 @@ def processArticle(id: str, article: Article) -> None:
         authorsList[-1] = 'and ' + authorsList[-1]
         authorsStr = ', '.join(authorsList)
     pubData['authorsStr'] = authorsStr
-
-    # add topicsStr
-    if 'topics' in article:
-        article['topicsStr'] = json.dumps(article['topics'])
 
     # expand acronyms
     if acronyms is not None:
