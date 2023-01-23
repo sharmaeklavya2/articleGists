@@ -61,7 +61,7 @@ This website contains summaries of research articles and categorizes them by top
 </div>
 <div class="meta">
 {% if article.gistStatus %}
-<span class="gistStatus">gist status: <span{% if article.gistStatus in ('error', 'incomplete') %} class="danger"{% endif %}>{{article.gistStatus}}</span></span>
+<span class="gistStatus">gist status: <span{% if article.gistStatus in ('error', 'incomplete') %} class="danger"{% endif %}{% if article.gistStatus in ('abstract', 'abstractOnly') %} class="warning"{% endif %}>{{article.gistStatus}}</span></span>
 {% endif %}
 {% if article.paperStatus %}
 <span class="paperStatus">paper status: <span>{{article.paperStatus}}</span></span>
