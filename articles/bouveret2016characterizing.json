@@ -17,7 +17,7 @@
 "description": "Gives a scale of criteria for fair division of $m$ indivisible goods among $n$ agents with additive valuations.",
 "results": [
     "Propositions 2, 4, 6, 7: MMS ⟹ PROP ⟹ MinMaxShare ⟹ EnvyFree ⟹ CEEI",
-    "Proposition 1, 3: The following problems are NP-complete: 1. computing an agent's MMS share. 2. finding an MMS allocation. 3. checking if a PROP allocation exists.",
+    "Proposition 1, 3: The following problems are NP-hard: 1. computing an agent's MMS share. 2. finding an MMS allocation. 3. checking if a PROP allocation exists.",
     "Proposition 10: For sum-normalized valuations, PROP ⟹ Egalitarian.",
     "Proposition 11: For binary valuations, the round-robin algorithm gives an MMS allocation in $O(m^2)$ time.",
     "Proposition 12: For identical valuations, MMS, PROP, envy-freeness, CEEI, and equitability are the same.",
