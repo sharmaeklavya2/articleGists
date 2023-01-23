@@ -1,0 +1,22 @@
+{
+"title": "An Algorithmic Framework for Approximating Maximin Share Allocation of Chores",
+"pubData": {
+    "authors": [["Xin", "Huang"], ["Pinyan", "Lu"]],
+    "doi": "10.1145/3465456.3467555",
+    "arxiv": "1907.04505v4",
+    "year": 2021,
+    "venue": "EC",
+    "type": "inproceedings",
+    "pages": "630--631"
+},
+"topics": {
+    "fairDivision": ["indiv", "chores", "additive", "mms"]
+},
+"description": "Fair division of indivisible chores among $n$ agents with additive valuations.",
+"results": [
+"Section 4: PTAS for 11/9-MMS.",
+"Example 4.1: Example with 4 agents, 14 chores, and identical valuations showing that their algorithm cannot give better than 20/17-MMS even for identical valuations.",
+"Section 5: 5/4-MMS in $O(mn\\log m + n^2)$ time.",
+"Section 6: 11/9-MMS in $O(m\\log m + n)$ time for identical valuations."
+]
+}
