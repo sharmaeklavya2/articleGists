@@ -1,0 +1,23 @@
+{
+"title": "Algorithms for Max-Min Share Fair Allocation of Indivisible Chores",
+"gistStatus": "abstractOnly",
+"pubData": {
+    "authors": [["Haris", "Aziz"], ["Gerhard", "Rauchecker"], ["Guido", "Schryen"], ["Toby", "Walsh"]],
+    "doi": "10.1609/aaai.v31i1.10582",
+    "year": 2017,
+    "venue": "AAAI",
+    "type": "inproceedings"
+},
+"topics": {
+    "fairDivision": ["indiv", "chores", "additive", "mms"]
+},
+"description": "Fair division of indivisible chores among $n$ agents with additive valuations.",
+"results": [
+"MMS allocations may not exist for 3 agents.",
+"Computing an MMS allocation for chores, if it exists, is strongly NP-hard.",
+"Polynomial-time algorithm for 2-MMS.",
+"New fairness concept: optimal MMS.",
+"PTAS for optimal MMS for constant number of agents.",
+"Efficient heuristic algorithm."
+]
+}
