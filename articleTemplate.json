@@ -1,0 +1,18 @@
+{
+"title": "",
+"pubData": {
+    "authors": [["FirstName1", "LastName1"], ["FirstName2", "LastName2"]],
+    "doi": "",
+    "year": 2000,
+    "venue": "",
+    "type": "",
+    "pages": ""
+},
+"topics": {
+    "fairDivision": []
+},
+"relatedWork": ["Superseded by", "article:id"],
+"description": "",
+"results": [
+]
+}
