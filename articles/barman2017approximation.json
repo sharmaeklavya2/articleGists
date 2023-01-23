@@ -1,0 +1,22 @@
+{
+"title": "Approximation Algorithms for Maximin Fair Division",
+"pubData": {
+    "authors": [["Siddharth", "Barman"], ["Sanath Kumar", "Krishna Murthy"]],
+    "doi": "10.1145/3033274.3085136",
+    "year": 2017,
+    "venue": "EC",
+    "type": "inproceedings",
+    "pages": "647--664"
+},
+"topics": {
+    "fairDivision": ["goods", "indiv", "additive", "submodular", "mms", "efx"]
+},
+"relatedWork": ["Superseded by", "article:barman2020approximation"],
+"description": "Fair (MMS) division of indivisible goods among n agents.",
+"results": [
+"Theorem 2.1: For non-negative additive valuations, $2n/(3n-1)$-MMS allocations can be found in polynomial time. The algorithm for this first reduces the problem to an ordered instance, and then applies a version of the Envy Cycle Elimination (ECE) algorithm.",
+"Corollary 2.3: For non-negative additive valuations, we can reduce the problem of finding an α-MMS allocation to the special case of an ordered instance using Bouveret and Lemaître's reduction.",
+"Lemma 2.5: For additive and ordered instances of goods, a version of the ECE algorithm outputs an EFX allocation.",
+"Theorem 3.1: For non-negative submodular valuations, we can compute a 1/10-MMS allocation in polynomial time using a simple round-robin algorithm."
+]
+}

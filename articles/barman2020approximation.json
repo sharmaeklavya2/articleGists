@@ -1,0 +1,25 @@
+{
+"title": "Approximation Algorithms for Maximin Fair Division",
+"pubData": {
+    "authors": [["Siddharth", "Barman"], ["Sanath Kumar", "KrishnaMurthy"]],
+    "doi": "10.1145/3381525",
+    "year": 2020,
+    "venue": "TEAC",
+    "type": "article",
+    "pages": "1--28"
+},
+"topics": {
+    "fairDivision": ["goods", "chores", "indiv", "additive", "submodular", "mms", "efx"]
+},
+"relatedWork": ["Supersedes", "article:barman2017approximation"],
+"description": "Fair (MMS) division of indivisible goods or chores among $n$ agents.",
+"results": [
+"Theorem 3.1: For non-negative additive valuations, $2n/(3n-1)$-MMS allocations can be found in polynomial time. The algorithm for this first reduces the problem to an ordered instance, and then applies a version of the Envy Cycle Elimination (ECE) algorithm.",
+"Corollary 3.3: For additive valuations (for either goods or chores), we can reduce the problem of finding an α-MMS allocation to the special case of an ordered instance using Bouveret and Lemaître's reduction.",
+"Lemma 3.5: For additive and ordered instances of goods, a version of the ECE algorithm outputs an EFX allocation.",
+"Theorem 4.1: For non-negative submodular valuations, we can compute a $\\frac{1}{3}(1-\\frac{1}{e})$-MMS allocation (≈ 0.2107-MMS) in polynomial time using a simple round-robin algorithm.",
+"Theorem A.2: For non-positive additive valuations, $(4n-1)/3n$-MMS allocations can be found in polynomial time. The algorithm for this first reduces the problem to an ordered instance, and then applies a version of the Envy Cycle Elimination (ECE) algorithm.",
+"Section B.1: Consider a fair division instance with $n$ agents, $2n-1$ goods, and additive identical valuations, where $n-1$ goods have value $n$ and $n$ goods have value 1. Then there is an EF1 allocation that is not better than $1/n$-MMS.",
+"Section B.2: There is a fair division instance with 2 agents, 4 goods, and submodular valuations, for which no allocation is better than $3/4$-MMS."
+]
+}
