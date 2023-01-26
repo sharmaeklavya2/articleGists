@@ -13,7 +13,7 @@
     "publisher": "University of Chicago Press"
 },
 "topics": {
-    "fairDivision": ["goods", "indiv", "ceei", "mms", "ef1"],
+    "fairDivision": ["indiv", "goods", "ceei", "mms", "ef1"],
     "marketEquilibrium": ["ceei"]
 },
 "results": [

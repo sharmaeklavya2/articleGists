@@ -14,7 +14,7 @@
     "address": "New York, NY, USA"
 },
 "topics": {
-    "fairDivision": ["goods", "indiv", "additive", "mms"]
+    "fairDivision": ["indiv", "goods", "additive", "mms"]
 },
 "relatedWork": ["Supersedes", "article:procaccia2014fair"],
 "description": "Fair division of $m$ indivisible goods among $n$ agents with additive valuations.",

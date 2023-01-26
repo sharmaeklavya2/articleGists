@@ -9,7 +9,7 @@
     "pages": "1--28"
 },
 "topics": {
-    "fairDivision": ["goods", "chores", "indiv", "additive", "submodular", "mms", "efx"]
+    "fairDivision": ["indiv", "goods", "chores", "additive", "submodular", "mms", "efx"]
 },
 "relatedWork": ["Supersedes", "article:barman2017approximation"],
 "description": "Fair (MMS) division of indivisible goods or chores among $n$ agents.",

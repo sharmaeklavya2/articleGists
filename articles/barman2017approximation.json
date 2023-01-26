@@ -9,7 +9,7 @@
     "pages": "647--664"
 },
 "topics": {
-    "fairDivision": ["goods", "indiv", "additive", "submodular", "mms", "efx"]
+    "fairDivision": ["indiv", "goods", "additive", "submodular", "mms", "efx"]
 },
 "relatedWork": ["Superseded by", "article:barman2020approximation"],
 "description": "Fair (MMS) division of indivisible goods among n agents.",

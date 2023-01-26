@@ -12,7 +12,7 @@
     "publisher": "Springer"
 },
 "topics": {
-    "fairDivision": ["goods", "indiv", "additive", "mms", "prop", "envyFree", "ceei", "minMaxShare", "egal"]
+    "fairDivision": ["indiv", "goods", "additive", "mms", "prop", "envyFree", "ceei", "minMaxShare", "egal"]
 },
 "description": "Gives a scale of criteria for fair division of $m$ indivisible goods among $n$ agents with additive valuations.",
 "results": [

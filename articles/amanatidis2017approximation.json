@@ -13,7 +13,7 @@
     "publisher": "ACM"
 },
 "topics": {
-    "fairDivision": ["goods", "indiv", "additive", "mms"]
+    "fairDivision": ["indiv", "goods", "additive", "mms"]
 },
 "relatedWork": ["Supersedes", "article:amanatidis2015approximation"],
 "description": "Fair division of $m$ indivisible goods among $n$ agents with additive valuations.",

@@ -10,7 +10,7 @@
     "publisher": "Springer"
 },
 "topics": {
-    "fairDivision": ["goods", "indiv", "additive", "mms"]
+    "fairDivision": ["indiv", "goods", "additive", "mms"]
 },
 "relatedWork": ["Superseded by", "article:amanatidis2017approximation"],
 "description": "Fair division of $m$ indivisible goods among $n$ agents with additive valuations.",

@@ -12,7 +12,7 @@
     "publisher": "Elsevier"
 },
 "topics": {
-    "fairDivision": ["goods", "indiv", "additive", "mms"],
+    "fairDivision": ["indiv", "goods", "additive", "mms"],
     "matroids": []
 },
 "description": "Fair division of $m$ indivisible goods among $n$ agents with additive valuations and matroid constraints: Polytime algorithm for $1/2$-MMS, PTAS for MMS for $n=2$, PTAS for $8/9$-MMS for $n=3$."

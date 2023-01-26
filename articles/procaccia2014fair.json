@@ -10,7 +10,7 @@
     "publisher": "ACM"
 },
 "topics": {
-    "fairDivision": ["goods", "indiv", "additive", "mms"]
+    "fairDivision": ["indiv", "goods", "additive", "mms"]
 },
 "relatedWork": ["Superseded by", "article:kurokawa2018fair"],
 "description": "Fair division of $m$ indivisible goods among $n$ agents with additive valuations.",
