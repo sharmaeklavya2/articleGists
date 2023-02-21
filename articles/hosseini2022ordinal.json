@@ -1,6 +1,5 @@
 {
 "title": "Ordinal Maximin Share Approximation for Chores",
-"gistStatus": "abstractOnly",
 "pubData": {
     "authors": [["Hadi", "Hosseini"], ["Andrew", "Searns"], ["Erel", "Segal-Halevi"]],
     "url": "https://www.ifaamas.org/Proceedings/aamas2022/pdfs/p597.pdf",
@@ -16,6 +15,7 @@
 "description": "Fair division of indivisible chores to $n$ agents. Fairness notion: 1-out-of-$d$ MMS.",
 "results": [
     "Strongly polynomial-time algorithm for 1-out-of-$\\lfloor 2n/3 \\rfloor$ MMS.",
-    "1-out-of-$\\lfloor 3n/4 \\rfloor$ MMS allocations always exist."
+    "1-out-of-$\\lfloor 3n/4 \\rfloor$ MMS allocations always exist.",
+    "Polynomial-time algorithm for 1-out-of-$\\lfloor 3n/4 - O(\\log n) \\rfloor$ MMS."
 ]
 }
