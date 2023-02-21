@@ -1,0 +1,22 @@
+{
+"title": "Fair-Share Allocations for Agents with Arbitrary Entitlements",
+"gistStatus": "abstractOnly",
+"pubData": {
+    "authors": [["Moshe", "Babaioff"], ["Tomer", "Ezra"], ["Uriel", "Feige"]],
+    "doi": "10.1145/3465456.3467559",
+    "arxiv": "2103.04304v4",
+    "year": 2021,
+    "venue": "EC",
+    "type": "inproceedings",
+    "pages": "127--127"
+},
+"topics": {
+    "fairDivision": ["indiv", "goods", "unequalEntitlements", "aps", "mms"]
+},
+"description": "For fair division of $m$ indivisible goods among $n$ agents with unequal entitlements, this paper proposes a new notion of fairness called AnyPrice Share (APS), and shows how to compute an approximate APS allocation when valuations are additive.",
+"results": [
+    "Introduces new fairness notion: AnyPrice Share (APS).",
+    "For equal entitlements, APS ≥ MMS.",
+    "3/5-APS in polytime for additive valuations."
+]
+}
