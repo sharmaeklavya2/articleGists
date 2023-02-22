@@ -1,6 +1,5 @@
 {
 "title": "Fair-Share Allocations for Agents with Arbitrary Entitlements",
-"gistStatus": "abstractOnly",
 "pubData": {
     "authors": [["Moshe", "Babaioff"], ["Tomer", "Ezra"], ["Uriel", "Feige"]],
     "doi": "10.1145/3465456.3467559",
@@ -11,12 +10,47 @@
     "pages": "127--127"
 },
 "topics": {
-    "fairDivision": ["indiv", "goods", "unequalEntitlements", "aps", "mms"]
+    "fairDivision": ["indiv", "goods", "chores", "mixedManna", "additive", "unequalEntitlements", "aps", "tps", "pessShare", "mms", "wmms"]
 },
-"description": "For fair division of $m$ indivisible goods among $n$ agents with unequal entitlements, this paper proposes a new notion of fairness called AnyPrice Share (APS), and shows how to compute an approximate APS allocation when valuations are additive.",
+"description": "For fair division of $m$ indivisible goods among $n$ agents with possibly unequal entitlements and additive valuations, this paper proposes a new notion of fairness called AnyPrice Share (APS), and shows how to compute an approximate APS allocation. Agent $i$ has entitlement $b_i$, where $\\sum_{i=1}^n b_i = 1$.",
 "results": [
-    "Introduces new fairness notion: AnyPrice Share (APS).",
-    "For equal entitlements, APS ≥ MMS.",
-    "3/5-APS in polytime for additive valuations."
+    {"head": "Definitions", "items": [
+        "Definition 1.1: AnyPrice Share (APS), defined as a price-and-choose guarantee. The definition works even for non-additive valuations.",
+        "Definition 3.1: AnyPrice Share, defined as a linear programming relaxation of MMS. The definition works even for non-additive valuations.",
+        "Proposition 3.2: The two definitions of APS are equivalent.",
+        "Section 1: Coined the term PessShare for a notion defined elsewhere."
+    ]},
+    "Theorem 1.3: Polytime algorithm for $\\max(\\frac{3}{5}, \\frac{1}{2-b_i})$-APS.",
+    {"head": "greedyEFX", "items": [
+        "Theorem 1.4: Polytime algorithm (called greedyEFX) for $\\frac{2}{3}(1 + \\frac{1}{3n-1})$-APS (same algorithm as [barman2020approximation]: reduce to ordered instance and then use Envy Cycle Elimination).",
+        "Proposition 5.5: For every $ε > 0$, there is an example with equal entitlements where greedyEFX outputs an allocation that is not $(2/3+ε)$-MMS.",
+        "Theorem E.5: For equal entitlements and identical valuations, greedyEFX outputs a $3/4$-APS allocation.",
+        "Proposition E.9: Example with $m = 3n-1$, equal entitlements, and identical valuations, where greedyEFX's output is not better than $\\frac{3}{4}(1 + \\frac{5}{24n-9})$-MMS."
+    ]},
+    {"head": "Relationships among fairness notions", "items": [
+        "Observation 3.4: A CE (competitive equilibrium) allocation is an APS allocation.",
+        "Proposition 3.7: Prop ≥ APS ≥ PessShare ≥ APS/2. For each inequality, there is an example where it holds as equality. For each inequality, there is an example with equal entitlements where it holds as a strict inequality.",
+        "Lemma C.1: There is an example with $n=3$, $m=15$, equal entitlements, and identical valuations, where APS = 97 and MMS ≤ 96.",
+        "Unproven claim: For equal entitlements, PessShare = MMS.",
+        "Observation 3.8: For 2 agents with equal entitlements, APS = MMS. (Hence, computing APS is NP-hard.)",
+        "Remark C.3: Example with $n=2$, $m=6$, equal entitlements, and submodular valuations, for which MMS = 5 and APS = 6. Another similar example with subadditive valuations instead, for which MMS = 3 and APS = 6.",
+        "Corollary 5.4: For equal entitlements, APS ≤ (4/3)MMS.",
+        "Proposition 4.2: TPS ≥ APS."
+    ]},
+    "Observation 3.9: APS allocation exists for $n=2$.",
+    "Proposition 3.10: Algorithm for computing an agent's APS in pseudopolynomial time.",
+    "Section 1: Why Weighted MMS (WMMS) is a bad notion of fairness.",
+    "Section 1: Maximizing weighted NSW can give a bad output, even for $n = m = 3$.",
+    "Observation 3.3: There is an optimal solution for APS' LP where the support has size at most $m$.",
+    {"head": "Chores and Mixed Manna", "items": [
+        "Definition F.1: APS for mixed manna defined as LP.",
+        "Proposition F.2: $v([m]) ≥ 0$ implies APS ≥ 0 for mixed manna, even for non-additive valuations.",
+        "Remark F.3: APS is a quasiconcave function of the entitlement for mixed manna.",
+        "Proposition F.4: For chores, APS ≤ $\\min_c v(c)$.",
+        "Proposition F.5: For mixed manna, APS ≤ PROP.",
+        "Proposition F.6: 2-APS allocation exists for chores.",
+        "Definition F.7: Price-and-choose definition of APS for chores.",
+        "Unproven claim: For chores, the two definitions of APS are equivalent."
+    ]}
 ]
 }
