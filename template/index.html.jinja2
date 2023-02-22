@@ -25,6 +25,18 @@ window.MathJax = {
 </script>
 {% endif %}
 </head>
+{% macro printNamedList(s) %}
+    {% if s.items %}
+        {% if s.name %}<span class="listHead">{{s.name}}</span>{% endif %}
+        <ol>
+        {% for x in s.items %}
+            <li>{{ printNamedList(x) }}</li>
+        {% endfor %}
+        </ol>
+    {% elif s.name %}
+{{s.name}}
+    {% endif %}
+{%- endmacro %}
 <body>
 <h1>{{config.title}}</h1>
 <p id="about">
@@ -97,13 +109,13 @@ This website contains summaries of research articles and categorizes them by top
 </pre>
 {% endif %}
 <div class="content">
-{% if article.description %}
-<p class="description">{{article.description}}</p>
+{% if article.entries.name %}
+<p class="description">{{article.entries.name}}</p>
 {% endif %}
-{% if article.results %}
+{% if article.entries.items %}
 <ol class="results">
-{% for result in article.results %}
-<li>{{result}}</li>
+{% for x in article.entries.items %}
+<li>{{ printNamedList(x) }}</li>
 {% endfor %}
 </ol>
 {% endif %}

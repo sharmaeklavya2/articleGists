@@ -18,6 +18,18 @@ from typing import Callable, Optional, TypedDict, TypeVar
 from jinja2 import Template
 
 
+class NamedList:
+    def __init__(self, name: Optional[str], items: Sequence['NamedList']) -> None:
+        self.name = name
+        self.items = items
+
+    def __len__(self) -> int:
+        return len(self.items)
+
+    def __repr__(self) -> str:
+        return '{}(name={}, items={})'.format(self.__class__.__name__, repr(self.name), self.items)
+
+
 class PubData(TypedDict, total=False):
     authors: Sequence[tuple[str, str]]
     authorsStr: Optional[str]
@@ -47,6 +59,7 @@ class Article(TypedDict, total=False):
     description: str
     relatedWork: Sequence[str]
     results: Sequence[str]
+    entries: NamedList
     bibtex: str
 
 
@@ -105,6 +118,23 @@ def generateBibEntry(id: str, title: str, pubData: PubData) -> str:
     return header + ',\n'.join([k + '={' + v + '}' for k, v in bibInfo.items()]) + '\n}'
 
 
+def jsonListToNamedList(name: Optional[str], s: Sequence[object]) -> NamedList:
+    return NamedList(name, [jsonObjToNamedList(x) for x in s])
+
+
+def jsonObjToNamedList(x: object) -> NamedList:
+    if isinstance(x, str):
+        return NamedList(x, [])
+    elif isinstance(x, Mapping):
+        name = x.get('head')
+        assert name is None or isinstance(name, str)
+        items = x.get('items', [])
+        assert isinstance(items, Sequence)
+        return jsonListToNamedList(name, items)
+    else:
+        raise TypeError('jsonObjToNamedList: invalid argument type')
+
+
 def processArticle(id: str, article: Article) -> None:
     assert 'pubData' in article
     pubData = article['pubData']
@@ -122,6 +152,9 @@ def processArticle(id: str, article: Article) -> None:
         authorsList[-1] = 'and ' + authorsList[-1]
         authorsStr = ', '.join(authorsList)
     pubData['authorsStr'] = authorsStr
+
+    article['entries'] = jsonListToNamedList(article.get('description'),
+        article.get('results', []))
 
     # expand acronyms
     if acronyms is not None:
