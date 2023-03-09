@@ -26,16 +26,16 @@ window.MathJax = {
 {% endif %}
 </head>
 {% macro printNamedList(s) %}
-    {% if s.items %}
-        {% if s.name %}<span class="listHead">{{s.name}}</span>{% endif %}
-        <ol>
-        {% for x in s.items %}
-            <li>{{ printNamedList(x) }}</li>
-        {% endfor %}
-        </ol>
-    {% elif s.name %}
+{% if s.items %}
+{% if s.name %}<span class="listHead">{{s.name}}</span>{% endif %}
+<ol>
+{% for x in s.items %}
+<li>{{ printNamedList(x) }}</li>
+{% endfor %}
+</ol>
+{% elif s.name -%}
 {{s.name}}
-    {% endif %}
+{%- endif %}
 {%- endmacro %}
 <body>
 <h1>{{config.title}}</h1>
