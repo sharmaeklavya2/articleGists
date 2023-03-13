@@ -7,7 +7,8 @@
 "JACM": "Journal of the ACM",
 "TALG": "ACM Transactions on Algorithms",
 "TEAC": "ACM Transactions on Economics and Computation",
-"TCS": "Theoretical Computer Science"
+"TCS": "Theoretical Computer Science",
+"WINE": "Web and Internet Economics"
 },
 "publisher": {
 "ACM": "Association for Computing Machinery"

@@ -1,0 +1,26 @@
+{
+"title": "A Tight Negative Example for MMS Fair Allocations",
+"pubData": {
+    "authors": [["Uriel", "Feige"], ["Ariel", "Sapir"], ["Laliv", "Tauber"]],
+    "doi": "10.1007/978-3-030-94676-0_20",
+    "arxiv": "2104.04977",
+    "year": 2021,
+    "venue": "WINE",
+    "type": "inproceedings",
+    "pages": "355--372",
+    "publisher": "Springer"
+},
+"topics": {
+    "fairDivision": ["indiv", "goods", "chores", "additive", "mms"]
+},
+"description": "Fair division of $m$ indivisible goods (or chores) among $n$ agents with additive valuations, using MMS as the notion of fairness.",
+"results": [
+"Theorem 1: An example with 3 agents and 9 goods where no allocation is better than 39/40-MMS.",
+"Theorem 2: For at most $n+5$ goods, an MMS allocation exists.",
+"Theorem 3: For at most 9 goods, some allocation is 39/40-MMS or better.",
+"Theorem 4: For each $n ≥ 4$, there is an instance with at most $3n+3$ goods for which no allocation is better than $(1-n^{-4})$-MMS.",
+"Theorem 5: Example with 3 agents and 9 chores for which no allocation is better than 44/43-MMS.",
+"Unproven claim: For at most 8 chores, an MMS allocation exists.",
+"Unproven claim: For at most 9 chores, some allocation is 44/43-MMS or better."
+]
+}
