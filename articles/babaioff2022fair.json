@@ -1,0 +1,34 @@
+{
+"title": "Fair Shares: Feasibility, Domination and Incentive",
+"gistStatus": "abstractOnly",
+"pubData": {
+    "authors": [["Moshe", "Babaioff"], ["Uriel", "Feige"]],
+    "doi": "10.1145/3490486.3538286",
+    "arxiv": "2205.07519",
+    "year": 2022,
+    "venue": "EC",
+    "type": "inproceedings",
+    "pages": "435--435"
+},
+"topics": {
+    "fairDivision": ["indiv", "goods", "shares", "mms"]
+},
+"description": "Considers fair division of $m$ indivisible goods among $n$ agents. This paper initiates a systematic study of feasible shares.",
+"results": [
+{"head": "Section 1.1: Definitions: Fix a class of valuations and the number $n$ of agents. The definitions also work for mixed-manna.", "items": [
+    "For a valuation function $v: 2^{[m]} → ℝ$, a share $s$ maps the pair $(v, n)$ to a number in interval $[α, β]$, where $α$ is the value of the minimum-value bundle and $β$ is the value of the maximum-value bundle. For a set $S$ of shares and a real number $α$, define $αS = \\{αs: s ∈ S\\}$.",
+    "For a share, defines feasibility, legibility (polytime computability), and self-maximizability. Let $S_F$, $S_M$, $S_C$ be the set of feasible, self-maximizing, and polytime computable shares, respectively.",
+    "For shares $s_1$ and $s_2$, $s_1$ dominates $s_2$ (denoted as $s_1 ⪰ s_2$) iff for every valuation function $v$, we have $s_1(v, n) ≥ s_2(v, n)$. Share $s$ dominates a set $S$ of shares (denoted as $s ⪰ S$) iff $s ⪰ s'$ for all $s' ∈ S$.",
+    "Two examples of feasibile, polytime-computable, and self-maximizing shares, where one dominates the other."
+]},
+"Proposition 4: MMS $⪰ S_F$. Moreover, if the MMS is feasible, then it is the unique dominator of $S_F$, and the unique dominator of $S_F ∩ S_M$.",
+"Theorem 1: Let C be a class of valuations containing additive valuations. For C, there is no feasible share dominating $S_F ∩ S_M$.",
+"Theorem 2: Every feasible share is dominated by some feasible self-maximizing share.",
+{"head": "Proposition 6:", "items": [
+    "$s ⪰ ρ$MMS $⟺ s ⪰ ρS_F$.",
+    "$s ⪰ ρ(S_F ∩ S_M) ⟹ s ⪰ ρ$MMS.",
+    "For additive valuations, $s ⪰ ρ(S_F ∩ S_M ∩ S_C) ⟹ s ⪰ ρ$MMS."
+]},
+"Theorem 3: For additive valuations, there is a share in $S_F ∩ S_M ∩ S_C$ that dominates $ρS_F$, where $ρ = 2n/(3n-1)$, and $ρ = 4/5$ for $n ≤ 4$. For any $ε > 0$, there is a share in $S_F ∩ S_M ∩ S_C$ that dominates $(1-ε)S_F$ for $n=2$."
+]
+}
