@@ -1,6 +1,5 @@
 {
 "title": "Fair Shares: Feasibility, Domination and Incentive",
-"gistStatus": "abstractOnly",
 "pubData": {
     "authors": [["Moshe", "Babaioff"], ["Uriel", "Feige"]],
     "doi": "10.1145/3490486.3538286",
@@ -11,12 +10,12 @@
     "pages": "435--435"
 },
 "topics": {
-    "fairDivision": ["indiv", "goods", "shares", "mms"]
+    "fairDivision": ["indiv", "goods", "additive", "shares", "mms"]
 },
 "description": "Considers fair division of $m$ indivisible goods among $n$ agents. This paper initiates a systematic study of feasible shares.",
 "results": [
 {"head": "Section 1.1: Definitions: Fix a class of valuations and the number $n$ of agents. The definitions also work for mixed-manna.", "items": [
-    "For a valuation function $v: 2^{[m]} → ℝ$, a share $s$ maps the pair $(v, n)$ to a number in interval $[α, β]$, where $α$ is the value of the minimum-value bundle and $β$ is the value of the maximum-value bundle. For a set $S$ of shares and a real number $α$, define $αS = \\{αs: s ∈ S\\}$.",
+    "For a valuation function $v: 2^{[m]} → ℝ$, a share $s$ maps the pair $(v, n)$ to a number in interval $[α, β]$, where $α$ is the value of the minimum-value bundle and $β$ is the value of the maximum-value bundle. For a set $S$ of shares and a real number $ρ$, define $ρS = \\{ρs: s ∈ S\\}$.",
     "For a share, defines feasibility, legibility (polytime computability), and self-maximizability. Let $S_F$, $S_M$, $S_C$ be the set of feasible, self-maximizing, and polytime computable shares, respectively.",
     "For shares $s_1$ and $s_2$, $s_1$ dominates $s_2$ (denoted as $s_1 ⪰ s_2$) iff for every valuation function $v$, we have $s_1(v, n) ≥ s_2(v, n)$. Share $s$ dominates a set $S$ of shares (denoted as $s ⪰ S$) iff $s ⪰ s'$ for all $s' ∈ S$.",
     "Two examples of feasibile, polytime-computable, and self-maximizing shares, where one dominates the other."
@@ -25,10 +24,31 @@
 "Theorem 1: Let C be a class of valuations containing additive valuations. For C, there is no feasible share dominating $S_F ∩ S_M$.",
 "Theorem 2: Every feasible share is dominated by some feasible self-maximizing share.",
 {"head": "Proposition 6:", "items": [
-    "$s ⪰ ρ$MMS $⟺ s ⪰ ρS_F$.",
-    "$s ⪰ ρ(S_F ∩ S_M) ⟹ s ⪰ ρ$MMS.",
-    "For additive valuations, $s ⪰ ρ(S_F ∩ S_M ∩ S_C) ⟹ s ⪰ ρ$MMS."
+    "$s ⪰ ρ$MMS $⟺ s ⪰ ρS_F ⟺ s ⪰ ρ(S_F ∩ S_M)$.",
+    "For additive valuations, $s ⪰ ρ(S_F ∩ S_M ∩ S_C) ⟺ s ⪰ ρ$MMS."
 ]},
-"Theorem 3: For additive valuations, there is a share in $S_F ∩ S_M ∩ S_C$ that dominates $ρS_F$, where $ρ = 2n/(3n-1)$, and $ρ = 4/5$ for $n ≤ 4$. For any $ε > 0$, there is a share in $S_F ∩ S_M ∩ S_C$ that dominates $(1-ε)S_F$ for $n=2$."
+"Theorem 3: For additive valuations, there is a share in $S_F ∩ S_M ∩ S_C$ that dominates $ρS_F$, where $ρ = 2n/(3n-1)$, and $ρ = 4/5$ for $n ≤ 4$. For any $ε > 0$, there is a share in $S_F ∩ S_M ∩ S_C$ that dominates $(1-ε)S_F$ for $n=2$.",
+{"head": "$F$-maximin shares (additive valuations only):", "items": [
+    {"head": "Definition 5: Let $F$ be a family of partitions of $[m]$.", "items": [
+        "The $F$-maximin share for valuation $v$ is $\\max_{P ∈ F} \\min_{j=1}^n v'(P_j)$, where $v'$ is the ordered valuation for $v$.",
+        "The $F$-maximin partition for ordered valuation $v$ is $\\arg\\max_{P ∈ F} \\min_{j=1}^n v(P_j)$.",
+        "An allocation that gives every agent their $F$-maximin share is called an $F$-maximin allocation."
+    ]},
+    "Observation 17: For $n=2$, every $F$-maximin share is feasible, and if an $F$-maximin partition can be computed in polynomial time, then an $F$-maximin allocation can also be computed in polynomial time.",
+    "Proposition 7: For additive valuations, every $F$-maximin share is self-maximizing."
+]},
+{"head": "Nested share (additive valuations only):", "items": [
+    "Section 6.3: The nested share for $n$ agents, parametrized by $q ∈ \\{0, 1, …, n\\}$, is denoted as $\\NestShare_{n,q}$ ($\\NestShare_q$ when $n$ is clear from context). It is defined as an $F$-maximin share. Let $ρ(n,q) := \\inf_v \\frac{\\NestShare_{n,q}(v)}{\\MMS^n(v)}$ (hence, $\\NestShare_{n,q} \\succeq ρ(n,q)\\MMS^n(v)$).",
+    "$\\NestShare_n(v) ≥ \\NestShare_{n-1}(v) ≥ … ≥ \\NestShare_1(v) = \\NestShare_0(v)$ for all $v$. Hence, $ρ(n,n) ≥ … ≥ ρ(n, 1) = ρ(n, 0)$.",
+    "Example 1: For $n=4$ and goods of (additive) values [3, 3, 2, 2, 2, 2, 2, 2, 1, 1], MMS is 5 but $\\NestShare_q$ is 4 for all $q$.",
+    "Theorem 6: $\\NestShare_3 ∈ S_F ∩ S_M ∩ S_C$, and an $\\NestShare_3$-allocation can be computed in polynomial time. Furthermore, $\\NestShare_3 \\succeq \\frac{2n}{3n-1}$MMS, and for $n≤4$, $\\NestShare_3 \\succeq (4/5)$MMS.",
+    "Lemma 18: $\\NestShare_q$ can be computed in $O(m^4\\log m)$ time using dynamic programming.",
+    "Lemma 19: $ρ(n,1) ≥ \\frac{2n}{3n-1}$ (and hence $\\NestShare_1 \\succeq \\frac{2n}{3n-1}$MMS).",
+    "Proposition 26 (adapted from [babaioff2021fair]): $∀ ε>0, ∀ q≥1, ∃ n, ∃$ additive $v$, such that $\\NestShare_1(v) ≤ (2/3+ε)$MMS$(v)$.",
+    "Lemma 9: An $\\NestShare_{q,q}$ allocation exists implies that an $\\NestShare_{n,q}$ allocation exists for all $n ≥ q$. Furthermore, if we can compute an $\\NestShare_{q,q}$ allocation in $T(m,q)$ time, we can compute an $\\NestShare_{n,q}$ allocation in $T(m-n+q,q) + O(mn)$ time (assuming $\\NestShare_{n,q}$ for the entire set of goods has already been computed for each agent).",
+    "Lemmas 10 and 11: For $n=3$, given every agent's $\\NestShare_3$ partition, an $\\NestShare_3$ allocation can be computed in $O(m)$ time.",
+    "Lemmas 20, 21, 23, 24: $ρ(2,1) = 4/5$, $ρ(2,2) = 5/6$, $ρ(3,2) = 4/5$, $ρ(4,3) = 4/5$.",
+    "Proposition 27: $ρ(3,3) ≤ 5/6$, $ρ(3,1) ≤ 0.7693$. For $n ≥ 4$, $ρ(n, n-2) ≤ 3/4$ and $ρ(n,n) ≤ 4/5$."
+]}
 ]
 }
