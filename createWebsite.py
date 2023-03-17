@@ -242,10 +242,12 @@ def pruneArticles(articles: ArticlesT) -> ArticlesT:
     return {id: pruneKeys(articleInfo, USEFUL_FIELDS) for id, articleInfo in articles.items()}
 
 
-def createWebsite(ipath: str, opath: str, acronymsPath: str) -> None:
+def createWebsite(ipath: str, opath: str, acronymsPath: str, macrosPath: str) -> None:
     global acronyms
     with open(acronymsPath) as fp:
         acronyms = json.load(fp)
+    with open(macrosPath) as fp:
+        texMacros = json.load(fp)
 
     articles = jsonConcat(ipath)
     articles = sortDict(articles, articleSortKey)
@@ -261,7 +263,7 @@ def createWebsite(ipath: str, opath: str, acronymsPath: str) -> None:
     for fname in STATIC_FILES:
         shutil.copyfile(pjoin(TEMPLATE_PATH, fname), pjoin(opath, fname))
 
-    context = {'config': CONFIG, 'articles': articles}
+    context = {'config': CONFIG, 'articles': articles, 'macros': texMacros}
     with open(pjoin(TEMPLATE_PATH, 'index.html.jinja2')) as fp:
         indexTemplate = Template(fp.read(), trim_blocks=True)
     indexPage = indexTemplate.render(context)
@@ -274,8 +276,10 @@ if __name__ == '__main__':
     parser.add_argument('-i', '--input', help='path to directory containing article JSON files')
     parser.add_argument('-o', '--output', required=True, help='path to output directory')
     parser.add_argument('--acronyms', help='path to acronyms JSON file')
+    parser.add_argument('--macros', help='path to TeX macros JSON file')
     args = parser.parse_args()
 
     ipath = args.input or pjoin(BASE_DIR, 'articles')
     acronymsPath = args.acronyms or pjoin(BASE_DIR, 'acronyms.json')
-    createWebsite(ipath, args.output, acronymsPath)
+    macrosPath = args.macros or pjoin(BASE_DIR, 'texMacros.json')
+    createWebsite(ipath, args.output, acronymsPath, macrosPath)

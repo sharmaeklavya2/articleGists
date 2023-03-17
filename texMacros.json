@@ -1,0 +1,9 @@
+{
+"MMS": "\\mathrm{MMS}",
+
+"eps": "\\varepsilon",
+"defeq": ":=",
+"Th": "^{\\textrm{th}}",
+"E": "\\operatorname{\\mathbb{E}}",
+"opname": "\\operatorname{#1}"
+}
