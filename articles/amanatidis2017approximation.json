@@ -22,6 +22,7 @@
     "Theorem 4.1: PTAS for $2/3$-MMS.",
     "Theorem 5.1: PTAS for $7/8$-MMS for $n=3$.",
     "Theorem 5.5: Algorithm to find an MMS allocation in $O(mn\\log m)$ time when valuations are in $\\{0, 1, 2\\}$.",
+    "Theorem 5.6 (without full proof): Reducing the problem of finding an $α$-MMS allocation to the special case of ordered instances.",
     "Theorem 6.2 and Corollary 6.4: Let valuations be IID uniform in $[0, 1]$. The Greedy Round Robin algorithm outputs a proportional allocation with probability $1-O(1/n)$ if $m > 2n$ and $n$ is large, and with probability $1-O(1/m)$ if $m$ is large."
 ]
 }
