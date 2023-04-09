@@ -1,0 +1,31 @@
+{
+"title": "Best of Both Worlds: Ex Ante and Ex Post Fairness in Resource Allocation",
+"pubData": {
+    "authors": [["Haris", "Aziz"], ["Rupert", "Freeman"], ["Nisarg", "Shah"], ["Rohit", "Vaish"]],
+    "doi": "10.1287/opre.2022.2432",
+    "year": 2023,
+    "venue": "Operations Research",
+    "type": "article",
+    "publisher": "INFORMS"
+},
+"topics": {
+    "fairDivision": ["indiv", "goods", "additive", "exAnte", "EF", "EF1", "PO", "fPO", "PROP1", "EF1MaL", "NashOpt"]
+},
+"description": "Fair and efficient division of $m$ indivisible goods among $n$ agents with additive valuations.",
+"results": [
+    {"head": "Defines (with citation) the following notions of fairness and efficiency:", "items": [
+        "SD-EF and SD-EF1, which are stronger notions than EF and EF1, respectively.",
+        "SD-Efficient (aka ordinally efficient), which is a weaker notion than fPO.",
+        "PROP1 and EF1MaL."
+    ]},
+    "Proposition 1: An ex ante fPO allocation is also ex post fPO.",
+    "Theorem 3: Algorithm to find a distribution of allocations that is ex ante SD-EF + ex post SD-EF1 + ex ante SD-Efficient in $O((m+n)^{9/2})$ time and having support at most $(m+n-1)^2 + 1$.",
+    "An ex ante NashOpt allocation is also ex ante Group Fair, which implies ex ante EF + ex ante fPO.",
+    "Theorem 8: Strongly polytime algorithm to find a distribution of allocations that is ex ante NashOpt + ex post PROP1 + ex post EF1MaL.",
+    {"head": "Impossibility results:", "items": [
+        "Theorem 4: Example with $n=2$ and $m=4$ for which no allocation is ex ante SD-EF + ex post EF1 + ex post PO.",
+        "Theorem 5: Example with $n=m=2$ for which no allocation is ex ante PROP + ex post EF1 + ex post fPO.",
+        "Theorem 6: Example with $n=m=2$ for which no allocation is ex ante SD-EF + ex ante fPO."
+    ]}
+]
+}
