@@ -1,0 +1,32 @@
+{
+"title": "On Best-of-Both-Worlds Fair-Share Allocations",
+"pubData": {
+    "authors": [["Moshe", "Babaioff"], ["Tomer", "Ezra"], ["Uriel", "Fiege"]],
+    "doi": "10.1007/978-3-031-22832-2_14",
+    "arxiv": "2102.04909",
+    "year": 2022,
+    "venue": "WINE",
+    "type": "inproceedings",
+    "pages": "237--255",
+    "publisher": "Springer"
+},
+"topics": {
+    "fairDivision": ["indiv", "goods", "additive", "exAnte", "PROP", "MMS", "fPO", "PO", "PROP1", "TPS"]
+},
+"description": "Fair and efficient division of $m$ indivisible goods among $n$ agents with additive valuations.",
+"results": [
+    "An example with $m=2n-1$ for which [aziz2023best]'s algorithms give some agent at most $(2+ε)/n$ times her MMS.",
+    {"head": "New fairness notion: TPS:", "items": [
+        "ProportionalShare ≥ TPS ≥ MMS ≥ $\\frac{n}{2n-1}$TPS. Every inequality holds as an equality for some instance and strict inequality for some instance.",
+        "Every half-fair allocation is $n/(2n-1)$-TPS.",
+        "The Envy-Cycle Elimination algorithm's output is half-fair.",
+        "EFX allocations are half-fair.",
+        "For $2n-1$ identical goods, in every allocation, some agent gets $n/(2n-1)$ times her TPS."
+    ]},
+    "Theorem 7: A polytime algorithm whose output is a distribution of at most $n$ allocations that is ex ante PROP + ex post 1/2-TPS + ex post PROP1.",
+    "Proposition 8: For every $n ≥ 2$ and $ε > 0$, there is a fair division instance such that for any ex ante fPO distribution of allocations, every allocation in that distribution gives some agent at most $(1+ε)/n$ times her MMS.",
+    "Corollary 9: There is a randomized allocation of support at most $n$ that is ex ante PROP + ex post 1/2-TPS + ex post PO.",
+    "Appendix D: For 2 agents, the output of the cut-and-choose protocol with a random cutter is ex ante EF + ex post MMS + ex post EFX + ex post $2/3$-TPS.",
+    "Theorem 22: Randomized polytime algorithm whose output is ex ante $\\frac{n}{2n-1}$-PROP, ex post $\\frac{n}{2n-1}$-TPS, and ex post EF1."
+]
+}
