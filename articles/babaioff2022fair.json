@@ -44,7 +44,7 @@
     "Theorem 6: $\\NestShare_3 ∈ S_F ∩ S_M ∩ S_C$, and an $\\NestShare_3$-allocation can be computed in polynomial time. Furthermore, $\\NestShare_3 \\succeq \\frac{2n}{3n-1}$MMS, and for $n≤4$, $\\NestShare_3 \\succeq (4/5)$MMS.",
     "Lemma 18: $\\NestShare_q$ can be computed in $O(m^4\\log m)$ time using dynamic programming.",
     "Lemma 19: $ρ(n,1) ≥ \\frac{2n}{3n-1}$ (and hence $\\NestShare_1 \\succeq \\frac{2n}{3n-1}$MMS).",
-    "Proposition 26 (adapted from [babaioff2021fair]): $∀ ε>0, ∀ q≥1, ∃ n, ∃$ additive $v$, such that $\\NestShare_1(v) ≤ (2/3+ε)$MMS$(v)$.",
+    "Proposition 26 (adapted from [babaioff2021fair]): $∀ ε>0, ∀ q≥1, ∃ n, ∃$ additive $v$, such that $\\NestShare_{n,q}(v) ≤ (2/3+ε)\\MMS^n(v)$.",
     "Lemma 9: An $\\NestShare_{q,q}$ allocation exists implies that an $\\NestShare_{n,q}$ allocation exists for all $n ≥ q$. Furthermore, if we can compute an $\\NestShare_{q,q}$ allocation in $T(m,q)$ time, we can compute an $\\NestShare_{n,q}$ allocation in $T(m-n+q,q) + O(mn)$ time (assuming $\\NestShare_{n,q}$ for the entire set of goods has already been computed for each agent).",
     "Lemmas 10 and 11: For $n=3$, given every agent's $\\NestShare_3$ partition, an $\\NestShare_3$ allocation can be computed in $O(m)$ time.",
     "Lemmas 20, 21, 23, 24: $ρ(2,1) = 4/5$, $ρ(2,2) = 5/6$, $ρ(3,2) = 4/5$, $ρ(4,3) = 4/5$.",
