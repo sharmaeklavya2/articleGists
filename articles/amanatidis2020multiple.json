@@ -1,0 +1,25 @@
+{
+"title": "Multiple birds with one stone: Beating 1/2 for EFX and GMMS via envy cycle elimination",
+"gistStatus": "abstractOnly",
+"pubData": {
+    "authors": [["Georgios", "Amanatidis"], ["Evangelos", "Markakis"], ["Apostolos", "Ntokos"]],
+    "doi": "10.1016/j.tcs.2020.07.006",
+    "arxiv": "1909.07650",
+    "year": 2020,
+    "venue": "TCS",
+    "type": "article",
+    "pages": "94--109",
+    "volume": 841,
+    "publisher": "Elsevier"
+},
+"topics": {
+    "fairDivision": ["indiv", "goods", "additive", "GMMS", "EF1", "EFX", "PMMS"]
+},
+"description": "Fair division of $m$ indivisible goods among $n$ agents with additive valuations.",
+"results": [
+    "Algorithm 3: 0.618-EFX + EF1 + 0.553-GMMS + $2/3$-PMMS in polytime.",
+    "Theorem 4.7: $3/5$-EFX + EF1 + $4/7$-GMMS + $2/3$-PMMS in polytime.",
+    "Theorem 4.10: 0.618-EFX + 0.894-EF1 + 0.553-GMMS + 0.717-PMMS in polytime.",
+    "Theorem 5.1: For $m ≤ n+2$, a GMMS allocation always exists and can be computed in polytime."
+]
+}
