@@ -9,7 +9,7 @@
     "publisher": "INFORMS"
 },
 "topics": {
-    "fairDivision": ["indiv", "goods", "additive", "exAnte", "EF", "EF1", "PO", "fPO", "PROP1", "EF1MaL", "NashOpt"]
+    "fairDivision": ["indiv", "goods", "additive", "exAnte", "EF", "EF1", "PO", "fPO", "PROP1", "EF1MaL", "nashOpt"]
 },
 "description": "Fair and efficient division of $m$ indivisible goods among $n$ agents with additive valuations.",
 "results": [

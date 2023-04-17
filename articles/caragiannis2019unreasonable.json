@@ -1,0 +1,25 @@
+{
+"title": "The Unreasonable Fairness of Maximum Nash Welfare",
+"gistStatus": "abstractOnly",
+"pubData": {
+    "authors": [["Ioannis", "Caragiannis"], ["David", "Kurokawa"], ["Hervé", "Moulin"],
+        ["Ariel D.", "Procaccia"], ["Nisarg", "Shah"], ["Junxing", "Wang"]],
+    "doi": "10.1145/3355902",
+    "year": 2019,
+    "venue": "TEAC",
+    "type": "article",
+    "volume": "7",
+    "number": "3",
+    "pages": "1--32"
+},
+"topics": {
+    "fairDivision": ["indiv", "goods", "additive", "nashOpt", "PO", "EF1", "mms", "pmms", "EFX"]
+},
+"description": "Fair division of $m$ indivisible goods among $n$ agents with additive valuations.",
+"results": [
+    "Theorem 3.2: A NashOpt allocation is also EF1+PO.",
+    "Theorem 4.1: A NashOpt allocation is $π_n$-MMS, where $π_n = 2/(1+\\sqrt{4n-3})$. For any $ε > 0$, no NashOpt allocation is $(π_n+ε)$-MMS.",
+    "Theorem 4.6: An envy-free allocation is PMMS. A PMMS allocation is EFX + $1/2$-MMS.",
+    "Corollary 4.7: A NashOpt allocation is $π_2$-PMMS, where $π_2 = (\\sqrt{5}-1)/2 ≈ 0.618$. For any $ε > 0$, no NashOpt allocation is $(π_2+ε)$-PMMS."
+]
+}
