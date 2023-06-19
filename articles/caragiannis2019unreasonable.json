@@ -1,6 +1,5 @@
 {
 "title": "The Unreasonable Fairness of Maximum Nash Welfare",
-"gistStatus": "abstractOnly",
 "pubData": {
     "authors": [["Ioannis", "Caragiannis"], ["David", "Kurokawa"], ["Hervé", "Moulin"],
         ["Ariel D.", "Procaccia"], ["Nisarg", "Shah"], ["Junxing", "Wang"]],
@@ -19,7 +18,27 @@
 "results": [
     "Theorem 3.2: A NashOpt allocation is also EF1+PO.",
     "Theorem 4.1: A NashOpt allocation is $π_n$-MMS, where $π_n = 2/(1+\\sqrt{4n-3})$. For any $ε > 0$, no NashOpt allocation is $(π_n+ε)$-MMS.",
-    "Theorem 4.6: An envy-free allocation is PMMS. A PMMS allocation is EFX + $1/2$-MMS.",
-    "Corollary 4.7: A NashOpt allocation is $π_2$-PMMS, where $π_2 = (\\sqrt{5}-1)/2 ≈ 0.618$. For any $ε > 0$, no NashOpt allocation is $(π_2+ε)$-PMMS."
+    {"head": "Pairwise maximin share (PMMS):", "items": [
+        "Definition 4.3: α-PMMS.",
+        "Example 4.4 (part 1): An instance with 3 agents and 5 identical goods, where some MMS allocation is not PMMS.",
+        "Example 4.4 (part 2): An instance with 3 agents, 7 goods, and identical valuations where some PMMS allocation is not MMS.",
+        "Theorem 4.6: An envy-free allocation is PMMS. A PMMS allocation is EFX + $1/2$-MMS.",
+        "Corollary 4.7: A NashOpt allocation is $π_2$-PMMS, where $π_2 = (\\sqrt{5}-1)/2 ≈ 0.618$. For any $ε > 0$, no NashOpt allocation is $(π_2+ε)$-PMMS."
+    ]},
+    {"head": "Appendix B: The elusive combination of EF1 and PO:", "items": [
+        "Example B.1: Instance with 3 agents and 31 goods where rounding any divisible MNW allocation violates EF1.",
+        "Example B.2 (part 1): Instance with 2 agents, 3 goods, and valuations normalized to sum to 1, where the unique max social welfare allocation is not EF1.",
+        "Example B.2 (part 2): Instance with 3 agents, 4 goods, and valuations normalized to sum to 1, where the unique max egalitarian allocation is not EF1.",
+        "Example B.3 (part 1): Instance with 4 agents, 10 goods, and valuations normalized to sum to 1, where the unique max social welfare allocation subject to EF1 is not PO.",
+        "Example B.3 (part 2): Instance with 3 agents, 3 goods, and valuations normalized to sum to 1, where there is an allocation that is both max egal welfare and EF1, but not PO.",
+        "Theorem B.5: Every EF1+PO allocation is $1/n$-MMS. For each $n≥1$, there exists an instance with $n$ agents and $2n-1$ goods for which some EF1+PO allocation gives some agent exactly $1/n$ of her MMS."
+    ]},
+    {"head": "Appendix C: General valuations:", "items": [
+        "Theorem 3.3 (part 1): There is an instance with 2 agents, 4 goods, and identical subadditive valuations for which no allocation is EF1+PO.",
+        "Theorem 3.3 (part 2): There is an instance with 2 agents, 4 goods, and identical superadditive (and hence supermodular) valuations for which no allocation is EF1+PO.",
+        "Example C.3: An instance with 2 agents, 4 goods, and (non-identical) submodular valuations for which the unique MNW allocation is not EF1.",
+        "Definition 3.4 and Theorem 3.5: For submodular valuations, every MNW allocation is MEF1+PO."
+    ]},
+    "Appendix D: Spectrum of Fair and Efficient Solutions"
 ]
 }
