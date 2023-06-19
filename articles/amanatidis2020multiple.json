@@ -1,6 +1,5 @@
 {
 "title": "Multiple birds with one stone: Beating 1/2 for EFX and GMMS via envy cycle elimination",
-"gistStatus": "abstractOnly",
 "pubData": {
     "authors": [["Georgios", "Amanatidis"], ["Evangelos", "Markakis"], ["Apostolos", "Ntokos"]],
     "doi": "10.1016/j.tcs.2020.07.006",
@@ -15,11 +14,12 @@
 "topics": {
     "fairDivision": ["indiv", "goods", "additive", "GMMS", "EF1", "EFX", "PMMS"]
 },
-"description": "Fair division of $m$ indivisible goods among $n$ agents with additive valuations.",
+"description": "Fair division of $m$ indivisible goods among $n$ agents with additive valuations. Let $ϕ = (\\sqrt{5}+1)/2$.",
 "results": [
-    "Algorithm 3: 0.618-EFX + EF1 + 0.553-GMMS + $2/3$-PMMS in polytime.",
-    "Theorem 4.7: $3/5$-EFX + EF1 + $4/7$-GMMS + $2/3$-PMMS in polytime.",
-    "Theorem 4.10: 0.618-EFX + 0.894-EF1 + 0.553-GMMS + 0.717-PMMS in polytime.",
-    "Theorem 5.1: For $m ≤ n+2$, a GMMS allocation always exists and can be computed in polytime."
+    "Algorithm 3: EF1 + $(ϕ-1)$-EFX (≈ 0.6180-EFX) + $\\frac{2}{ϕ+2}$-GMMS (≈ 0.5529-GMMS) + $2/3$-PMMS in polytime.",
+    "Theorem 4.7: EF1 + $3/5$-EFX + $4/7$-GMMS (≈ 0.5714-GMMS) + $2/3$-PMMS in polytime.",
+    "Theorem 4.10: $\\frac{2}{2ϕ-1}$-EF1 (≈ 0.894-EF1) + $(ϕ-1)$-EFX + $\\frac{2}{ϕ+2}$-GMMS + $\\frac{4ϕ-2}{2ϕ+3}$-PMMS (≈ 0.7171-PMMS) in polytime.",
+    "Theorem 5.1: For $m ≤ n+2$, a GMMS allocation always exists and can be computed in polytime.",
+    "Proposition 5.5: For any integers $n ≥ 2$ and $k ≥ 1$ and real numbers $α, β ∈ (0, 1)$, there is an instance with $n$ agents and $n + 4k$ goods, for which some allocation is $α$-GMMS but not $β$-EFX and not better than $\\frac{α}{2-α}$-EF1 or $α$-PMMS."
 ]
 }
