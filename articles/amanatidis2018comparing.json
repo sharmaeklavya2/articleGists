@@ -1,0 +1,30 @@
+{
+"title": "Comparing Approximate Relaxations of Envy-Freeness",
+"pubData": {
+    "authors": [["Georgios", "Amanatidis"], ["Georgios", "Birmpas"], ["Evangelos", "Markakis"]],
+    "doi": "10.24963/ijcai.2018/6",
+    "arxiv": "1806.03114",
+    "year": 2018,
+    "venue": "IJCAI",
+    "type": "inproceedings",
+    "pages": "42--48"
+},
+"topics": {
+    "fairDivision": ["indiv", "goods", "additive", "ef1", "efx", "mms", "pmms"]
+},
+"description": "Relations between fairness notions for division of $m$ indivisible goods among $n$ agents with additive valuations.",
+"results": [
+    "Proposiiton 3.1: $∀n≥2$, $∀α∈(0,1]$, $α$-EFX $\\implies$ $α$-EF1, and EF1 doesn't imply $α$-EFX, even for identical valuations.",
+    "Proposition 3.3: $∀n∈\\{2,3\\}$, EFX $\\implies$ $2/3$-MMS. This is tight, even for identical valuations.",
+    "Proposition 3.4: $∀n≥4$, EFX $\\implies$ $\\frac{4n}{7n-2}$-MMS. EFX doesn't guarantee better than $8/13$-MMS for $n≥4$ and doesn't guarantee better than $301/509$-MMS (≈ 0.5914-MMS) for $n≥1631721$, even for identical valuations.",
+    "Proposition 3.5: $∀n≥2$, $∀α∈(0,1)$, $α$-EFX $\\implies$ $\\frac{αn}{α+2n-2}$-MMS, but is not better than $\\frac{2α}{2+α}$-MMS, and not better than $\\max(\\frac{α}{1+α}, \\frac{8α}{11+2α})$-MMS for $n≥4$, even for identical valuations.",
+    "Proposition 3.6: $∀n≥2$, $∀α∈(0,1]$, $α$-EF1 $\\implies$ $\\frac{α}{n-1+α}$-MMS, and this is tight, even for identical valuations.",
+    "Proposition 3.7: $∀n≥2$, $∀α∈(0,1]$, $α$-EFX $\\implies$ $\\frac{2α}{2+α}$-PMMS, and this is tight, even for identical valuations.",
+    "Proposition 3.8: $∀n≥3$, $∀α∈(0,1]$, $α$-EF1 $\\implies$ $\\frac{α}{1+α}$-PMMS, and this is tight.",
+    "Corollary 4.2 and Proposition 4.3: $∀n≥4$, PMMS $\\implies$ $\\frac{4n}{7n-2}$-MMS. PMMS doesn't guarantee better than $8/13$-MMS for $n≥4$ and doesn't guarantee better than $301/509$-MMS (≈ 0.5914-MMS) for $n≥1631721$, even for identical valuations.",
+    "Proposition 4.4: $∀n≥3$, $∀α∈(0,1)$, $α$-PMMS $\\implies$ $\\frac{α}{2(n-1)-α(n-2)}$-MMS, but is not better than $\\frac{α}{n-1-α(n-2)}$-MMS, even for identical valuations.",
+    "Propositions 4.5 and 4.7: $∀n≥3$, $∀β∈(0,1]$, an MMS allocation is not guaranteed to be $β$-PMMS or $β$-EF1.",
+    "Proposition 4.6: $∀n≥2$, $∀α∈(0,1)$, $α$-PMMS $\\implies$ $\\frac{α}{2-α}$-EF1, and this is tight, even for identical valuations.",
+    "Proposition 4.8: $∀n≥2$, $∀α,β∈(0,1)$, $α$-PMMS doesn't guarantee $β$-EFX, even for identical valuations."
+]
+}
