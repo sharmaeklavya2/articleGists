@@ -1,0 +1,21 @@
+{
+"title": "EFX Allocations: Simplifications and Improvements",
+"paperStatus": "toBePublished",
+"gistStatus": "abstractOnly",
+"pubData": {
+    "authors": [["Hannaneh", "Akrami"], ["Chaudhury", "Bhaskar Ray"], ["Jugal", "Garg"], ["Kurt", "Mehlhorn"], ["Ruta", "Mehta"]],
+    "year": 2023,
+    "arxiv": "2205.07638",
+    "venue": "EC",
+    "type": "inproceedings"
+},
+"topics": {
+    "fairDivision": ["indiv", "goods", "EFX", "charity", "nashWelfare"]
+},
+"description": "Fair division of $m$ indivisible goods among $n$ agents with general monotone valuations.",
+"results": [
+"Definition 2: A new class of valuations, called MMS-feasible valuations, that generalize additive and nice-cancelable valuations.",
+"Theorem 2: EFX allocations exist when $n=3$ and at least one agent has an MMS-feasible valuation function.",
+"Theorem 4: A polytime algorithm to find a partial $(1-ε)$-EFX allocation $X$ where no agent envies the charity bundle and the number of unallocated goods is $\\widetilde{O}(\\sqrt{n/ε})$. Furthermore, $X$ is $1/2$-MNW."
+]
+}
