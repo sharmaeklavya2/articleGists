@@ -6,5 +6,6 @@
 "defeq": ":=",
 "Th": "^{\\textrm{th}}",
 "E": "\\operatorname{\\mathbb{E}}",
+"Var": "\\operatorname{Var}",
 "opname": "\\operatorname{#1}"
 }

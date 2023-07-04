@@ -1,0 +1,18 @@
+{
+"title": "When Can the Maximin Share Guarantee Be Guaranteed?",
+"pubData": {
+    "authors": [["David", "Kurokawa"], ["Ariel", "Procaccia"], ["Junxing", "Wang"]],
+    "doi": "10.1609/aaai.v30i1.10041",
+    "year": 2016,
+    "venue": "AAAI",
+    "type": "inproceedings"
+},
+"topics": {
+    "fairDivision": ["indiv", "goods", "additive", "mms"]
+},
+"description": "Fair division of $m$ indivisible goods among $n$ agents with additive valuations.",
+"results": [
+    "Theorem 2.1: $∀n≥3$, there is an example with $≤3n+4$ goods for which an MMS allocation doesn't exist.",
+    "Theorem 3.1: Let $c > 0$ be a constant. For each agent $i$, let $D_i$ be a probability distribution supported over $[0, 1]$ such that $\\Var(D_i) ≥ c$. Suppose $v_i(g)$ is independently randomly sampled from $D_i$ for each agent $i$ and good $g$. Then $∀ ε>0$, $∃ K$, such that if $\\max(n, m) ≥ K$, then an MMS allocation exists with probability $1-ε$ ($K$ depends on $ε$ and $c$)."
+]
+}
