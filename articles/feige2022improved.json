@@ -1,0 +1,19 @@
+{
+"title": "Improved maximin fair allocation of indivisible items to three agents",
+"gistStatus": "abstractOnly",
+"paperStatus": "unpublished",
+"pubData": {
+    "authors": [["Uriel", "Feige"], ["Alexey", "Norkin"]],
+    "arxiv": "2205.05363",
+    "year": 2022,
+    "type": "misc"
+},
+"topics": {
+    "fairDivision": ["indiv", "goods", "chores", "additive", "mms"]
+},
+"description": "Fair division of $m$ indivisible items among 3 agents with additive valuations.",
+"results": [
+    "An allocation of goods exists where agent 1 gets at least her proportional share and the other agents get at least 11/12 of their maximin share.",
+    "An allocation of chores exists where agent 1 gets at most her proportional share and the other agents get at most 19/18 of their maximin share."
+]
+}
