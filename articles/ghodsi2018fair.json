@@ -1,0 +1,26 @@
+{
+"title": "Fair Allocation of Indivisible Goods: Improvements and Generalizations",
+"pubData": {
+    "authors": [["Mohammad", "Ghodsi"], ["MohammadTaghi", "HajiAghayi"], ["Masoud", "Seddighin"], ["Saeed", "Seddighin"],["Hadi", "Yami"]],
+    "doi": "10.1145/3219166.3219238",
+    "arxiv": "1704.00222",
+    "year": 2018,
+    "venue": "EC",
+    "type": "inproceedings",
+    "pages": "539--556"
+},
+"topics": {
+    "fairDivision": ["indiv", "goods", "additive", "submodular", "xos", "subadditive", "mms"]
+},
+"description": "Fair division of $m$ indivisible goods among $n$ agents, using MMS as the notion of fairness.",
+"results": [
+    "Theorem 1.1: additive valuations: PTAS for $3/4$-MMS.",
+    "Theorem 4.8: submodular valuations: $1/3$-MMS in polytime.",
+    "Theorem 4.1: submodular valuations: For any $n≥2$, there is an instance with $n$ agents and $2n$ goods, where the first $n-1$ agents have the same valuation function and no allocation is better than $3/4$-MMS.",
+    "Theorem 1.2: xos valuations: A $1/5$-MMS allocation always exists.",
+    "Theorem 1.3: xos valuations: $1/8$-MMS in polytime.",
+    "Theorem 4.2: xos valuations: For any $n≥2$, there is an instance with $n$ agents and $2n$ goods, where the first $n-1$ agents have the same valuation function and no allocation is better than $1/2$-MMS.",
+    "Theorem 1.5: subadditive valuations: A $(10⌈\\log m⌉)^{-1}$-MMS allocation always exists.",
+    "Theorem A.6: additive valuations: A $4/5$-MMS allocation always exists for $n=4$."
+]
+}
