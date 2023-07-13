@@ -1,0 +1,34 @@
+{
+"title": "A Little Charity Guarantees Almost Envy-Freeness",
+"pubData": {
+    "authors": [["Bhaskar Ray", "Chaudhury"], ["Telikepalli", "Kavitha"], ["Kurt", "Mehlhorn"], ["Alkmini", "Sgouritsa"]],
+    "doi": "10.1137/20M1359134",
+    "year": 2021,
+    "venue": "SJoC",
+    "type": "article",
+    "volume": "50",
+    "number": "4",
+    "pages": "1336--1358"
+},
+"topics": {
+    "fairDivision": ["indiv", "goods", "efx", "charity", "mms", "gmms", "nashWelfare"]
+},
+"description": "Fair division of a set $M$ of $m$ indivisible goods among $n$ agents (general monotone valuations).",
+"results": [
+    "Section 1.2: Example with 3 agents, 4 goods, and additive valuations for which bundle-splitting is necessary.",
+    {"head": "Algorithm 2.1: Takes as input any partial EFX allocation $Y$ (default value of $Y$ is the empty allocation) and outputs another partial allocation $X$ and a set $P$ of unallocated goods such that all of these hold:", "items": [
+        "$X$ is EFX.", "$|P| < n$.",
+        "$v_i(X_i) ≥ v_i(P)$ for each agent $i$.",
+        "$v_i(X_i) ≥ v_i(Y_i)$ for each agent $i$.",
+        "The algorithm runs in at most $m + mnV/Δ$ iterations, and each iteration uses at most $mn$ value queries, where $V = \\max_i v_i(M)$ and $Δ = \\min_i \\min_{S≠T} |v_i(S)-v_i(T)|$.",
+        "Proposition 3.1: When valuations are additive, $v_i(X_i) ≥ \\frac{\\MMS_i(M, n)}{2-|P|/n}$ for each agent $i$.",
+        "Theorem 3.5: When valuations are additive, $(X_1 ∪ P, X_2, …, X_n)$ is $4/7$-GMMS and $1/2$-EFX."
+    ]},
+    {"head": "An algorithm parametrized by $ε > 0$ that outputs a partial allocation $X$ and a set $P$ of unallocated goods such that all of these hold:", "items": [
+        "$X$ is $(1+ε)^{-1}$-EFX.", "$|P| < n$.",
+        "$v_i(X_i) ≥ v_i(P)/(1+ε)$ for each agent $i$.",
+        "The algorithm runs in $O((mn/ε)\\log(V/Δ))$ iterations, and each iteration uses at most $mn$ value queries, where $V = \\max_i v_i(M)$ and $Δ = \\min_i\\min_{S≠T} |v_i(S)-v_i(T)|$."
+    ]},
+    "For additive valuations, by picking $Y$ appropriately in Algorithm 2.1, its output $X$ satisfies $v_i(X_i) ≥ v_i(X^*)/2$, where $X^*$ is the maximum Nash welfare allocation."
+]
+}
