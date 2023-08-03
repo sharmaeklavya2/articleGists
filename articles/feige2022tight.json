@@ -18,7 +18,12 @@
 "Theorem 1: An example with 3 agents and 9 goods where no allocation is better than 39/40-MMS.",
 "Theorem 2: For at most $n+5$ goods, an MMS allocation exists.",
 "Theorem 3: For at most 9 goods, some allocation is 39/40-MMS or better.",
-"Theorem 4: For each $n ≥ 4$, there is an instance with at most $3n+3$ goods for which no allocation is better than $(1-n^{-4})$-MMS.",
+{"head": "Theorem 4: For each $n ≥ 4$, there is an instance with at most $3n+1+2(n\\%2)$ goods for which no allocation is better than $(1-(⌈\\frac{n}{2}⌉+1)^{-4})$-MMS. Furthermore, the instance has these properties:", "items": [
+    "There are 2 kinds of valuation functions.",
+    "There is a set $S$ of at most 11 positive integers such that $v_i(g) ∈ S$ for all $i$ and $g$.",
+    "There is a set $S$ of goods such that $|S| ≤ 2⌈\\frac{n}{2}⌉ + 3$, every good outside $S$ has the same value for each agent, and for each good $g ∈ S$ and every pair $(i,j)$ of agents, $|v_i(g) - v_j(g)| ≤ 1$.",
+    "Each agent has an MMS partition where each bundle has total value $f(⌈\\frac{n}{2}⌉+2)$, where $f(x) = x^2(x-2)^2+x ∈ ((x-2)^4, (x-1)^4)$."
+]},
 "Theorem 5: Example with 3 agents and 9 chores for which no allocation is better than 44/43-MMS.",
 "Unproven claim: For at most 8 chores, an MMS allocation exists.",
 "Unproven claim: For at most 9 chores, some allocation is 44/43-MMS or better."
