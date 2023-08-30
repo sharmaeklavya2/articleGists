@@ -1,0 +1,21 @@
+{
+"title": "Simplification and Improvement of MMS Approximation",
+"pubData": {
+    "authors": [["Hannaneh", "Akrami"], ["Jugal", "Garg"], ["Eklavya", "Sharma"], ["Setareh", "Taki"]],
+    "doi": "10.24963/ijcai.2023/276",
+    "arxiv": "2303.16788",
+    "year": 2023,
+    "venue": "IJCAI",
+    "type": "inproceedings",
+    "pages": "2485--2493"
+},
+"topics": {
+    "fairDivision": ["indiv", "goods", "additive", "mms"]
+},
+"description": "Fair division of $m$ indivisible goods among $n$ agents with additive valuations.",
+"results": [
+    "Simple proof that a slight variant of the Garg-Taki algorithm gives $3/4$-MMS.",
+    "Proof that a slight variant of the Garg-Taki algorithm gives $(\\frac{3}{4} + \\min(\\frac{1}{36} + \\frac{3}{16n-4}))$-MMS.",
+    "Theorem 2: An algorithm that either performs one of the four valid reductions (as in the Garg-Taki algorithm) or does bag filling, cannot get better than $(\\frac{3}{4} + \\frac{3}{8n-4})$-MMS."
+]
+}
