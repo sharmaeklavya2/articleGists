@@ -1,0 +1,21 @@
+{
+"title": "An Improved Approximation Algorithm for Maximin Shares",
+"gistStatus": "abstractOnly",
+"pubData": {
+    "authors": [["Jugal", "Garg"], ["Setareh", "Taki"]],
+    "doi": "10.1145/3391403.3399526",
+    "arxiv": "1903.00029",
+    "year": 2020,
+    "venue": "EC",
+    "type": "inproceedings",
+    "pages": "379--380"
+},
+"topics": {
+    "fairDivision": ["indiv", "goods", "additive", "mms"]
+},
+"description": "Fair division of $m$ indivisible goods among $n$ agents with additive valuations.",
+"results": [
+    "Algorithm for $(\\frac{3}{4} + \\frac{1}{12n})$-MMS.",
+    "Strongly polytime algorithm for $3/4$-MMS."
+]
+}
