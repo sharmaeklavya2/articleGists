@@ -82,8 +82,8 @@ BIBTEX_TRN = {
     'publisher': ['longPublisher', 'publisher'],
 }
 BIBTEX_FORMATS = {
-    'article': ['journal', 'year', 'volume', 'number', 'pages'],
-    'inproceedings': ['booktitle', 'year', 'volume', 'number', 'pages'],
+    'article': ['journal', 'year', 'volume', 'number', 'pages', 'publisher'],
+    'inproceedings': ['booktitle', 'year', 'volume', 'number', 'pages', 'publisher'],
     'misc': ['year'],
 }
 
