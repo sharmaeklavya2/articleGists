@@ -1,0 +1,26 @@
+{
+"title": "Optimal Social Choice Functions: A Utilitarian View",
+"gistStatus": "abstractOnly",
+"pubData": {
+    "authors": [["Craig", "Boutilier"], ["Ioannis", "Caragiannis"], ["Simi", "Haber"], ["Tyler", "Lu"], ["Ariel D.", "Procaccia"]],
+    "doi": "10.1145/2229012.2229030",
+    "year": 2012,
+    "venue": "EC",
+    "type": "inproceedings",
+    "pages": "197--214"
+},
+"topics": {
+    "socialChoice": ["voting", "distortion"],
+    "learningTheory": []
+},
+"description": "Studies distortion for single-winner elections with $m$ candidates.",
+"results": [
+    "Theorem 3.2: Every randomized social choice function has distortion at least $\\sqrt{m}/3$.",
+    "Theorem 3.3: There is a randomized scoring function having distortion $O(\\sqrt{m}\\log^*m)$.",
+    "Section 3: There is a randomized scoring function having distortion at most $2\\sqrt{mH_m}$, where $H_m = \\sum_{i=1}^m 1/i ≤ \\ln m + 1$.",
+    "Theorem 3.4: There is a polytime randomized scoring function with optimal distortion.",
+    "Theorem 4.2: When utility functions are drawn IID from a neutral distribution (utilities of an agent may not sum to 1), then the average-case distortion-optimal social choice function is a scoring function.",
+    "Corollary 4.5: When utility functions are drawn IID from $[0, 1]^m$, then the average-case distortion-optimal social choice function is a scoring function.",
+    "Section 5: Learning-theoretic model: Utilities are drawn IID from some unknown distribution $D$. We have samples from this distribution, using which we want to design optimal social choice functions. Algorithmic and sample-complexity results are given."
+]
+}
