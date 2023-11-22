@@ -2,12 +2,12 @@
 "title": "Optimal Social Choice Functions: A Utilitarian View",
 "gistStatus": "abstractOnly",
 "pubData": {
-    "authors": [["Craig", "Boutilier"], ["Ioannis", "Caragiannis"], ["Simi", "Haber"], ["Tyler", "Lu"], ["Ariel D.", "Procaccia"]],
-    "doi": "10.1145/2229012.2229030",
-    "year": 2012,
-    "venue": "EC",
-    "type": "inproceedings",
-    "pages": "197--214"
+    "authors": [["Craig", "Boutilier"], ["Ioannis", "Caragiannis"], ["Simi", "Haber"], ["Tyler", "Lu"], ["Ariel D.", "Procaccia"], ["Or", "Sheffet"]],
+    "doi": "10.1016/j.artint.2015.06.003",
+    "year": 2015,
+    "venue": "Journal of Artificial Intelligence",
+    "type": "article",
+    "pages": "190--213"
 },
 "topics": {
     "socialChoice": ["voting", "distortion"],
