@@ -1,0 +1,25 @@
+{
+"title": "The Distortion of Cardinal Preferences in Voting",
+"pubData": {
+    "authors": [["Ariel D.", "Procaccia"], ["Jeffrey S.", "Rosenschein"]],
+    "doi": "10.1007/11839354_23",
+    "year": 2006,
+    "venue": "International Workshop on Cooperative Information Agents",
+    "type": "inproceedings",
+    "pages": "317--331"
+},
+"topics": {
+    "socialChoice": ["voting", "distortion"]
+},
+"description": "Introduces distortion and misrepresentation in voting. Let there be $m$ candidates and $n$ voters.",
+"results": [
+    "Section 2.1: Defines $α$-scoring-protocol, and its special cases Plurality, Borda count, and Veto.",
+    "Definition 2: Distortion of a voting rule.",
+    "Proposition 1: For $m=2$ and $n=3$, distortion of any voting rule is at least $3/2$.",
+    "Proposition 2: The $α$-scoring-protocol has unbounded distortion (even if we fix $m$) if $mα_2 ≥ \\sum_{j=1}^m α_j$.",
+    "Corollary 1: Borda count and Veto have unbounded distortion, even if we fix $m$.",
+    "Section 3.1: Distortion in the weighted setting.",
+    "Section 3.2 (without proof): Defines the min-score-max-util problem, and shows that it's NP-complete.",
+    "[TODO] Section 4: Misrepresentation."
+]
+}
