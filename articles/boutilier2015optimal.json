@@ -18,7 +18,7 @@
     "Theorem 3.2: Every randomized social choice function has distortion at least $\\sqrt{m}/3$.",
     "Theorem 3.3: There is a randomized scoring function having distortion $O(\\sqrt{m}\\log^*m)$.",
     "Section 3: There is a randomized scoring function having distortion at most $2\\sqrt{mH_m}$, where $H_m = \\sum_{i=1}^m 1/i ≤ \\ln m + 1$.",
-    "Theorem 3.4: There is a polytime randomized scoring function with optimal distortion.",
+    "Theorem 3.4: There is a randomized social choice function with optimal distortion. It works by solving a linear program in $O(nm^2)$ variables and $O(nm^2)$ constraints to get a vector $p ∈ [0,1]^m$ such that $\\sum_{i=1}^m p_i = 1$. It then randomly samples $i ∈ [m]$ with probability $p_i$.",
     "Theorem 4.2: When utility functions are drawn IID from a neutral distribution (utilities of an agent may not sum to 1), then the average-case distortion-optimal social choice function is a scoring function.",
     "Corollary 4.5: When utility functions are drawn IID from $[0, 1]^m$, then the average-case distortion-optimal social choice function is a scoring function.",
     "Section 5: Learning-theoretic model: Utilities are drawn IID from some unknown distribution $D$. We have samples from this distribution, using which we want to design optimal social choice functions. Algorithmic and sample-complexity results are given."
