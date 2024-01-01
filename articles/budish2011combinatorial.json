@@ -14,7 +14,7 @@
 },
 "topics": {
     "fairDivision": ["indiv", "goods", "ceei", "mms", "ef1"],
-    "marketEquilibrium": ["ceei"]
+    "marketEq": ["ceei"]
 },
 "results": [
     "Defines envy-freeness up to one good (EF1).",

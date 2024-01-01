@@ -1,0 +1,21 @@
+{
+"title": "On the Proximity of Markets with Integral Equilibria",
+"gistStatus": "abstractOnly",
+"pubData": {
+    "authors": [["Siddharth", "Barman"], ["Sanath Kumar", "Krishnamurthy"]],
+    "doi": "10.1609/aaai.v33i01.33011748",
+    "year": 2019,
+    "venue": "AAAI",
+    "type": "inproceedings",
+    "pages": "1748--1755"
+},
+"topics": {
+    "fairDivision": ["indiv", "goods", "additive", "prop1", "po", "ef11", "fpo"],
+    "marketEq": ["fisher"]
+},
+"description": "Fair and efficient allocation of $m$ indivisible goods among $n$ agents with additive valuations.",
+"results": [
+    "Corollary 10: PROP1+fPO in strong polytime.",
+    "Corollary 11: $\\mathrm{EF}^1_1$+fPO in strong polytime."
+]
+}

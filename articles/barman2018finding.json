@@ -1,0 +1,23 @@
+{
+"title": "Finding Fair and Efficient Allocations",
+"gistStatus": "abstractOnly",
+"pubData": {
+    "authors": [["Siddharth", "Barman"], ["Sanath Kumar", "Krishnamurthy"], ["Rohit", "Vaish"]],
+    "doi": "10.1145/3219166.3219176",
+    "arxiv": "1707.04731",
+    "year": 2018,
+    "venue": "EC",
+    "type": "inproceedings",
+    "pages": "557--574"
+},
+"topics": {
+    "fairDivision": ["indiv", "goods", "additive", "ef1", "po", "fpo", "nashWelfare"],
+    "marketEq": ["fisher"]
+},
+"description": "Fair and efficient allocation of $m$ indivisible goods among $n$ agents with additive valuations.",
+"results": [
+    "Theorem 1: EF1+PO in $O(\\textrm{poly}(m, n, v_{\\max}))$ time, where $v_{\\max} := \\max_{i,j} v_i(j)$.",
+    "Theorem 2: EF1+fPO allocation always exists.",
+    "Theorem 3: Polytime 1.45-approximation to Nash welfare maximization."
+]
+}
