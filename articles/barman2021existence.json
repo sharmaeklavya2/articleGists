@@ -1,0 +1,21 @@
+{
+"title": "Existence and Computation of Maximin Fair Allocations Under Matroid-Rank Valuations",
+"status": "incomplete",
+"pubData": {
+    "authors": [["Siddharth", "Barman"], ["Paritosh", "Verma"]],
+    "arxiv": "2012.12710",
+    "year": 2021,
+    "venue": "AAMAS",
+    "type": "inproceedings",
+    "pages": "169--177"
+},
+"topics": {
+    "fairDivision": ["indiv", "goods", "submodular", "binary", "xos", "mms"]
+},
+"description": "Fair division of $m$ indivisible goods among $n$ agents.",
+"results": [
+    "MMS+PO allocation in polytime for submodular valuations with binary marginals.",
+    "Theorem 2: Instance with $n=2$, $m=4$, and XOS valuations with binary marginals where better than $1/2$-MMS allocations don't exist.",
+    "Theorem 3: Instance with $n=2$, $m=4$, and weighted matroid-rank valuations where an MMS allocation doesn't exist."
+]
+}
