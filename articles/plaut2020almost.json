@@ -1,0 +1,20 @@
+{
+"title": "Almost Envy-Freeness with General Valuations",
+"gistStatus": "incomplete",
+"pubData": {
+    "authors": [["Benjamin", "Plaut"], ["Tim", "Roughgarden"]],
+    "doi": "10.1137/19M124397X",
+    "year": 2020,
+    "venue": "SIAM Journal on Discrete Mathematics",
+    "type": "article",
+    "pages": "1039--1068"
+},
+"topics": {
+    "fairDivision": ["indiv", "goods", "mms"]
+},
+"description": "Fair division of $m$ indivisible goods among $n$ agents.",
+"results": [
+    "EFX allocations exist for 2 agents.",
+    "EFX allocations exist for identical valuations."
+]
+}
