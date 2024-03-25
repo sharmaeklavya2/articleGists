@@ -3,16 +3,17 @@
 "pubData": {
     "authors": [["FirstName1", "LastName1"], ["FirstName2", "LastName2"]],
     "doi": "",
+    "arxiv": "",
     "year": 2000,
     "venue": "",
     "type": "",
     "pages": ""
 },
 "topics": {
-    "fairDivision": []
+    "fairDivision": ["indiv", "goods", "additive", "mms"]
 },
 "relatedWork": ["Superseded by", "article:id"],
-"description": "",
+"description": "Fair division of $m$ indivisible goods among $n$ agents with additive valuations.",
 "results": [
 ]
 }
