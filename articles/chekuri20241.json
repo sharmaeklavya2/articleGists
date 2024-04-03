@@ -14,6 +14,6 @@
 "description": "Fair division of $m$ indivisible goods among $n$ agents.",
 "results": [
     "1/2-APS (identical entitlements) in polytime for SPLC valuations.",
-    "1/3-APS (non-identical entitlements) exists for submodular valuations."
+    "PTAS for 1/3-APS (non-identical entitlements) for submodular valuations."
 ]
 }
