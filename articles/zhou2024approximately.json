@@ -1,0 +1,24 @@
+{
+"title": "Approximately EFX allocations for indivisible chores",
+"gistStatus": "abstractOnly",
+"pubData": {
+    "authors": [["Shengwei", "Zhou"], ["Xiaowei", "Wu"]],
+    "doi": "10.1016/j.artint.2023.104037",
+    "year": 2024,
+    "venue": "AI",
+    "type": "article",
+    "volume": "326",
+    "pages": "104037"
+},
+"topics": {
+    "fairDivision": ["indiv", "chores", "additive", "efx"]
+},
+"description": "Fair division of $m$ indivisible chores among $n$ agents with additive valuations.",
+"results": [
+    "$(2+\\sqrt{6})$-EFX in polytime for $n=3$.",
+    "$(3n^2-n)$-EFX in polytime for $n ≥ 4$.",
+    "EFX in polytime for bivalued $n=3$.",
+    "(Partial) EFX in polytime with at most $n-1$ unallocated chores for bivalued $n ≥ 4$.",
+    "$(n-1)$-EFX in polytime for bivalued $n ≥ 4$."
+]
+}
