@@ -1,0 +1,20 @@
+{
+"title": "One Dollar Each Eliminates Envy",
+"pubData": {
+    "authors": [["Johannes", "Brustle"], ["Jack", "Dippel"], ["Vishnu V.", "Narayan"], ["Mashbat", "Suzuki"], ["Adrian", "Vetta"]],
+    "doi": "10.1145/3391403.3399447",
+    "arxiv": "1912.02797",
+    "year": 2020,
+    "venue": "EC",
+    "type": "inproceedings",
+    "pages": "23--39"
+},
+"topics": {
+    "fairDivision": ["indiv", "goods", "additive", "ef", "subsidy"]
+},
+"description": "Fair division of $m$ indivisible goods among $n$ agents, where each good has marginal value at most 1 to each agent.",
+"results": [
+    "For additive valuations, a polytime algorithm to get a balanced EF1 allocation $A$ and a vector $p$ such that $(A, p)$ is EF and $p_i ≤ 1$ for each $i$.",
+    "For general monotone valuations, a polytime algorithm (given a value oracle) to get an EF allocation with $≤ 2(n-1)$ subsidy per agent."
+]
+}
