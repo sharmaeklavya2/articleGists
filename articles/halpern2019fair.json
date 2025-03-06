@@ -1,0 +1,27 @@
+{
+"title": "Fair Division with Subsidy",
+"pubData": {
+    "authors": [["Daniel", "Halpern"], ["Nisarg", "Shah"]],
+    "doi": "10.1007/978-3-030-30473-7_25",
+    "year": 2019,
+    "venue": "SAGT",
+    "type": "inproceedings",
+    "publisher": "Springer",
+    "pages": "374--389"
+},
+"topics": {
+    "fairDivision": ["indiv", "goods", "additive", "ef", "subsidy"]
+},
+"description": "Fair division of $m$ indivisible goods among $n$ agents with additive valuations, where each good has value at most 1 to each agent.",
+"results": [
+    "Section 2: A slightly different definition of the envy graph of an allocation.",
+    "Theorem 1: For any allocation $A$, the following are equivalent: (i) $A$ is envy-freeable, (ii) $A$ is welfare maximizing across all reassignments of its bundles to agents, (iii) $G_A$ has no positive-weight cycles.",
+    "Theorem 2: For any envy-freeable allocation $A$, let $p^*_i$ be the max weight of any path starting at $i$ in $A$'s envy graph. Then $(A, p^*)$ is EF. Moreover, $p^*$ can be computed in $O(nm + n^3)$ time, and for any $p$ such that $(A, p)$ is EF, $p^*_i ≤ p_i$ for all $i$. (Call $p^*$ the minimum subsidy vector for $A$.)",
+    "Theorem 3: Let $A$ be an envy-freeable allocation. Then the minimum total subsidy is at most $(n-1)m$. This is tight: $m$ identical goods of value 1, all of which are allocated to a single agent.",
+    "Theorem 4: For any fair division instance, the minimum total subsidy is at least $n-1$ (single good of value 1).",
+    "Lemma 2: For any EF1 allocation $A$, the minimum total subsidy is $≤ (n-1)\\min(n-1, m)$.",
+    "Theorem 5: For binary valuations, the max-Nash-welfare allocation is EF1 and its minimum total subsidy is $≤ n-1$.",
+    "Proposition 4: When valuations are identical, for any EF1 allocation $A$, the minimum total subsidy is $≤ (n-1)$.",
+    "Theorem 6: When $n=2$, there is an agent ordering such that the allocation returned by round-robin is envy-freeable and requires $≤ 1$ subsidy."
+]
+}
