@@ -1,0 +1,30 @@
+name: deploy-to-github-pages
+on:
+  push:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python3 createWebsite.py -i articles -o output
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: output
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: '${{ steps.deployment.outputs.page_url }}'
+    steps:
+      - uses: actions/deploy-pages@v5
+        id: deployment
